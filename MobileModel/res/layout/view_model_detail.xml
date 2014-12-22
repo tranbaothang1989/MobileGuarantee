@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_default"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Mã SC" />
+
+        <TextView
+            android:id="@+id/tv_ma_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Sửa chữa" />
+
+        <TextView
+            android:id="@+id/tv_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Mã LK" />
+
+        <TextView
+            android:id="@+id/tv_ma_lk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Linh Kiện" />
+
+        <TextView
+            android:id="@+id/tv_lk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Bảo hành" />
+
+        <Spinner
+            android:id="@+id/spinner_bh"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Giá" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+</LinearLayout>
