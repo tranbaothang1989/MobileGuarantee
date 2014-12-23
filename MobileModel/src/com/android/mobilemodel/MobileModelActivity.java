@@ -58,7 +58,7 @@ public class MobileModelActivity extends ActionBarActivity
         String product      = Build.PRODUCT;
         String model        = Build.MODEL;
         
-        Log.d("ThangTB", "MANUFACTURER BRAND PRODUCT MODEL is "+manufacturer + " "+brand + " "+ product + " " +model );
+        Log.d("ThangTB", "MANUFACTURER BRAND PRODUCT MODEL is "+manufacturer + "+"+brand + "+"+ product + "+" +model );
         ModelFragment modelFragment = new ModelFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.container,modelFragment).commit();
         modelFragment.setOnClickItemList(new OnClickItemList() {
