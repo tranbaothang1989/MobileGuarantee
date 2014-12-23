@@ -157,6 +157,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		switch (id) {
 		case R.id.btn_my_model:
 			Intent i = new Intent(getApplicationContext(), MobileModelActivity.class);
+			i.putExtra("model_name", "M8");
 			startActivity(i);
 			break;
 		case R.id.btn_search_model:

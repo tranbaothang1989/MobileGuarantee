@@ -3,21 +3,21 @@ package com.android.mobilemodel;
 import java.util.ArrayList;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.android.mobilemodel.entity.CorrectionEntity;
 import com.android.mobilemodel.entity.MainModel;
 
 public class CorrectAdapter extends BaseAdapter {
 
-	ArrayList<MainModel> datas;
+	ArrayList<CorrectionEntity> datas;
     private LayoutInflater l_Inflater;
     
-	public CorrectAdapter(ArrayList<MainModel> datas, Context context) {
+	public CorrectAdapter(ArrayList<CorrectionEntity> datas, Context context) {
         this.datas = datas;
         this.l_Inflater = LayoutInflater.from(context);
     }
@@ -44,7 +44,7 @@ public class CorrectAdapter extends BaseAdapter {
 	public View getView(int position, View convertView, ViewGroup parent) {
 //		View view = l_Inflater.inflate(R.layout.item_correction, null);
 		ViewHolder holder;
-		MainModel mainModel = datas.get(position);
+		CorrectionEntity correctionEntity = datas.get(position);
 		if(convertView == null){
 			holder = new ViewHolder();
 			convertView = l_Inflater.inflate(R.layout.item_correction, null);
@@ -55,8 +55,8 @@ public class CorrectAdapter extends BaseAdapter {
 		else{
 			holder = (ViewHolder) convertView.getTag();
 		}
-		holder.tvCode.setText(mainModel.getCorrectionCode());
-		holder.tvName.setText(mainModel.getCorrectionName());
+		holder.tvCode.setText(correctionEntity.getId());
+		holder.tvName.setText(correctionEntity.getName());
         return convertView;
 	}
 

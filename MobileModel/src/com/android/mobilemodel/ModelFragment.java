@@ -12,12 +12,15 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
+import com.android.mobilemodel.entity.CorrectionEntity;
 import com.android.mobilemodel.entity.MainModel;
+import com.android.mobilemodel.entity.Model;
 import com.android.mobilemodel.entity.Price;
 
 public class ModelFragment extends Fragment{
 
-	ArrayList<MainModel> mainModels;
+	Model mModel;
+	ArrayList<CorrectionEntity> correctionList;
 	MobileModelActivity activity;
 
 	@Override
@@ -53,9 +56,9 @@ public class ModelFragment extends Fragment{
 		// TODO Auto-generated method stub
 		View v = getView();
 		ListView lv = (ListView) v.findViewById(R.id.listView1);
-		
+		correctionList = (ArrayList<CorrectionEntity>) activity.databaseHelper.getAllCorrectionsByModelId(activity.mModel.getId());
 
-		CorrectAdapter adapter = new CorrectAdapter(mainModels, getActivity().getApplicationContext());
+		CorrectAdapter adapter = new CorrectAdapter(correctionList, getActivity().getApplicationContext());
 		lv.setAdapter(adapter);
 		lv.setOnItemClickListener(new OnItemClickListener() {
 

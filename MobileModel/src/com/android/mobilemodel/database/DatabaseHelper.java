@@ -11,6 +11,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.database.sqlite.SQLiteStatement;
 import android.util.Log;
 
 import com.android.mobilemodel.Contants;
@@ -143,6 +144,38 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		return model;
 	}
 
+	/*
+	 * get single model
+	 */
+	public Model getModel(String modelName) {
+		SQLiteDatabase db = this.getReadableDatabase();
+
+		String selectQuery = "SELECT  * FROM " + TABLE_MODEL + " WHERE "
+				+ COL_MODEL_CODE + " like '%"+modelName+"%'";
+		Log.e(LOG, selectQuery);
+		Cursor c = db.rawQuery(selectQuery, null);
+//		Cursor c = db.query(true, 
+//				TABLE_MODEL,                        /**< Table name. */
+//		        null,                             /**< All the fields that you want the 
+//		                                                cursor to contain; null means all.*/
+//		        COL_MODEL_CODE+ " like ?",                         /**< WHERE statement without the WHERE clause. */
+//		        new String[] {"'%"+ modelName +"%'"},    /**< Selection arguments. */
+//		        null, null, null, null);
+		
+		Model model = new Model();
+		if (c.moveToFirst()) {
+			do {
+				model.setId(c.getInt(c.getColumnIndex(COL_ID)));
+				model.setBrand((c.getString(c.getColumnIndex(COL_MODEL_BRAND))));
+				model.setModelCode((c.getString(c.getColumnIndex(COL_MODEL_CODE))));
+				model.setCreatedAt(c.getString(c.getColumnIndex(COL_CREATED_AT)));
+			}while (c.moveToNext());
+
+		}
+		Log.d("ThangTB", model.getModelCode());
+		return model;
+	}
+	
 	/**
 	 * getting all model
 	 * */
@@ -172,6 +205,36 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		return models;
 	}
 
+	/**
+	 * getting all model
+	 * */
+	public List<Model> getAllModelsByName(String name) {
+		List<Model> models = new ArrayList<Model>();
+		String selectQuery = "SELECT  * FROM " + TABLE_MODEL + " WHERE "
+				+ COL_MODEL_CODE + " like '%"+name+"%'";
+
+		Log.e(LOG, selectQuery);
+
+		SQLiteDatabase db = this.getReadableDatabase();
+		Cursor c = db.rawQuery(selectQuery, null);
+
+		// looping through all rows and adding to list
+		if (c.moveToFirst()) {
+			do {
+				Model model = new Model();
+				model.setId(c.getInt(c.getColumnIndex(COL_ID)));
+				model.setBrand((c.getString(c.getColumnIndex(COL_MODEL_BRAND))));
+				model.setModelCode((c.getString(c.getColumnIndex(COL_MODEL_CODE))));
+				model.setCreatedAt(c.getString(c.getColumnIndex(COL_CREATED_AT)));
+
+				// adding to todo list
+				models.add(model);
+			} while (c.moveToNext());
+		}
+
+		return models;
+	}
+	
 	/*
 	 * Updating a todo
 	 */

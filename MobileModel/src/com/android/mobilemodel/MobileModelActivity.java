@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import com.android.mobilemodel.ModelFragment.OnClickItemList;
 import com.android.mobilemodel.database.DatabaseHelper;
 import com.android.mobilemodel.entity.MainModel;
+import com.android.mobilemodel.entity.Model;
 import com.android.mobilemodel.entity.Price;
 
 import android.app.Activity;
@@ -37,6 +38,7 @@ public class MobileModelActivity extends ActionBarActivity
     private CharSequence mTitle;
     
     public DatabaseHelper databaseHelper;
+    Model mModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,12 +55,16 @@ public class MobileModelActivity extends ActionBarActivity
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
         
-        String manufacturer = Build.MANUFACTURER;
-        String brand        = Build.BRAND;
-        String product      = Build.PRODUCT;
-        String model        = Build.MODEL;
+        Bundle b = getIntent().getExtras();
+        String modelName = b.getString("model_name");
+//        String manufacturer = Build.MANUFACTURER;
+//        String brand        = Build.BRAND;
+//        String product      = Build.PRODUCT;
+//        String model        = Build.MODEL;
         
-        Log.d("ThangTB", "MANUFACTURER BRAND PRODUCT MODEL is "+manufacturer + "+"+brand + "+"+ product + "+" +model );
+        mModel = databaseHelper.getModel(modelName);
+        
+        //Log.d("ThangTB", "MANUFACTURER BRAND PRODUCT MODEL is "+manufacturer + "+"+brand + "+"+ product + "+" +model );
         ModelFragment modelFragment = new ModelFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.container,modelFragment).commit();
         modelFragment.setOnClickItemList(new OnClickItemList() {
