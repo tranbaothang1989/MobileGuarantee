@@ -1,4 +1,4 @@
-package com.android.mobilemodel;
+package com.android.mobilemodel.adapter;
 
 import java.util.ArrayList;
 
@@ -9,6 +9,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.android.mobilemodel.R;
+import com.android.mobilemodel.R.id;
+import com.android.mobilemodel.R.layout;
 import com.android.mobilemodel.entity.CorrectionEntity;
 import com.android.mobilemodel.entity.MainModel;
 

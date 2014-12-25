@@ -1,4 +1,4 @@
-package com.android.mobilemodel;
+package com.android.mobilemodel.fragment;
 
 import java.util.ArrayList;
 
@@ -12,6 +12,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.android.mobilemodel.R;
+import com.android.mobilemodel.R.id;
+import com.android.mobilemodel.R.layout;
 import com.android.mobilemodel.entity.MainModel;
 import com.android.mobilemodel.entity.Price;
 

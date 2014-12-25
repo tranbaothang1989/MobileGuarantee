@@ -1,4 +1,4 @@
-package com.android.mobilemodel;
+package com.android.mobilemodel.fragment;
 
 import java.util.ArrayList;
 
@@ -12,6 +12,11 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
+import com.android.mobilemodel.MobileModelActivity;
+import com.android.mobilemodel.R;
+import com.android.mobilemodel.R.id;
+import com.android.mobilemodel.R.layout;
+import com.android.mobilemodel.adapter.CorrectAdapter;
 import com.android.mobilemodel.entity.CorrectionEntity;
 import com.android.mobilemodel.entity.MainModel;
 import com.android.mobilemodel.entity.Model;
@@ -19,7 +24,7 @@ import com.android.mobilemodel.entity.Price;
 
 public class ModelFragment extends Fragment{
 
-	Model mModel;
+	//public Model mModel;
 	ArrayList<CorrectionEntity> correctionList;
 	MobileModelActivity activity;
 

@@ -112,6 +112,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		values.put(COL_MODEL_CODE, model.getModelCode());
 		values.put(COL_CREATED_AT, getDateTime());
 
+		Log.d("ThangTB", " insert model "+model.getModelCode());
 		// insert row
 //		long model_id = db.insert(TABLE_MODEL, null, values);
 		long model_id = db.insertWithOnConflict(TABLE_MODEL, null, values, SQLiteDatabase.CONFLICT_REPLACE);
@@ -128,7 +129,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		String selectQuery = "SELECT  * FROM " + TABLE_MODEL + " WHERE "
 				+ COL_ID + " = " + model_id;
 
-		Log.e(LOG, selectQuery);
+		//Log.e(LOG, selectQuery);
 
 		Cursor c = db.rawQuery(selectQuery, null);
 
@@ -172,7 +173,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 			}while (c.moveToNext());
 
 		}
-		Log.d("ThangTB", model.getModelCode());
+		//Log.d("ThangTB", model.getModelCode());
 		return model;
 	}
 	
@@ -183,7 +184,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		List<Model> models = new ArrayList<Model>();
 		String selectQuery = "SELECT  * FROM " + TABLE_MODEL;
 
-		Log.e(LOG, selectQuery);
+		//Log.e(LOG, selectQuery);
 
 		SQLiteDatabase db = this.getReadableDatabase();
 		Cursor c = db.rawQuery(selectQuery, null);
@@ -213,7 +214,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		String selectQuery = "SELECT  * FROM " + TABLE_MODEL + " WHERE "
 				+ COL_MODEL_CODE + " like '%"+name+"%'";
 
-		Log.e(LOG, selectQuery);
+		//Log.e(LOG, selectQuery);
 
 		SQLiteDatabase db = this.getReadableDatabase();
 		Cursor c = db.rawQuery(selectQuery, null);
@@ -269,7 +270,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 				values.put(COL_CREATED_AT, getDateTime());
 //				long model_id = db.insert(TABLE_CORRECTION, null, values);
 				long model_id = db.insertWithOnConflict(TABLE_CORRECTION, null, values, SQLiteDatabase.CONFLICT_REPLACE);
-				Log.d("ThangTB", "====> insertCorrections "+ entity.getId()+ " is "+model_id);
+				//Log.d("ThangTB", "====> insertCorrections "+ entity.getId()+ " is "+model_id);
 			}
 			db.setTransactionSuccessful();
 			db.endTransaction();
@@ -300,7 +301,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 				
 //				long model_id = db.insert(TABLE_APPLIANCE, null, values);
 				long model_id = db.insertWithOnConflict(TABLE_APPLIANCE, null, values, SQLiteDatabase.CONFLICT_REPLACE);
-				Log.d("ThangTB", "====> insertAppliances "+ entity.getId()+ " is "+model_id);
+				//Log.d("ThangTB", "====> insertAppliances "+ entity.getId()+ " is "+model_id);
 			}
 			db.setTransactionSuccessful();
 			db.endTransaction();

@@ -69,9 +69,9 @@ public class MainActivity extends Activity implements OnClickListener{
 			ArrayList<String> appliance = new ArrayList<String>();
 			ArrayList<String> constant = new ArrayList<String>();
 			try {
-				InputStream is = getAssets().open("book1.txt");
+				InputStream is = getAssets().open("modellist.csv");
 				char c = '\t';
-				CsvReader products = new CsvReader(is, c,Charset.forName("UCS-2"));
+				CsvReader products = new CsvReader(is, c,Charset.forName("UTF-8"));
 			
 				//products.readHeaders();
 
@@ -83,8 +83,13 @@ public class MainActivity extends Activity implements OnClickListener{
 				ArrayList<ApplianceEntity> listAppliance = new ArrayList<ApplianceEntity>();
 
 				int id=0;
+				int flg =0;
 				while (products.readRecord())
 				{
+					if (flg == 0) {
+						flg =1;
+						continue;
+					}
 					String brand = products.get(0);
 					//Log.d("ThangTb", " brand = " + brand);
 					String modelCode = products.get(1).trim();
@@ -102,6 +107,7 @@ public class MainActivity extends Activity implements OnClickListener{
 						model.setModelCode(modelCode);
 						constant.add(modelCode);
 						int modelId = (int) databaseHelper.insertModel(model);
+						Log.d("ThangTB", " insert model "+modelId);
 						model.setId(modelId);
 						mapModel.put(modelCode, model);
 						listModel.add(model);
@@ -123,7 +129,7 @@ public class MainActivity extends Activity implements OnClickListener{
 						mApplianceEntity.setId(componentCode);
 						mApplianceEntity.setCorrectionId(mapCorrection.get(correctionCode).getId());
 						mApplianceEntity.setName(componentName);
-						mApplianceEntity.setPrice(Integer.parseInt(price));
+						mApplianceEntity.setPrice(Integer.parseInt(price.trim().equals("") ? "0": price));
 						mapComponent.put(componentCode, mApplianceEntity);
 						listAppliance.add(mApplianceEntity);
 					}
@@ -161,7 +167,8 @@ public class MainActivity extends Activity implements OnClickListener{
 			startActivity(i);
 			break;
 		case R.id.btn_search_model:
-			
+			Intent i2 = new Intent(getApplicationContext(), ModelListActivity.class);
+			startActivity(i2);
 			break;
 
 		default:

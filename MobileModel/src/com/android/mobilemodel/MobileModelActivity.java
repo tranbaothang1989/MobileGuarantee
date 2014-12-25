@@ -2,11 +2,14 @@ package com.android.mobilemodel;
 
 import java.util.ArrayList;
 
-import com.android.mobilemodel.ModelFragment.OnClickItemList;
 import com.android.mobilemodel.database.DatabaseHelper;
 import com.android.mobilemodel.entity.MainModel;
 import com.android.mobilemodel.entity.Model;
 import com.android.mobilemodel.entity.Price;
+import com.android.mobilemodel.fragment.ModelDetailFragment;
+import com.android.mobilemodel.fragment.ModelFragment;
+import com.android.mobilemodel.fragment.NavigationDrawerFragment;
+import com.android.mobilemodel.fragment.ModelFragment.OnClickItemList;
 
 import android.app.Activity;
 import android.os.Build;
@@ -38,7 +41,7 @@ public class MobileModelActivity extends ActionBarActivity
     private CharSequence mTitle;
     
     public DatabaseHelper databaseHelper;
-    Model mModel;
+    public Model mModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,11 +60,7 @@ public class MobileModelActivity extends ActionBarActivity
         
         Bundle b = getIntent().getExtras();
         String modelName = b.getString("model_name");
-//        String manufacturer = Build.MANUFACTURER;
-//        String brand        = Build.BRAND;
-//        String product      = Build.PRODUCT;
-//        String model        = Build.MODEL;
-        
+
         mModel = databaseHelper.getModel(modelName);
         
         //Log.d("ThangTB", "MANUFACTURER BRAND PRODUCT MODEL is "+manufacturer + "+"+brand + "+"+ product + "+" +model );

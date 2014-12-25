@@ -1,4 +1,11 @@
-package com.android.mobilemodel;
+package com.android.mobilemodel.fragment;
+
+import com.android.mobilemodel.R;
+import com.android.mobilemodel.R.drawable;
+import com.android.mobilemodel.R.id;
+import com.android.mobilemodel.R.layout;
+import com.android.mobilemodel.R.menu;
+import com.android.mobilemodel.R.string;
 
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
