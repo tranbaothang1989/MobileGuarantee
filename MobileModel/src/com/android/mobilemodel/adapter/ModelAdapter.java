@@ -3,8 +3,10 @@ package com.android.mobilemodel.adapter;
 import java.util.ArrayList;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
@@ -15,7 +17,7 @@ import com.android.mobilemodel.entity.Model;
 public class ModelAdapter extends BaseAdapter {
 
 	ArrayList<Model> datas;
-    private LayoutInflater l_Inflater;
+    LayoutInflater l_Inflater;
     
 	public ModelAdapter(ArrayList<Model> datas, Context context) {
         this.datas = datas;
@@ -51,12 +53,30 @@ public class ModelAdapter extends BaseAdapter {
 			holder = (ViewHolder) convertView.getTag();
 		}
 		holder.tvName.setText(model.getModelCode());
+//		convertView.setOnClickListener(new OnClickListener() {
+//			
+//			@Override
+//			public void onClick(View v) {
+//				// TODO Auto-generated method stub
+//				Log.d("ThangTB", "click------------");
+//			}
+//		});
         return convertView;
 	}
 
+	@Override
+	public void notifyDataSetChanged() {
+		// TODO Auto-generated method stub
+		super.notifyDataSetChanged();
+	}
+	
 	static class ViewHolder {		
 		TextView tvCode;
 		TextView tvName;		
 	}
 	
+	
+	public interface OnClickModelItem{
+		public void onClick(Model model);
+	}
 }

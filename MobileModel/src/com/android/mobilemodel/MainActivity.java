@@ -102,7 +102,6 @@ public class MainActivity extends Activity implements OnClickListener{
 
 					if (!constant.contains(modelCode)) {
 						Model model = new Model();
-						model.setId(mapModel.size()+1);
 						model.setBrand(brand);
 						model.setModelCode(modelCode);
 						constant.add(modelCode);
@@ -139,12 +138,15 @@ public class MainActivity extends Activity implements OnClickListener{
 				databaseHelper.insertAppliances(listAppliance);
 				
 				products.close();
-				
+				for (int i = 0; i < listModel.size(); i++) {
+					Log.d("ThangTB", " list model : "+ listModel.get(i).getModelCode());
+				}
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+			
 			return null;
 		}
 		

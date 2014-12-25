@@ -56,8 +56,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	// model table create statement
 	private static final String CREATE_TABLE_MODEL = "CREATE TABLE "
 			+ TABLE_MODEL + "(" + COL_ID + " INTEGER PRIMARY KEY," 
-								+ COL_MODEL_BRAND+ " TEXT UNIQUE," 
-								+ COL_MODEL_CODE + " TEXT," 
+								+ COL_MODEL_BRAND+ " TEXT," 
+								+ COL_MODEL_CODE + " TEXT UNIQUE," 
 								+ COL_CREATED_AT + " DATETIME" + ")";
 
 	// correction table create statement
