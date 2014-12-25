@@ -1,10 +1,12 @@
 package com.android.mobilemodel.entity;
 
+import java.io.Serializable;
+
 /**
  * @author ThangTB
  *
  */
-public class CorrectionEntity {
+public class CorrectionEntity implements Serializable{
 	private String id;
 	private int modelId;
 	private String name;
