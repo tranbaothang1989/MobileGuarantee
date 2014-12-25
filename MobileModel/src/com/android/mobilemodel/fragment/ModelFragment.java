@@ -52,7 +52,7 @@ public class ModelFragment extends Fragment{
 	public View onCreateView(LayoutInflater inflater,
 			@Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		View view = inflater.inflate(R.layout.view_correction_list, container, false);
+		View view = inflater.inflate(R.layout.view_model, container, false);
 		return view;
 	}
 

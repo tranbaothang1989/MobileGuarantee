@@ -1,12 +1,10 @@
 package com.android.mobilemodel.entity;
 
-import java.io.Serializable;
-
 /**
  * @author ThangTB
  *
  */
-public class Model implements Serializable{
+public class Model {
 	private int id;
 	private String brand;
 	private String modelCode;
