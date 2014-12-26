@@ -345,11 +345,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	/**
 	 * getting all appliance under correction id
 	 * */
-	public List<ApplianceEntity> getAllAppliancesByCorId(int model_id) {
+	public List<ApplianceEntity> getAllAppliancesByCorId(String cor_id) {
 		List<ApplianceEntity> appliances = new ArrayList<ApplianceEntity>();
 
-		String selectQuery = "SELECT  * FROM " + TABLE_CORRECTION 
-				+ " WHERE "+ COL_COR_MODEL_ID + " = '" + model_id + "'";
+		String selectQuery = "SELECT  * FROM " + TABLE_APPLIANCE
+				+ " WHERE "+ COL_APP_COR_ID + " like '" + cor_id + "'";
 
 		Log.e(LOG, selectQuery);
 

@@ -12,5 +12,7 @@
     <string name="btn_my_model">Thông tin bảo hành của bạn</string>
     <string name="btn_search_another_model">Tìm kiếm thông tin bảo hành của máy khác</string>
     <string name="action_search">Search</string>
+    <string name="text_price">giá</string>
+    <string name="text_price_type">đồng</string>
 
 </resources>
