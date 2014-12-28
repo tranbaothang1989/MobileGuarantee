@@ -2,20 +2,20 @@ package com.android.mobilemodel;
 
 import java.util.ArrayList;
 
-import com.android.mobilemodel.adapter.CorrectAdapter;
-import com.android.mobilemodel.database.DatabaseHelper;
-import com.android.mobilemodel.entity.CorrectionEntity;
-import com.android.mobilemodel.entity.Model;
-
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-public class CorrectionListActivity extends Activity implements OnItemClickListener{
+import com.android.mobilemodel.adapter.CorrectAdapter;
+import com.android.mobilemodel.database.DatabaseHelper;
+import com.android.mobilemodel.entity.CorrectionEntity;
+import com.android.mobilemodel.entity.Model;
+
+public class CorrectionListActivity extends ActionBarActivity implements OnItemClickListener{
 
 	ArrayList<CorrectionEntity> correctionList;
 	DatabaseHelper databaseHelper;
@@ -26,8 +26,11 @@ public class CorrectionListActivity extends Activity implements OnItemClickListe
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.view_correction_list);
+		
 		databaseHelper = new DatabaseHelper(getApplicationContext());
 		ListView lv = (ListView)findViewById(R.id.listView1);
+		lv.setDivider(getResources().getDrawable(R.color.red));
+		lv.setDividerHeight(2);
 		
 		Bundle b = getIntent().getExtras();
 		myModel = (Model) b.get("model_item");
@@ -35,7 +38,7 @@ public class CorrectionListActivity extends Activity implements OnItemClickListe
 		if (null == myModel) {
 			finish();
 		}
-		
+		getSupportActionBar().setTitle(myModel.getModelCode());
 		correctionList = (ArrayList<CorrectionEntity>) databaseHelper.getAllCorrectionsByModelId(myModel.getId());
 
 		CorrectAdapter adapter = new CorrectAdapter(correctionList, getApplicationContext());

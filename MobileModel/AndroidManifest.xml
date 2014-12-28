@@ -23,6 +23,9 @@
             </intent-filter>
         </activity>
         <activity android:name="MobileModelActivity"></activity>
+        <activity android:name="ModelListActivity"></activity>
+        <activity android:name="CorrectionListActivity"></activity>
+        <activity android:name="ModelDetailActivity"></activity>
     </application>
 
 </manifest>

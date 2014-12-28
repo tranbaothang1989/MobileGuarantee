@@ -2,6 +2,7 @@
 <resources>
     <color name="white">#ffffff</color>
     <color name="blue">#333399</color>
+    <color name="blue_blur">#70333399</color>
     <color name="holo_blue_dark">#ff0099cc</color>
     <color name="holo_blue">#FF33E5B5</color>
     <color name="dark_slate_gray">#2F4F4F</color>
@@ -11,4 +12,8 @@
     <color name="black_trans">#50000000</color>
     <color name="translucent">#00000000</color>
     <color name="yellow_dark">#f9f93d</color>
+    <color name="red">#A00000</color>
+    <color name="black1">#20000000</color>
+    <color name="black2">#40000000</color>
+    
 </resources>

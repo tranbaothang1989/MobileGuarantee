@@ -47,6 +47,7 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 		super.onCreate(savedInstanceState);
 		
 		setContentView(R.layout.fragment_model_list);
+		getSupportActionBar().setTitle(getResources().getString(R.string.title_model_list));
 		
 		models = new ArrayList<Model>();
 		databaseHelper = new DatabaseHelper(getApplicationContext());
@@ -54,7 +55,13 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 		models = (ArrayList<Model>) databaseHelper.getAllModels();
 		lvModel = (ListView) findViewById(R.id.lv_model);
 		expandableListViewModel = (ExpandableListView)findViewById(R.id.expandable_lv_model);
-		
+		expandableListViewModel.setGroupIndicator(getResources().getDrawable(R.drawable.select_vertical));
+		expandableListViewModel.setChildIndicator(null);
+		expandableListViewModel.setChildDivider(getResources().getDrawable(R.color.red));
+		expandableListViewModel.setDivider(getResources().getDrawable(R.color.white));
+		expandableListViewModel.setDividerHeight(2);
+
+
 		listDataHeader = new ArrayList<String>();
 		listDataChild = new HashMap<String, List<Model>>();
 		
@@ -69,12 +76,10 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 		modelExpandableListAdapter = new ModelExpandableListAdapter(getApplicationContext(), listDataHeader, listDataChild);
 		expandableListViewModel.setAdapter(modelExpandableListAdapter);
 		expandableListViewModel.setOnChildClickListener(this);
-		for(int i=0; i < modelExpandableListAdapter.getGroupCount(); i++){
-			expandableListViewModel.expandGroup(i);
-		}
+		expandList();
 	}
 
-	
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.model_list, menu);
@@ -107,6 +112,7 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 				// TODO Auto-generated method stub
 				//adapter.notifyDataSetChanged();
 				modelExpandableListAdapter.notifyDataSetChanged();
+				expandList();
 			}
 		});
 		return true;
@@ -123,6 +129,7 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 				// TODO Auto-generated method stub
 				//adapter.notifyDataSetChanged();
 				modelExpandableListAdapter.notifyDataSetChanged();
+				expandList();
 			}
 		});
 		
@@ -172,6 +179,11 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 		}
 	}
 
+	private void expandList(){
+		for(int i=0; i < modelExpandableListAdapter.getGroupCount(); i++){
+			expandableListViewModel.expandGroup(i);
+		}
+	}
 
 	@Override
 	public boolean onChildClick(ExpandableListView parent, View v,

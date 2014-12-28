@@ -61,18 +61,18 @@ public class ModelDetailFragment extends Fragment{
 		// TODO Auto-generated method stub
 		View v = getView();
 		
-		TextView tvMaSC = (TextView) v.findViewById(R.id.tv_ma_sc);
+		//TextView tvMaSC = (TextView) v.findViewById(R.id.tv_ma_sc);
 		TextView tvSC = (TextView) v.findViewById(R.id.tv_sc);
-		TextView tvMaLK = (TextView) v.findViewById(R.id.tv_ma_lk);
+//		TextView tvMaLK = (TextView) v.findViewById(R.id.tv_ma_lk);
 		TextView tvLK = (TextView) v.findViewById(R.id.tv_lk);
 		TextView tvPrice = (TextView) v.findViewById(R.id.tv_price);
 		
-		Spinner spinner = (Spinner)v.findViewById(R.id.spinner_bh);
+//		Spinner spinner = (Spinner)v.findViewById(R.id.spinner_bh);
 		
-		tvMaSC.setText(mainModel.getCorrectionCode());
+		//tvMaSC.setText(mainModel.getCorrectionCode());
 		tvSC.setText(mainModel.getCorrectionName());
 
-		tvMaLK.setText(mainModel.getComponentCode());
+//		tvMaLK.setText(mainModel.getComponentCode());
 		tvLK.setText(mainModel.getComponentName());
 		ArrayList<String> listPrice = new ArrayList<String>();
 		for (int i = 0; i < prices.size(); i++) {
@@ -81,8 +81,8 @@ public class ModelDetailFragment extends Fragment{
 //				listPrice.add(Utils.getGuaranteeString(p.getGuaranteeId()));
 //			}
 		}
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, listPrice);
-		spinner.setAdapter(adapter);
+//		ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, listPrice);
+//		spinner.setAdapter(adapter);
 		super.onViewCreated(view, savedInstanceState);
 	}
 }

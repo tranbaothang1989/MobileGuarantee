@@ -1,23 +1,37 @@
 package com.android.mobilemodel;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.Locale;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.text.Html;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.TextView;
 
 import com.android.mobilemodel.database.DatabaseHelper;
 import com.android.mobilemodel.entity.ApplianceEntity;
 import com.android.mobilemodel.entity.CorrectionEntity;
-import com.android.mobilemodel.entity.Guarantee;
 import com.android.mobilemodel.entity.Model;
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.text.Html;
-import android.widget.TextView;
-
-public class ModelDetailActivity extends Activity {
+public class ModelDetailActivity extends ActionBarActivity {
 
 	CorrectionEntity correctionEntity;
+	Model modelEntity;
 	DatabaseHelper databaseHelper;
 	ArrayList<ApplianceEntity> applianceEntities;
+	LayoutInflater _inflater;
+	LinearLayout llContentAppliance;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -30,26 +44,49 @@ public class ModelDetailActivity extends Activity {
 			finish();
 		}
 
+		TextView tvSC = (TextView) findViewById(R.id.tv_sc);
+		TextView tvNoticeModelDetail = (TextView) findViewById(R.id.tv_notice_model_detail);
+		TextView tvPrice = (TextView) findViewById(R.id.tv_price);
+		llContentAppliance = (LinearLayout)findViewById(R.id.ll_content_appliance);
+		
 		databaseHelper = new DatabaseHelper(getApplicationContext());
 		applianceEntities = new ArrayList<ApplianceEntity>();
-		
 		applianceEntities = (ArrayList<ApplianceEntity>) databaseHelper.getAllAppliancesByCorId(correctionEntity.getId());
+		modelEntity = databaseHelper.getModel(correctionEntity.getModelId());
 		
-		TextView tvMaSC = (TextView) findViewById(R.id.tv_ma_sc);
-		TextView tvSC = (TextView) findViewById(R.id.tv_sc);
-		TextView tvMaLK = (TextView) findViewById(R.id.tv_ma_lk);
-		TextView tvLK = (TextView) findViewById(R.id.tv_lk);
-		TextView tvPrice = (TextView) findViewById(R.id.tv_price);
+		tvNoticeModelDetail.setText(Html.fromHtml(getResources().getString(R.string.text_notice_model_detail) + " <b>"+modelEntity.getModelCode()+"</b>"));
 		
+		_inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		
+		DecimalFormat formatter = (DecimalFormat) NumberFormat.getInstance();
+		formatter.setMaximumFractionDigits(2);
+
 		tvSC.setText(correctionEntity.getName());
-		String sLK="";
+		int sumPrice =0;
 		for (int i = 0; i < applianceEntities.size(); i++) {
-			sLK+=applianceEntities.get(i).getName()+" "+ getResources().getString(R.string.text_price)
-					+" "+applianceEntities.get(i).getPrice()+" "+getResources().getString(R.string.text_price_type);
-			sLK+="</br>";
+			ApplianceEntity item = applianceEntities.get(i);
+		
+			View applicanceView = _inflater.inflate(R.layout.item_appliance, null);
+			TextView tvApplianceName = (TextView) applicanceView.findViewById(R.id.tv_appliance_name);
+			TextView tvAppliancePrice = (TextView) applicanceView.findViewById(R.id.tv_appliance_price);
 			
+			tvApplianceName.setText(item.getName());
+			
+			String sPrice = formatter.format(item.getPrice());
+			tvAppliancePrice.setText(sPrice);
+
+			llContentAppliance.addView(applicanceView);
+			
+			sumPrice += item.getPrice();
 		}
 		
-		tvLK.setText(Html.fromHtml(sLK));
+		tvPrice.setText(formatter.format(sumPrice)+" "+getResources().getString(R.string.text_price_type));
 	}
+	
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+	}
+	
 }

@@ -6,119 +6,137 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/tv_notice_model_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp" />
 
         <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone" >
-
-        <TextView
-            android:layout_width="70dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mã SC" />
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" >
 
-        <TextView
-            android:id="@+id/tv_ma_sc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="" />
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_corection_type" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:text="Sửa chữa" />
+            <TextView
+                android:id="@+id/tv_sc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text=""
+                android:textStyle="bold" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/tv_sc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="" />
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
 
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:text="Mã LK" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black1"
+                    android:paddingLeft="5dp"
+                    android:text="Linh Kiện"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tv_ma_lk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="" />
-    </LinearLayout>
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@color/black1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/text_price"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:text="Linh Kiện" />
+            <TextView
+                android:id="@+id/tv_lk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone" />
 
-        <TextView
-            android:id="@+id/tv_lk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="" />
-    </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:visibility="gone" >
+                <LinearLayout
+                    android:id="@+id/ll_contentsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="35dp" >
 
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:text="Bảo hành" />
+                    <ScrollView
+                        android:id="@+id/scrollview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
 
-        <Spinner
-            android:id="@+id/spinner_bh"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
 
-    </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/ll_content_appliance"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rectangle_black"
+                                android:orientation="vertical" >
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:text="Giá" />
+                <LinearLayout
+                    android:id="@+id/totalView"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignBottom="@id/ll_contentsc"
+                    android:orientation="horizontal" >
 
-        <TextView
-            android:id="@+id/tv_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="" />
-    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_sum_price" />
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="TextView" />
+        android:text="@string/text_not_price" />
 
 </LinearLayout>

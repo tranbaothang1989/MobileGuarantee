@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -23,7 +24,7 @@ import com.android.mobilemodel.entity.CorrectionEntity;
 import com.android.mobilemodel.entity.Model;
 import com.csvreader.CsvReader;
 
-public class MainActivity extends Activity implements OnClickListener{
+public class MainActivity extends ActionBarActivity implements OnClickListener{
 
 	public DatabaseHelper databaseHelper;
 	DoImportData doImportData;
@@ -164,8 +165,9 @@ public class MainActivity extends Activity implements OnClickListener{
 		int id = v.getId();
 		switch (id) {
 		case R.id.btn_my_model:
-			Intent i = new Intent(getApplicationContext(), MobileModelActivity.class);
-			i.putExtra("model_name", "M8");
+			Intent i = new Intent(getApplicationContext(), CorrectionListActivity.class);
+			Model model = databaseHelper.getModel("M8");
+			i.putExtra("model_item", model);
 			startActivity(i);
 			break;
 		case R.id.btn_search_model:

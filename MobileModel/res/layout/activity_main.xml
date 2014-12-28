@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     android:gravity="center"
     android:orientation="vertical" >
 
@@ -9,12 +10,17 @@
         android:id="@+id/btn_my_model"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:text="@string/btn_my_model" />
+        android:layout_marginBottom="5dp"
+        android:background="@color/red"
+        android:text="@string/btn_my_model"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/btn_search_model"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:text="@string/btn_search_another_model" />
+        android:background="@color/red"
+        android:text="@string/btn_search_another_model"
+        android:textColor="@color/white" />
 
 </LinearLayout>
