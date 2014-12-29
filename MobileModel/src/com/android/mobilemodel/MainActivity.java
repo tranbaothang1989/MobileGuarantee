@@ -7,12 +7,12 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -37,10 +37,24 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
+		
+		DisplayMetrics metrics = new DisplayMetrics();
+		getWindowManager().getDefaultDisplay().getMetrics(metrics);
+
+		int screenHeight = metrics.heightPixels;
+		int screenWidth = metrics.widthPixels;
+		
 		btnMyModel = (Button)findViewById(R.id.btn_my_model);
 		btnSearchModel = (Button)findViewById(R.id.btn_search_model);
 		btnMyModel.setOnClickListener(this);
 		btnSearchModel.setOnClickListener(this);
+		
+		int btnWidth = (screenWidth*60)/100;
+		int btnHeight = (screenHeight*30)/100;
+		btnMyModel.setWidth(btnWidth);
+		btnMyModel.setHeight(btnHeight);
+		btnSearchModel.setWidth(btnWidth);
+		btnSearchModel.setHeight(btnHeight);
 		
 		String sManufacturer = Build.MANUFACTURER;
         String sBrand        = Build.BRAND;

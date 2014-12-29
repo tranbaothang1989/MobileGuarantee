@@ -10,4 +10,5 @@
     -->
     <dimen name="navigation_drawer_width">240dp</dimen>
 
+    <dimen name="main_btn_text_size">25sp</dimen>
 </resources>
