@@ -54,7 +54,7 @@ public class ModelDetailActivity extends ActionBarActivity {
 		applianceEntities = (ArrayList<ApplianceEntity>) databaseHelper.getAllAppliancesByCorId(correctionEntity.getId());
 		modelEntity = databaseHelper.getModel(correctionEntity.getModelId());
 		
-		tvNoticeModelDetail.setText(Html.fromHtml(getResources().getString(R.string.text_notice_model_detail) + " <b>"+modelEntity.getModelCode()+"</b>"));
+		tvNoticeModelDetail.setText(Html.fromHtml(getResources().getString(R.string.text_notice_model_detail) + " <b>"+modelEntity.getModelName()+"</b>"));
 		
 		_inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		
@@ -72,12 +72,12 @@ public class ModelDetailActivity extends ActionBarActivity {
 			
 			tvApplianceName.setText(item.getName());
 			
-			String sPrice = formatter.format(item.getPrice());
+			String sPrice = formatter.format(item.getAppliancePrice());
 			tvAppliancePrice.setText(sPrice);
 
 			llContentAppliance.addView(applicanceView);
 			
-			sumPrice += item.getPrice();
+			sumPrice += item.getAppliancePrice();
 		}
 		
 		tvPrice.setText(formatter.format(sumPrice)+" "+getResources().getString(R.string.text_price_type));

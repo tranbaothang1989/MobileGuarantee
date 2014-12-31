@@ -21,6 +21,7 @@ import android.widget.Button;
 import com.android.mobilemodel.database.DatabaseHelper;
 import com.android.mobilemodel.entity.ApplianceEntity;
 import com.android.mobilemodel.entity.CorrectionEntity;
+import com.android.mobilemodel.entity.MainModel;
 import com.android.mobilemodel.entity.Model;
 import com.csvreader.CsvReader;
 
@@ -84,7 +85,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 			ArrayList<String> appliance = new ArrayList<String>();
 			ArrayList<String> constant = new ArrayList<String>();
 			try {
-				InputStream is = getAssets().open("modellist.csv");
+				InputStream is = getAssets().open("datasuachuadt.csv");
 				char c = '\t';
 				CsvReader products = new CsvReader(is, c,Charset.forName("UTF-8"));
 			
@@ -92,11 +93,13 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 
 				HashMap<String, Model> mapModel = new HashMap<String, Model>();
 				HashMap<String, CorrectionEntity> mapCorrection = new HashMap<String, CorrectionEntity>();
-				HashMap<String, ApplianceEntity> mapComponent = new HashMap<String, ApplianceEntity>();
+				//HashMap<String, ApplianceEntity> mapComponent = new HashMap<String, ApplianceEntity>();
 				ArrayList<Model> listModel = new ArrayList<Model>();
 				ArrayList<CorrectionEntity> listCorrection = new ArrayList<CorrectionEntity>();
 				ArrayList<ApplianceEntity> listAppliance = new ArrayList<ApplianceEntity>();
-
+				
+				ArrayList<MainModel> mainModels = new ArrayList<MainModel>();
+				
 				int id=0;
 				int flg =0;
 				while (products.readRecord())
@@ -106,55 +109,89 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 						continue;
 					}
 					String brand = products.get(0);
-					//Log.d("ThangTb", " brand = " + brand);
-					String modelCode = products.get(1).trim();
-					String correctionCode = products.get(2).trim();
-					String correctionName = products.get(3).trim();
-					String componentCode = products.get(4).trim();
-					String componentName = products.get(5).trim();
-					String guarantee = products.get(6).trim();
-					String price = products.get(7).trim();
+					String modelName = products.get(2).trim();
+					
+					String correctionCode = products.get(3).trim();
+					String correctionName = products.get(4).trim();
+					
+					String applianceCode = products.get(6).trim();
+					String applianceName = products.get(7).trim();
+					
+					//String guarantee = products.get(8).trim();
+					
+					String appliancePrice = products.get(9).trim();
+					String fee = products.get(10).trim();
 
-					if (!constant.contains(modelCode)) {
+					MainModel mainModel = new MainModel();
+					mainModel.setCorrectionCode(correctionCode);
+					mainModel.setCorrectionName(correctionName);
+					mainModel.setApplianceCode(applianceCode);
+					mainModel.setApplianceName(applianceName);
+					mainModel.setAppliancePrice(Integer.parseInt(appliancePrice.trim().equals("") ? "0": appliancePrice));
+					mainModel.setFee(Integer.parseInt(fee.trim().equals("") ? "0": fee));
+					mainModels.add(mainModel);
+					
+					if (!constant.contains(modelName)) {
 						Model model = new Model();
 						model.setBrand(brand);
-						model.setModelCode(modelCode);
-						constant.add(modelCode);
-						int modelId = (int) databaseHelper.insertModel(model);
-						Log.d("ThangTB", " insert model "+modelId);
-						model.setId(modelId);
-						mapModel.put(modelCode, model);
+						model.setModelName(modelName);
+						constant.add(modelName);
+//						int modelId = (int) databaseHelper.insertModel(model);
+//						Log.d("ThangTB", " insert model "+modelId);
+//						model.setId(modelId);
+//						mapModel.put(modelName, model);
 						listModel.add(model);
+						//import correction
+//						constant.add(correctionCode);
+//						CorrectionEntity mCorrectionEntity = new CorrectionEntity();
+						//mCorrectionEntity.setId(correctionCode);
+//						mCorrectionEntity.setModelId(mapModel.get(modelName).getId());
+//						mCorrectionEntity.setCode(correctionCode);
+//						mCorrectionEntity.setName(correctionName);
+//						mapCorrection.put(correctionCode, mCorrectionEntity);
+//						listCorrection.add(mCorrectionEntity);
+						
+						//import appliance
+//						ApplianceEntity mApplianceEntity = new ApplianceEntity();
+						//mApplianceEntity.setId(applianceCode);
+//						mApplianceEntity.setCorrectionId(mapCorrection.get(correctionCode).getId());
+//						mApplianceEntity.setName(applianceName);
+//						mApplianceEntity.setAppliancePrice(Integer.parseInt(appliancePrice.trim().equals("") ? "0": appliancePrice));
+//						mApplianceEntity.setFee(Integer.parseInt(fee.trim().equals("") ? "0": fee));
+						//mapComponent.put(applianceCode, mApplianceEntity);
+//						listAppliance.add(mApplianceEntity);
 					}
-					if (!constant.contains(correctionCode)) {
-						constant.add(correctionCode);
-						CorrectionEntity mCorrectionEntity = new CorrectionEntity();
-						mCorrectionEntity.setId(correctionCode);
-						mCorrectionEntity.setModelId(mapModel.get(modelCode).getId());
-						mCorrectionEntity.setName(correctionName);
-						mapCorrection.put(correctionCode, mCorrectionEntity);
-						listCorrection.add(mCorrectionEntity);
-					}
+
+//					if (!constant.contains(correctionCode)) {
+//						constant.add(correctionCode);
+//						CorrectionEntity mCorrectionEntity = new CorrectionEntity();
+//						mCorrectionEntity.setId(correctionCode);
+//						mCorrectionEntity.setModelId(mapModel.get(modelName).getId());
+//						mCorrectionEntity.setName(correctionName);
+//						mapCorrection.put(correctionCode, mCorrectionEntity);
+//						listCorrection.add(mCorrectionEntity);
+//					}
 					
-					if (!constant.contains(componentCode)) {
-						constant.add(componentCode);
-						appliance.add(componentCode);
-						ApplianceEntity mApplianceEntity = new ApplianceEntity();
-						mApplianceEntity.setId(componentCode);
-						mApplianceEntity.setCorrectionId(mapCorrection.get(correctionCode).getId());
-						mApplianceEntity.setName(componentName);
-						mApplianceEntity.setPrice(Integer.parseInt(price.trim().equals("") ? "0": price));
-						mapComponent.put(componentCode, mApplianceEntity);
-						listAppliance.add(mApplianceEntity);
-					}
+//					if (!constant.contains(applianceCode)) {
+//						constant.add(applianceCode);
+//						appliance.add(applianceCode);
+//						ApplianceEntity mApplianceEntity = new ApplianceEntity();
+//						mApplianceEntity.setId(applianceCode);
+//						mApplianceEntity.setCorrectionId(mapCorrection.get(correctionCode).getId());
+//						mApplianceEntity.setName(applianceName);
+//						mApplianceEntity.setAppliancePrice(Integer.parseInt(appliancePrice.trim().equals("") ? "0": appliancePrice));
+//						mApplianceEntity.setFee(Integer.parseInt(fee.trim().equals("") ? "0": fee));
+//						//mapComponent.put(applianceCode, mApplianceEntity);
+//						listAppliance.add(mApplianceEntity);
+//					}
 				}
 				
-				databaseHelper.insertCorrections(listCorrection);
-				databaseHelper.insertAppliances(listAppliance);
+//				databaseHelper.insertCorrections(listCorrection);
+//				databaseHelper.insertAppliances(listAppliance);
 				
 				products.close();
 				for (int i = 0; i < listModel.size(); i++) {
-					Log.d("ThangTB", " list model : "+ listModel.get(i).getModelCode());
+					Log.d("ThangTB", " list model : "+ listModel.get(i).getModelName());
 				}
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();

@@ -143,7 +143,7 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 		modelsTemp.clear();
 		for (int i = 0; i < modelSize; i++) {
 			Model item = models.get(i);
-			if (item.getModelCode().toLowerCase().contains(searchString.toLowerCase())) {
+			if (item.getModelName().toLowerCase().contains(searchString.toLowerCase())) {
 				modelsTemp.add(item);
 			}
 		}
@@ -157,7 +157,7 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 		// TODO Auto-generated method stub
 		Model item = (Model) adapter.getItem(position);
 		
-		Log.d("ThangTB", "click on :"+item.getModelCode());
+		Log.d("ThangTB", "click on :"+item.getModelName());
 	}
 	
 	private void prepareListData(ArrayList<Model> modelList) {
@@ -196,7 +196,7 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 		Intent i = new Intent(getApplicationContext(), CorrectionListActivity.class);
 		i.putExtra("model_item", item);
 		startActivity(i);
-		Log.d("ThangTB", "click on :"+item.getModelCode());
+		Log.d("ThangTB", "click on :"+item.getModelName());
 		return false;
 	}
 }

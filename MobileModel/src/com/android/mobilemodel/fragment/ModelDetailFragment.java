@@ -73,7 +73,7 @@ public class ModelDetailFragment extends Fragment{
 		tvSC.setText(mainModel.getCorrectionName());
 
 //		tvMaLK.setText(mainModel.getComponentCode());
-		tvLK.setText(mainModel.getComponentName());
+		tvLK.setText(mainModel.getApplianceName());
 		ArrayList<String> listPrice = new ArrayList<String>();
 		for (int i = 0; i < prices.size(); i++) {
 			Price p = prices.get(i);

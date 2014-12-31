@@ -38,7 +38,7 @@ public class CorrectionListActivity extends ActionBarActivity implements OnItemC
 		if (null == myModel) {
 			finish();
 		}
-		getSupportActionBar().setTitle(myModel.getModelCode());
+		getSupportActionBar().setTitle(myModel.getModelName());
 		correctionList = (ArrayList<CorrectionEntity>) databaseHelper.getAllCorrectionsByModelId(myModel.getId());
 
 		CorrectAdapter adapter = new CorrectAdapter(correctionList, getApplicationContext());

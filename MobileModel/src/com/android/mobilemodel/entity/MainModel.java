@@ -7,17 +7,24 @@ import java.util.ArrayList;
 public class MainModel implements Serializable{
 
 	private int id;
+	
+	private String modelCode;
+	
 	private String correctionCode;
 	private String correctionName;
-	private String componentCode;
-	private String componentName;
 	
-	private ArrayList<Price> prices;
+	private String applianceCode;
+	private String applianceName;
+	
+	private int appliancePrice;
+	private int fee;
 	
 	public MainModel() {
 		// TODO Auto-generated constructor stub
-		setComponentCode("");
-		setComponentName("");
+		
+		setApplianceCode("");
+		setApplianceName("");
+		
 		setCorrectionCode("");
 		setCorrectionName("");
 	}
@@ -27,6 +34,15 @@ public class MainModel implements Serializable{
 	public void setId(int id) {
 		this.id = id;
 	}
+	
+	public void setModelCode(String modelCode) {
+		this.modelCode = modelCode;
+	}
+	
+	public String getModelCode() {
+		return modelCode;
+	}
+	
 	public String getCorrectionCode() {
 		return correctionCode;
 	}
@@ -39,32 +55,33 @@ public class MainModel implements Serializable{
 	public void setCorrectionName(String correctionName) {
 		this.correctionName = correctionName;
 	}
-	public String getComponentCode() {
-		return componentCode;
+	public String getApplianceCode() {
+		return applianceCode;
 	}
-	public void setComponentCode(String componentCode) {
-		this.componentCode = componentCode;
+	public void setApplianceCode(String componentCode) {
+		this.applianceCode = componentCode;
 	}
-	public String getComponentName() {
-		return componentName;
+	public String getApplianceName() {
+		return applianceName;
 	}
-	public void setComponentName(String componentName) {
-		this.componentName = componentName;
-	}
-	
-	
-	/**
-	 * @param prices
-	 */
-	public void setPrices(ArrayList<Price> prices) {
-		this.prices = prices;
+	public void setApplianceName(String componentName) {
+		this.applianceName = componentName;
 	}
 	
-	/**
-	 * @return
-	 */
-	public ArrayList<Price> getPrices() {
-		return prices;
+	public void setAppliancePrice(int appliancePrice) {
+		this.appliancePrice = appliancePrice;
+	}
+	
+	public void setFee(int fee) {
+		this.fee = fee;
+	}
+	
+	public int getAppliancePrice() {
+		return appliancePrice;
+	}
+	
+	public int getFee() {
+		return fee;
 	}
 	
 }

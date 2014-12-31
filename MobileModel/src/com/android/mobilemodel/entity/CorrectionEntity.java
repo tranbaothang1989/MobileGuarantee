@@ -7,21 +7,24 @@ import java.io.Serializable;
  *
  */
 public class CorrectionEntity implements Serializable{
-	private String id;
+	private int id;
 	private int modelId;
+	private String code;
 	private String name;
+	private String nameShow;
 	
 	public CorrectionEntity() {
 		// TODO Auto-generated constructor stub
-		setId("");
+		setId(0);
 		setModelId(0);
+		setCode("");
 		setName("");
 	}
 	
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public int getModelId() {
@@ -30,6 +33,15 @@ public class CorrectionEntity implements Serializable{
 	public void setModelId(int modelId) {
 		this.modelId = modelId;
 	}
+	
+	public void setCode(String code) {
+		this.code = code;
+	}
+	
+	public String getCode() {
+		return code;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -37,5 +49,11 @@ public class CorrectionEntity implements Serializable{
 		this.name = name;
 	}
 	
+	public void setNameShow(String nameShow) {
+		this.nameShow = nameShow;
+	}
 	
+	public String getNameShow() {
+		return nameShow;
+	}
 }

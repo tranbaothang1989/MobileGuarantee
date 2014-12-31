@@ -52,7 +52,7 @@ public class ModelAdapter extends BaseAdapter {
 		else{
 			holder = (ViewHolder) convertView.getTag();
 		}
-		holder.tvName.setText(model.getModelCode());
+		holder.tvName.setText(model.getModelName());
 //		convertView.setOnClickListener(new OnClickListener() {
 //			
 //			@Override

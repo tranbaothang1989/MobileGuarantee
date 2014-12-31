@@ -9,14 +9,14 @@ import java.io.Serializable;
 public class Model implements Serializable{
 	private int id;
 	private String brand;
-	private String modelCode;
+	private String modelName;
 	private String createdAt;
 	
 	public Model() {
 		// TODO Auto-generated constructor stub
 		setId(0);
 		setBrand("");
-		setModelCode("");
+		setModelName("");
 		setCreatedAt("");
 	}
 
@@ -36,12 +36,12 @@ public class Model implements Serializable{
 		this.brand = brand;
 	}
 
-	public String getModelCode() {
-		return modelCode;
+	public String getModelName() {
+		return modelName;
 	}
 
-	public void setModelCode(String modelCode) {
-		this.modelCode = modelCode;
+	public void setModelName(String modelCode) {
+		this.modelName = modelCode;
 	}
 	
 	public void setCreatedAt(String createdAt) {

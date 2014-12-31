@@ -94,7 +94,7 @@ public class ModelExpandableListAdapter extends BaseExpandableListAdapter {
         }
 
         TextView txtListChild = (TextView) convertView.findViewById(R.id.tv_model_name);
-        txtListChild.setText(model.getModelCode());
+        txtListChild.setText(model.getModelName());
         return convertView;
 	}
 
