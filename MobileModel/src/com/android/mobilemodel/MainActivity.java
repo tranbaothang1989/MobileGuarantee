@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 
 import android.content.Intent;
@@ -123,6 +124,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 					String fee = products.get(10).trim();
 
 					MainModel mainModel = new MainModel();
+                    mainModel.setModelCode(modelName);
 					mainModel.setCorrectionCode(correctionCode);
 					mainModel.setCorrectionName(correctionName);
 					mainModel.setApplianceCode(applianceCode);
@@ -190,9 +192,81 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 //				databaseHelper.insertAppliances(listAppliance);
 				
 				products.close();
-				for (int i = 0; i < listModel.size(); i++) {
-					Log.d("ThangTB", " list model : "+ listModel.get(i).getModelName());
+
+                Log.d("ThangTB", " list model before: "+ listModel.size());
+                databaseHelper.insertModelList(listModel);
+                listModel = (ArrayList<Model>) databaseHelper.getAllModels();
+                Log.d("ThangTB", " list model after: "+ listModel.size());
+
+                int modelSize = listModel.size();
+
+                ArrayList<MainModel> mainModelsTemp = (ArrayList<MainModel>) mainModels.clone();
+                HashMap<String, ArrayList<ApplianceEntity>> applianceMaps = new HashMap<String, ArrayList<ApplianceEntity>>();
+
+                Log.d("ThangTB", " list correction after: "+ listCorrection.size()+ "  time "+ new Date().getTime());
+                long time1 =new Date().getTime();
+				for (int i = 0; i < modelSize; i++) {
+
+                    Model model = listModel.get(i);
+                   ArrayList<ApplianceEntity> applianceTemp = new ArrayList<ApplianceEntity>();
+                    for (MainModel mainModel : mainModelsTemp){
+
+                        if (mainModel.getModelCode().equals(model.getModelName())){
+                            if (!mapCorrection.containsKey(mainModel.getCorrectionCode())) {
+                                CorrectionEntity mCorrectionEntity = new CorrectionEntity();
+                                mCorrectionEntity.setModelId(model.getId());
+                                mCorrectionEntity.setCode(mainModel.getCorrectionCode());
+                                mCorrectionEntity.setName(mainModel.getCorrectionName());
+                                mCorrectionEntity.setNameShow(mainModel.getCorrectionName());
+
+                                mapCorrection.put(mainModel.getCorrectionCode(), mCorrectionEntity);
+                                listCorrection.add(mCorrectionEntity);
+                            }
+
+
+                            ApplianceEntity mApplianceEntity = new ApplianceEntity();
+                            mApplianceEntity.setCorrectionCode(mainModel.getCorrectionCode());
+
+                            mApplianceEntity.setCode(mainModel.getApplianceCode());
+						    mApplianceEntity.setName(mainModel.getApplianceName());
+						    mApplianceEntity.setAppliancePrice(mainModel.getAppliancePrice());
+						    mApplianceEntity.setFee(mainModel.getFee());
+
+                            applianceTemp.add(mApplianceEntity);
+
+                        }
+                        //itemp++;
+                    }
+                    applianceMaps.put(model.getModelName(), applianceTemp);
+
+                    mapCorrection.clear();
+
 				}
+                long time2 =new Date().getTime();
+                Log.d("ThangTB", " list correction after: "+ listCorrection.size()+ "  time "+ new Date().getTime());
+                Log.d("ThangTB", " total time : "+ (time2-time1));
+
+                databaseHelper.insertCorrections(listCorrection);
+
+                for (Model model : listModel){
+
+                    listCorrection = (ArrayList<CorrectionEntity>) databaseHelper.getAllCorrectionsByModelId(model.getId());
+                    ArrayList<ApplianceEntity> applianceTemp = applianceMaps.get(model.getModelName());
+
+                    Log.d("ThangTB", " list listAppliance temp: "+ applianceTemp.size());
+                    for (CorrectionEntity correctionEntity : listCorrection){
+                        for (ApplianceEntity appEntity : applianceTemp){
+                            if (correctionEntity.getCode().equals(appEntity.getCorrectionCode())){
+                                appEntity.setCorrectionId(correctionEntity.getId());
+                                listAppliance.add(appEntity);
+                                Log.d("ThangTB", " add to  listAppliance : "+appEntity.getCode());
+                            }
+                        }
+                    }
+
+                }
+                Log.d("ThangTB", " list listAppliance after: "+ listAppliance.size()+ "  time "+ new Date().getTime());
+
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			} catch (IOException e) {

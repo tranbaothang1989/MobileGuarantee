@@ -130,7 +130,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	 * Inserting a model
 	 */
 	public int insertModelList(ArrayList<Model> listModels) {
-		Log.d("ThangTB", "====> insertModelList "+ listModels.size());
+		//Log.d("ThangTB", "====> insertModelList "+ listModels.size());
 		SQLiteDatabase db = this.getWritableDatabase();
 		db.beginTransaction();
 		try {
@@ -349,7 +349,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		String selectQuery = "SELECT  * FROM " + TABLE_CORRECTION 
 				+ " WHERE "+ COL_COR_MODEL_ID + " = '" + model_id + "'";
 
-		Log.e(LOG, selectQuery);
+		//Log.e(LOG, selectQuery);
 
 		SQLiteDatabase db = this.getReadableDatabase();
 		Cursor c = db.rawQuery(selectQuery, null);

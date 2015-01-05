@@ -12,6 +12,9 @@ public class ApplianceEntity {
 	private String name;
 	private int appliancePrice;
 	private int fee;
+
+
+    private String correctionCode;
 	public ApplianceEntity() {
 		// TODO Auto-generated constructor stub
 		setId(0);
@@ -65,4 +68,12 @@ public class ApplianceEntity {
 	public int getAppliancePrice() {
 		return appliancePrice;
 	}
+
+    public void setCorrectionCode(String correctionCode) {
+        this.correctionCode = correctionCode;
+    }
+
+    public String getCorrectionCode() {
+        return correctionCode;
+    }
 }
