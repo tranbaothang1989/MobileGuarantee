@@ -289,7 +289,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 			for (int i = 0; i < listCorrections.size(); i++) {
 				CorrectionEntity entity = listCorrections.get(i);
 				ContentValues values = new ContentValues();
-				values.put(COL_ID, entity.getId());
+				//values.put(COL_ID, entity.getId());
 				values.put(COL_COR_MODEL_ID, entity.getModelId());
 				values.put(COL_COR_CODE, entity.getCode());
 				values.put(COL_COR_NAME, entity.getName());
@@ -319,7 +319,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 			for (int i = 0; i < listAppliances.size(); i++) {
 				ApplianceEntity entity = listAppliances.get(i);
 				ContentValues values = new ContentValues();
-				values.put(COL_ID, entity.getId());
+				//values.put(COL_ID, entity.getId());
 				values.put(COL_APP_COR_ID, entity.getCorrectionId());
 				values.put(COL_APP_CODE, entity.getCode());
 				values.put(COL_APP_NAME, entity.getName());

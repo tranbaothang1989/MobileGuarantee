@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -39,6 +40,7 @@ public class CorrectionListActivity extends ActionBarActivity implements OnItemC
 			finish();
 		}
 		getSupportActionBar().setTitle(myModel.getModelName());
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		correctionList = (ArrayList<CorrectionEntity>) databaseHelper.getAllCorrectionsByModelId(myModel.getId());
 
 		CorrectAdapter adapter = new CorrectAdapter(correctionList, getApplicationContext());
@@ -54,4 +56,15 @@ public class CorrectionListActivity extends ActionBarActivity implements OnItemC
 		i.putExtra("correction_item", correctionList.get(position));
 		startActivity(i);
 	}
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // TODO Auto-generated method stub
+        switch(item.getItemId()){
+            case android.R.id.home:
+                this.finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.android.mobilemodel.R;
 import com.android.mobilemodel.entity.Model;
+import com.android.mobilemodel.view.AnimatedExpandableListView;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -14,7 +15,7 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
-public class ModelExpandableListAdapter extends BaseExpandableListAdapter {
+public class ModelExpandableListAdapter extends AnimatedExpandableListView.AnimatedExpandableListAdapter {
 
 	private Context _context;
     private List<String> _listDataHeader; // header titles
@@ -33,10 +34,10 @@ public class ModelExpandableListAdapter extends BaseExpandableListAdapter {
 		return this._listDataHeader.size();
 	}
 
-	@Override
-	public int getChildrenCount(int groupPosition) {
-		return this._listDataChild.get(this._listDataHeader.get(groupPosition)).size();
-	}
+//	@Override
+//	public int getChildrenCount(int groupPosition) {
+//		return this._listDataChild.get(this._listDataHeader.get(groupPosition)).size();
+//	}
 
 	@Override
 	public Object getGroup(int groupPosition) {
@@ -82,11 +83,10 @@ public class ModelExpandableListAdapter extends BaseExpandableListAdapter {
         return convertView;
 	}
 
-	@Override
-	public View getChildView(int groupPosition, int childPosition,
-			boolean isLastChild, View convertView, ViewGroup parent) {
-		final Model model = (Model) getChild(groupPosition, childPosition);
-		 
+    @Override
+    public View getRealChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
+        final Model model = (Model) getChild(groupPosition, childPosition);
+
         if (convertView == null) {
             LayoutInflater infalInflater = (LayoutInflater) this._context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -96,7 +96,28 @@ public class ModelExpandableListAdapter extends BaseExpandableListAdapter {
         TextView txtListChild = (TextView) convertView.findViewById(R.id.tv_model_name);
         txtListChild.setText(model.getModelName());
         return convertView;
-	}
+    }
+
+    @Override
+    public int getRealChildrenCount(int groupPosition) {
+        return this._listDataChild.get(this._listDataHeader.get(groupPosition)).size();
+    }
+
+//    @Override
+//	public View getChildView(int groupPosition, int childPosition,
+//			boolean isLastChild, View convertView, ViewGroup parent) {
+//		final Model model = (Model) getChild(groupPosition, childPosition);
+//
+//        if (convertView == null) {
+//            LayoutInflater infalInflater = (LayoutInflater) this._context
+//                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+//            convertView = infalInflater.inflate(R.layout.item_model, null);
+//        }
+//
+//        TextView txtListChild = (TextView) convertView.findViewById(R.id.tv_model_name);
+//        txtListChild.setText(model.getModelName());
+//        return convertView;
+//	}
 
 	@Override
 	public boolean isChildSelectable(int groupPosition, int childPosition) {

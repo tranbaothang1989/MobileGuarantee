@@ -13,6 +13,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -53,6 +54,8 @@ public class ModelDetailActivity extends ActionBarActivity {
 		applianceEntities = new ArrayList<ApplianceEntity>();
 		applianceEntities = (ArrayList<ApplianceEntity>) databaseHelper.getAllAppliancesByCorId(correctionEntity.getId());
 		modelEntity = databaseHelper.getModel(correctionEntity.getModelId());
+        getSupportActionBar().setTitle(modelEntity.getModelName());
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		
 		tvNoticeModelDetail.setText(Html.fromHtml(getResources().getString(R.string.text_notice_model_detail) + " <b>"+modelEntity.getModelName()+"</b>"));
 		
@@ -69,15 +72,17 @@ public class ModelDetailActivity extends ActionBarActivity {
 			View applicanceView = _inflater.inflate(R.layout.item_appliance, null);
 			TextView tvApplianceName = (TextView) applicanceView.findViewById(R.id.tv_appliance_name);
 			TextView tvAppliancePrice = (TextView) applicanceView.findViewById(R.id.tv_appliance_price);
+            TextView tvFeePrice = (TextView) applicanceView.findViewById(R.id.tv_fee);
 			
 			tvApplianceName.setText(item.getName());
 			
 			String sPrice = formatter.format(item.getAppliancePrice());
 			tvAppliancePrice.setText(sPrice);
+            tvFeePrice.setText(formatter.format(item.getFee()));
 
 			llContentAppliance.addView(applicanceView);
 			
-			sumPrice += item.getAppliancePrice();
+			sumPrice += item.getAppliancePrice()+item.getFee();
 		}
 		
 		tvPrice.setText(formatter.format(sumPrice)+" "+getResources().getString(R.string.text_price_type));
@@ -88,5 +93,16 @@ public class ModelDetailActivity extends ActionBarActivity {
 		// TODO Auto-generated method stub
 		super.onResume();
 	}
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // TODO Auto-generated method stub
+        switch(item.getItemId()){
+            case android.R.id.home:
+                this.finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 	
 }

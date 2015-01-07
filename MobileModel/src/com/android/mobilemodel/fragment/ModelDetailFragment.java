@@ -3,18 +3,13 @@ package com.android.mobilemodel.fragment;
 import java.util.ArrayList;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.android.mobilemodel.R;
-import com.android.mobilemodel.R.id;
-import com.android.mobilemodel.R.layout;
 import com.android.mobilemodel.entity.MainModel;
 import com.android.mobilemodel.entity.Price;
 
@@ -30,14 +25,13 @@ public class ModelDetailFragment extends Fragment{
 	}
 	
 	@Override
-	@Nullable
 	public View getView() {
 		// TODO Auto-generated method stub
 		return super.getView();
 	}
 
 	@Override
-	public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+	public void onActivityCreated(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
 	}
@@ -50,14 +44,14 @@ public class ModelDetailFragment extends Fragment{
 
 	@Override
 	public View onCreateView(LayoutInflater inflater,
-			@Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+			ViewGroup container, Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		View view = inflater.inflate(R.layout.view_model_detail, container, false);
 		return view;
 	}
 	
 	@Override
-	public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+	public void onViewCreated(View view, Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		View v = getView();
 		

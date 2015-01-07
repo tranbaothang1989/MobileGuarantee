@@ -8,6 +8,7 @@ import com.android.mobilemodel.adapter.ModelAdapter;
 import com.android.mobilemodel.adapter.ModelExpandableListAdapter;
 import com.android.mobilemodel.database.DatabaseHelper;
 import com.android.mobilemodel.entity.Model;
+import com.android.mobilemodel.view.AnimatedExpandableListView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,7 +29,7 @@ import android.widget.ListView;
 public class ModelListActivity extends ActionBarActivity implements OnQueryTextListener, OnItemClickListener, OnChildClickListener {
 
 	ListView lvModel;
-	ExpandableListView expandableListViewModel;
+	AnimatedExpandableListView expandableListViewModel;
 	
 	
 	ArrayList<Model> models;
@@ -48,13 +49,14 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 		
 		setContentView(R.layout.fragment_model_list);
 		getSupportActionBar().setTitle(getResources().getString(R.string.title_model_list));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		
 		models = new ArrayList<Model>();
 		databaseHelper = new DatabaseHelper(getApplicationContext());
 		
 		models = (ArrayList<Model>) databaseHelper.getAllModels();
 		lvModel = (ListView) findViewById(R.id.lv_model);
-		expandableListViewModel = (ExpandableListView)findViewById(R.id.expandable_lv_model);
+		expandableListViewModel = (AnimatedExpandableListView)findViewById(R.id.expandable_lv_model);
 		expandableListViewModel.setGroupIndicator(getResources().getDrawable(R.drawable.select_vertical));
 		expandableListViewModel.setChildIndicator(null);
 		expandableListViewModel.setChildDivider(getResources().getDrawable(R.color.red));
@@ -77,6 +79,23 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 		expandableListViewModel.setAdapter(modelExpandableListAdapter);
 		expandableListViewModel.setOnChildClickListener(this);
 		expandList();
+        // for our ExpandableListView.
+//        expandableListViewModel.setOnGroupClickListener(new AnimatedExpandableListView.OnGroupClickListener() {
+//
+//            @Override
+//            public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
+//                // We call collapseGroupWithAnimation(int) and
+//                // expandGroupWithAnimation(int) to animate group
+//                // expansion/collapse.
+//                if (expandableListViewModel.isGroupExpanded(groupPosition)) {
+//                    expandableListViewModel.collapseGroupWithAnimation(groupPosition);
+//                } else {
+//                    expandableListViewModel.expandGroupWithAnimation(groupPosition);
+//                }
+//                return true;
+//            }
+//
+//        });
 	}
 
 
@@ -96,6 +115,9 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
         case R.id.action_search:
             mSearchView.setIconified(false);
             return true;
+            case android.R.id.home:
+                this.finish();
+                return true;
     }
 			return super.onOptionsItemSelected(item);
 		}

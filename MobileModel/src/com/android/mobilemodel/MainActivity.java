@@ -50,7 +50,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 		btnSearchModel = (Button)findViewById(R.id.btn_search_model);
 		btnMyModel.setOnClickListener(this);
 		btnSearchModel.setOnClickListener(this);
-		
 		int btnWidth = (screenWidth*60)/100;
 		int btnHeight = (screenHeight*30)/100;
 		btnMyModel.setWidth(btnWidth);
@@ -138,59 +137,11 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 						model.setBrand(brand);
 						model.setModelName(modelName);
 						constant.add(modelName);
-//						int modelId = (int) databaseHelper.insertModel(model);
-//						Log.d("ThangTB", " insert model "+modelId);
-//						model.setId(modelId);
-//						mapModel.put(modelName, model);
 						listModel.add(model);
-						//import correction
-//						constant.add(correctionCode);
-//						CorrectionEntity mCorrectionEntity = new CorrectionEntity();
-						//mCorrectionEntity.setId(correctionCode);
-//						mCorrectionEntity.setModelId(mapModel.get(modelName).getId());
-//						mCorrectionEntity.setCode(correctionCode);
-//						mCorrectionEntity.setName(correctionName);
-//						mapCorrection.put(correctionCode, mCorrectionEntity);
-//						listCorrection.add(mCorrectionEntity);
-						
-						//import appliance
-//						ApplianceEntity mApplianceEntity = new ApplianceEntity();
-						//mApplianceEntity.setId(applianceCode);
-//						mApplianceEntity.setCorrectionId(mapCorrection.get(correctionCode).getId());
-//						mApplianceEntity.setName(applianceName);
-//						mApplianceEntity.setAppliancePrice(Integer.parseInt(appliancePrice.trim().equals("") ? "0": appliancePrice));
-//						mApplianceEntity.setFee(Integer.parseInt(fee.trim().equals("") ? "0": fee));
-						//mapComponent.put(applianceCode, mApplianceEntity);
-//						listAppliance.add(mApplianceEntity);
 					}
 
-//					if (!constant.contains(correctionCode)) {
-//						constant.add(correctionCode);
-//						CorrectionEntity mCorrectionEntity = new CorrectionEntity();
-//						mCorrectionEntity.setId(correctionCode);
-//						mCorrectionEntity.setModelId(mapModel.get(modelName).getId());
-//						mCorrectionEntity.setName(correctionName);
-//						mapCorrection.put(correctionCode, mCorrectionEntity);
-//						listCorrection.add(mCorrectionEntity);
-//					}
-					
-//					if (!constant.contains(applianceCode)) {
-//						constant.add(applianceCode);
-//						appliance.add(applianceCode);
-//						ApplianceEntity mApplianceEntity = new ApplianceEntity();
-//						mApplianceEntity.setId(applianceCode);
-//						mApplianceEntity.setCorrectionId(mapCorrection.get(correctionCode).getId());
-//						mApplianceEntity.setName(applianceName);
-//						mApplianceEntity.setAppliancePrice(Integer.parseInt(appliancePrice.trim().equals("") ? "0": appliancePrice));
-//						mApplianceEntity.setFee(Integer.parseInt(fee.trim().equals("") ? "0": fee));
-//						//mapComponent.put(applianceCode, mApplianceEntity);
-//						listAppliance.add(mApplianceEntity);
-//					}
 				}
-				
-//				databaseHelper.insertCorrections(listCorrection);
-//				databaseHelper.insertAppliances(listAppliance);
-				
+
 				products.close();
 
                 Log.d("ThangTB", " list model before: "+ listModel.size());
@@ -235,37 +186,35 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
                             applianceTemp.add(mApplianceEntity);
 
                         }
-                        //itemp++;
                     }
                     applianceMaps.put(model.getModelName(), applianceTemp);
 
                     mapCorrection.clear();
 
 				}
-                long time2 =new Date().getTime();
+
                 Log.d("ThangTB", " list correction after: "+ listCorrection.size()+ "  time "+ new Date().getTime());
-                Log.d("ThangTB", " total time : "+ (time2-time1));
 
                 databaseHelper.insertCorrections(listCorrection);
 
                 for (Model model : listModel){
-
                     listCorrection = (ArrayList<CorrectionEntity>) databaseHelper.getAllCorrectionsByModelId(model.getId());
                     ArrayList<ApplianceEntity> applianceTemp = applianceMaps.get(model.getModelName());
 
-                    Log.d("ThangTB", " list listAppliance temp: "+ applianceTemp.size());
                     for (CorrectionEntity correctionEntity : listCorrection){
                         for (ApplianceEntity appEntity : applianceTemp){
                             if (correctionEntity.getCode().equals(appEntity.getCorrectionCode())){
                                 appEntity.setCorrectionId(correctionEntity.getId());
                                 listAppliance.add(appEntity);
-                                Log.d("ThangTB", " add to  listAppliance : "+appEntity.getCode());
                             }
                         }
                     }
 
                 }
                 Log.d("ThangTB", " list listAppliance after: "+ listAppliance.size()+ "  time "+ new Date().getTime());
+                databaseHelper.insertAppliances(listAppliance);
+                long time2 =new Date().getTime();
+                Log.d("ThangTB", " total time : "+ (time2-time1));
 
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();

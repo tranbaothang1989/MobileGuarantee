@@ -58,7 +58,7 @@ public class CorrectAdapter extends BaseAdapter {
 		else{
 			holder = (ViewHolder) convertView.getTag();
 		}
-		holder.tvCode.setText(correctionEntity.getId());
+		holder.tvCode.setText(correctionEntity.getCode());
 		holder.tvName.setText(correctionEntity.getName());
         return convertView;
 	}

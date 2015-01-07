@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">MobileModel</string>
+    <string name="app_name">Warranty Tracking</string>
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
@@ -12,12 +12,13 @@
     <string name="btn_my_model">Thông tin bảo hành của bạn</string>
     <string name="btn_search_another_model">Tìm kiếm thông tin bảo hành của máy khác</string>
     <string name="action_search">Search</string>
-    <string name="text_price">giá</string>
+    <string name="text_price">giá LK</string>
+    <string name="text_fee">tiền công</string>
     <string name="text_sum_price">Tổng thành tiền là: </string>
     <string name="text_price_type">đồng</string>
     <string name="text_data_not_found">Không thể tìm thấy dữ liệu.</string>
-    <string name="text_not_price">Lưu ý: Quí khách sẽ được miễn phí, nếu máy của quí khách còn trong thời hạn bảo hành.</string>
-    <string name="text_notice_model_detail">Quí khách đang xem bảng giá của :</string>
+    <string name="text_not_price">Lưu ý: Quý khách sẽ được miễn phí, nếu máy của quý khách còn trong thời hạn bảo hành.</string>
+    <string name="text_notice_model_detail">Quý khách đang xem bảng giá của :</string>
     <string name="text_corection_type">Loại sửa chữa: </string>
     <string name="title_model_list">Danh sách các máy khác</string>
 
