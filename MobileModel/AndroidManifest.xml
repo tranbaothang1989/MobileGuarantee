@@ -14,7 +14,8 @@
         android:label="@string/app_name"
         android:theme="@style/CustomActionBarTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="MainActivity"></activity>
         <activity android:name="MobileModelActivity"></activity>
         <activity android:name="ModelListActivity"></activity>
         <activity android:name="CorrectionListActivity"></activity>
