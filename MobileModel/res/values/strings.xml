@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Warranty Tracking</string>
+    <string name="app_name">Bảng báo giá</string>
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
@@ -9,17 +9,22 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
-    <string name="btn_my_model">Thông tin bảo hành của bạn</string>
-    <string name="btn_search_another_model">Tìm kiếm thông tin bảo hành của máy khác</string>
+    <string name="btn_my_model">Báo giá sửa chữa máy</string>
+    <string name="btn_search_another_model">Tra Cứu bảng báo giá sửa chữa</string>
     <string name="action_search">Search</string>
     <string name="text_price">giá LK</string>
-    <string name="text_fee">tiền công</string>
+    <string name="text_fee">Tiền công:</string>
     <string name="text_sum_price">Tổng thành tiền là: </string>
     <string name="text_price_type">đồng</string>
-    <string name="text_data_not_found">Không thể tìm thấy dữ liệu.</string>
+    <string name="text_data_not_found">Không thể tìm thấy dữ liệu của</string>
     <string name="text_not_price">Lưu ý: Quý khách sẽ được miễn phí, nếu máy của quý khách còn trong thời hạn bảo hành.</string>
     <string name="text_notice_model_detail">Quý khách đang xem bảng giá của :</string>
     <string name="text_corection_type">Loại sửa chữa: </string>
     <string name="title_model_list">Danh sách các máy khác</string>
+
+    <string name="text_splash_screen_title">Báo giá sửa chữa điện thoại</string>
+    <string name="text_splash_screen_check_data">Đang kiểm tra dữ liệu...</string>
+
+
 
 </resources>

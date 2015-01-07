@@ -59,20 +59,12 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="70dp"
+                    android:layout_width="75dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="2dp"
                     android:background="@color/black1"
                     android:gravity="center_horizontal"
                     android:text="@string/text_price"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="65dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="2dp"
-                    android:background="@color/black1"
-                    android:gravity="center_horizontal"
-                    android:text="@string/text_fee"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -92,7 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingBottom="35dp" >
+                    android:paddingBottom="50dp" >
 
                     <ScrollView
                         android:id="@+id/scrollview"
@@ -118,23 +110,45 @@
                 <LinearLayout
                     android:id="@+id/totalView"
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
                     android:layout_alignBottom="@id/ll_contentsc"
-                    android:orientation="horizontal" >
+                    android:orientation="vertical" >
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/text_sum_price" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_fee" />
 
-                    <TextView
-                        android:id="@+id/tv_price"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tv_fee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_sum_price" />
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
                 </LinearLayout>
+
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>

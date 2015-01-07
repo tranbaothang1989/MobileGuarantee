@@ -3,6 +3,7 @@ package com.android.mobilemodel;
 import java.util.ArrayList;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.android.mobilemodel.adapter.CorrectAdapter;
 import com.android.mobilemodel.database.DatabaseHelper;
@@ -21,6 +23,8 @@ public class CorrectionListActivity extends ActionBarActivity implements OnItemC
 	ArrayList<CorrectionEntity> correctionList;
 	DatabaseHelper databaseHelper;
 	Model myModel;
+
+    TextView tvNotice;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +50,22 @@ public class CorrectionListActivity extends ActionBarActivity implements OnItemC
 		CorrectAdapter adapter = new CorrectAdapter(correctionList, getApplicationContext());
 		lv.setAdapter(adapter);
 		lv.setOnItemClickListener(this);
+
+        String sModel        = Build.MODEL;
+        tvNotice = (TextView)findViewById(R.id.tv_notice);
+
+        if (correctionList.size() == 0)
+        {
+            getSupportActionBar().setTitle(sModel);
+            String sNotice = getResources().getString(R.string.text_data_not_found) + " "+sModel;
+            tvNotice.setText(sNotice);
+            tvNotice.setVisibility(View.VISIBLE);
+            lv.setVisibility(View.GONE);
+        }else{
+            getSupportActionBar().setTitle(myModel.getModelName());
+            tvNotice.setVisibility(View.GONE);
+            lv.setVisibility(View.VISIBLE);
+        }
 	}
 
 	@Override

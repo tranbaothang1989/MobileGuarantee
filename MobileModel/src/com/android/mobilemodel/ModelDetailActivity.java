@@ -47,7 +47,9 @@ public class ModelDetailActivity extends ActionBarActivity {
 
 		TextView tvSC = (TextView) findViewById(R.id.tv_sc);
 		TextView tvNoticeModelDetail = (TextView) findViewById(R.id.tv_notice_model_detail);
+        TextView tvFeePrice = (TextView) findViewById(R.id.tv_fee);
 		TextView tvPrice = (TextView) findViewById(R.id.tv_price);
+
 		llContentAppliance = (LinearLayout)findViewById(R.id.ll_content_appliance);
 		
 		databaseHelper = new DatabaseHelper(getApplicationContext());
@@ -66,25 +68,29 @@ public class ModelDetailActivity extends ActionBarActivity {
 
 		tvSC.setText(correctionEntity.getName());
 		int sumPrice =0;
+        int maxFeePrice = 0;
 		for (int i = 0; i < applianceEntities.size(); i++) {
 			ApplianceEntity item = applianceEntities.get(i);
 		
 			View applicanceView = _inflater.inflate(R.layout.item_appliance, null);
 			TextView tvApplianceName = (TextView) applicanceView.findViewById(R.id.tv_appliance_name);
 			TextView tvAppliancePrice = (TextView) applicanceView.findViewById(R.id.tv_appliance_price);
-            TextView tvFeePrice = (TextView) applicanceView.findViewById(R.id.tv_fee);
+
 			
 			tvApplianceName.setText(item.getName());
 			
 			String sPrice = formatter.format(item.getAppliancePrice());
 			tvAppliancePrice.setText(sPrice);
-            tvFeePrice.setText(formatter.format(item.getFee()));
 
 			llContentAppliance.addView(applicanceView);
-			
-			sumPrice += item.getAppliancePrice()+item.getFee();
+			if (item.getFee()>maxFeePrice){
+                maxFeePrice = item.getFee();
+            }
+			sumPrice += item.getAppliancePrice();
 		}
-		
+        sumPrice+=maxFeePrice;
+        tvFeePrice.setText(formatter.format(maxFeePrice)+" "+getResources().getString(R.string.text_price_type));
+
 		tvPrice.setText(formatter.format(sumPrice)+" "+getResources().getString(R.string.text_price_type));
 	}
 	
