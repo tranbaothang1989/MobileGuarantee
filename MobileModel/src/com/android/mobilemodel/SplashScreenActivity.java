@@ -32,7 +32,7 @@ import java.util.HashMap;
  */
 public class SplashScreenActivity extends Activity{
 
-    private static int SPLASH_TIME_OUT = 3000;
+    private static int SPLASH_TIME_OUT = 2000;
     public DatabaseHelper databaseHelper;
     DoImportData doImportData;
 

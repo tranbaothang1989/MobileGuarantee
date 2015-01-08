@@ -18,6 +18,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.android.mobilemodel.database.DatabaseHelper;
 import com.android.mobilemodel.entity.ApplianceEntity;
@@ -31,6 +32,9 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 	public DatabaseHelper databaseHelper;
 	Button btnMyModel;
 	Button btnSearchModel;
+
+    LinearLayout llMyModel;
+    LinearLayout llSearchModel;
     Model model;
     String sModel;
 	
@@ -46,12 +50,15 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 
 		int screenHeight = metrics.heightPixels;
 		int screenWidth = metrics.widthPixels;
-		
+
+        llMyModel = (LinearLayout)findViewById(R.id.ll_my_model);
+        llSearchModel = (LinearLayout)findViewById(R.id.ll_search_model);
+
 		btnMyModel = (Button)findViewById(R.id.btn_my_model);
 		btnSearchModel = (Button)findViewById(R.id.btn_search_model);
-		btnMyModel.setOnClickListener(this);
-		btnSearchModel.setOnClickListener(this);
-		int btnWidth = (screenWidth*70)/100;
+        llMyModel.setOnClickListener(this);
+        llSearchModel.setOnClickListener(this);
+		//int btnWidth = (screenWidth*70)/100;
 		int btnHeight = (screenHeight*20)/100;
 
 		//btnMyModel.setWidth(btnWidth);
@@ -70,7 +77,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 
         model = databaseHelper.getModel(sModel.toLowerCase());
         if (model.getId() ==0){
-            btnMyModel.setVisibility(View.GONE);
+            llMyModel.setVisibility(View.GONE);
         }
 		
 	}
@@ -80,14 +87,14 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 		// TODO Auto-generated method stub
 		int id = v.getId();
 		switch (id) {
-		case R.id.btn_my_model:
+		case R.id.ll_my_model:
 			Intent i = new Intent(getApplicationContext(), CorrectionListActivity.class);
 			i.putExtra("model_item", model);
 			startActivity(i);
 			break;
-		case R.id.btn_search_model:
-			Intent i2 = new Intent(getApplicationContext(), ModelListActivity.class);
-            //Intent i2 = new Intent(getApplicationContext(), BrandActivity.class);
+		case R.id.ll_search_model:
+			//Intent i2 = new Intent(getApplicationContext(), ModelListActivity.class);
+            Intent i2 = new Intent(getApplicationContext(), BrandActivity.class);
 			startActivity(i2);
 			break;
 

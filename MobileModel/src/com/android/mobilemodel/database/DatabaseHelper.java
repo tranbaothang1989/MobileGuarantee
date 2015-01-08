@@ -231,6 +231,36 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		return models;
 	}
 
+    /**
+     * getting all model
+     * */
+    public List<Model> getAllModelsByBranch(String branch) {
+        List<Model> models = new ArrayList<Model>();
+        String selectQuery = "SELECT  * FROM " + TABLE_MODEL+ " WHERE "
+                + COL_MODEL_BRAND + " like '%"+branch+"%'";
+
+        //Log.e(LOG, selectQuery);
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = db.rawQuery(selectQuery, null);
+
+        // looping through all rows and adding to list
+        if (c.moveToFirst()) {
+            do {
+                Model model = new Model();
+                model.setId(c.getInt(c.getColumnIndex(COL_ID)));
+                model.setBrand((c.getString(c.getColumnIndex(COL_MODEL_BRAND))));
+                model.setModelName((c.getString(c.getColumnIndex(COL_MODEL_CODE))));
+                model.setCreatedAt(c.getString(c.getColumnIndex(COL_CREATED_AT)));
+
+                // adding to todo list
+                models.add(model);
+            } while (c.moveToNext());
+        }
+
+        return models;
+    }
+
 	/**
 	 * getting all model
 	 * */

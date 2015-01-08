@@ -26,10 +26,10 @@ import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnChildClickListener;
 import android.widget.ListView;
 
-public class ModelListActivity extends ActionBarActivity implements OnQueryTextListener, OnItemClickListener, OnChildClickListener {
+public class ModelListActivity extends ActionBarActivity implements OnQueryTextListener, OnItemClickListener {
 
 	ListView lvModel;
-	AnimatedExpandableListView expandableListViewModel;
+	//AnimatedExpandableListView expandableListViewModel;
 	
 	
 	ArrayList<Model> models;
@@ -38,9 +38,9 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 	ArrayList<Model> modelsTemp;
 	SearchView mSearchView;
 	
-	ArrayList<String> listDataHeader;
-	HashMap<String, List<Model>> listDataChild;
-	ModelExpandableListAdapter modelExpandableListAdapter;
+	//ArrayList<String> listDataHeader;
+	//HashMap<String, List<Model>> listDataChild;
+	//ModelExpandableListAdapter modelExpandableListAdapter;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -48,54 +48,41 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 		super.onCreate(savedInstanceState);
 		
 		setContentView(R.layout.fragment_model_list);
-		getSupportActionBar().setTitle(getResources().getString(R.string.title_model_list));
+
+        Bundle b = getIntent().getExtras();
+        String branch = b.getString("branch");
+
+        getSupportActionBar().setTitle(branch.toUpperCase());
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		
 		models = new ArrayList<Model>();
 		databaseHelper = new DatabaseHelper(getApplicationContext());
 		
-		models = (ArrayList<Model>) databaseHelper.getAllModels();
+		models = (ArrayList<Model>) databaseHelper.getAllModelsByBranch(branch);
 		lvModel = (ListView) findViewById(R.id.lv_model);
-		expandableListViewModel = (AnimatedExpandableListView)findViewById(R.id.expandable_lv_model);
+		/*expandableListViewModel = (AnimatedExpandableListView)findViewById(R.id.expandable_lv_model);
 		expandableListViewModel.setGroupIndicator(getResources().getDrawable(R.drawable.select_vertical));
 		expandableListViewModel.setChildIndicator(null);
 		expandableListViewModel.setChildDivider(getResources().getDrawable(R.color.red));
 		expandableListViewModel.setDivider(getResources().getDrawable(R.color.white));
-		expandableListViewModel.setDividerHeight(2);
+		expandableListViewModel.setDividerHeight(2);*/
 
 
-		listDataHeader = new ArrayList<String>();
-		listDataChild = new HashMap<String, List<Model>>();
+		/*listDataHeader = new ArrayList<String>();
+		listDataChild = new HashMap<String, List<Model>>();*/
 		
 		modelsTemp = new ArrayList<Model>();
 		modelsTemp = (ArrayList<Model>) models.clone();
-//		adapter = new ModelAdapter(modelsTemp, getApplicationContext());
-//		lvModel.setAdapter(adapter);
+		adapter = new ModelAdapter(modelsTemp, getApplicationContext());
+		lvModel.setAdapter(adapter);
 		
 		lvModel.setOnItemClickListener(this);
 		
-		prepareListData(modelsTemp);
-		modelExpandableListAdapter = new ModelExpandableListAdapter(getApplicationContext(), listDataHeader, listDataChild);
+		//prepareListData(modelsTemp);
+		/*modelExpandableListAdapter = new ModelExpandableListAdapter(getApplicationContext(), listDataHeader, listDataChild);
 		expandableListViewModel.setAdapter(modelExpandableListAdapter);
-		expandableListViewModel.setOnChildClickListener(this);
-		expandList();
-        // for our ExpandableListView.
-//        expandableListViewModel.setOnGroupClickListener(new AnimatedExpandableListView.OnGroupClickListener() {
-//
-//            @Override
-//            public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
-//                // We call collapseGroupWithAnimation(int) and
-//                // expandGroupWithAnimation(int) to animate group
-//                // expansion/collapse.
-//                if (expandableListViewModel.isGroupExpanded(groupPosition)) {
-//                    expandableListViewModel.collapseGroupWithAnimation(groupPosition);
-//                } else {
-//                    expandableListViewModel.expandGroupWithAnimation(groupPosition);
-//                }
-//                return true;
-//            }
-//
-//        });
+		expandableListViewModel.setOnChildClickListener(this);*/
+		//expandList();
 	}
 
 
@@ -126,15 +113,15 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 	public boolean onQueryTextChange(String searchString) {
 		// TODO Auto-generated method stub
 		getModelListBySearch(searchString);
-		prepareListData(modelsTemp);
+		//prepareListData(modelsTemp);
 		runOnUiThread(new Runnable() {
 			
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
-				//adapter.notifyDataSetChanged();
-				modelExpandableListAdapter.notifyDataSetChanged();
-				expandList();
+				adapter.notifyDataSetChanged();
+				//modelExpandableListAdapter.notifyDataSetChanged();
+				//expandList();
 			}
 		});
 		return true;
@@ -143,15 +130,15 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 	@Override
 	public boolean onQueryTextSubmit(String searchString) {
 		getModelListBySearch(searchString);
-		prepareListData(modelsTemp);
+		//prepareListData(modelsTemp);
 		runOnUiThread(new Runnable() {
 			
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
-				//adapter.notifyDataSetChanged();
-				modelExpandableListAdapter.notifyDataSetChanged();
-				expandList();
+				adapter.notifyDataSetChanged();
+				//modelExpandableListAdapter.notifyDataSetChanged();
+				//expandList();
 			}
 		});
 		
@@ -180,9 +167,12 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 		Model item = (Model) adapter.getItem(position);
 		
 		Log.d("ThangTB", "click on :"+item.getModelName());
+        Intent i = new Intent(getApplicationContext(), CorrectionListActivity.class);
+        i.putExtra("model_item", item);
+        startActivity(i);
 	}
 	
-	private void prepareListData(ArrayList<Model> modelList) {
+	/*private void prepareListData(ArrayList<Model> modelList) {
 		listDataHeader.clear();
 		listDataChild.clear();
 		int modelSize = modelList.size() ;
@@ -199,18 +189,17 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 				listDataChild.get(item.getBrand()).add(item);
 			}
 		}
-	}
+	}*/
 
-	private void expandList(){
+	/*private void expandList(){
 		for(int i=0; i < modelExpandableListAdapter.getGroupCount(); i++){
 			expandableListViewModel.expandGroup(i);
 		}
-	}
+	}*/
 
-	@Override
+	/*@Override
 	public boolean onChildClick(ExpandableListView parent, View v,
 			int groupPosition, int childPosition, long id) {
-		// TODO Auto-generated method stub
 		String sGroup = listDataHeader.get(groupPosition);
 		
 		Model item = (Model) listDataChild.get(sGroup).get(childPosition);
@@ -220,5 +209,5 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 		startActivity(i);
 		Log.d("ThangTB", "click on :"+item.getModelName());
 		return false;
-	}
+	}*/
 }

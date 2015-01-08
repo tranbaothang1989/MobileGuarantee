@@ -7,13 +7,14 @@
     <com.android.mobilemodel.view.AnimatedExpandableListView
         android:id="@+id/expandable_lv_model"
         android:layout_width="match_parent"
+        android:visibility="gone"
         android:layout_height="wrap_content">
         
     </com.android.mobilemodel.view.AnimatedExpandableListView>
 
     <ListView
         android:id="@+id/lv_model"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
     </ListView>
