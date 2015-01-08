@@ -17,7 +17,8 @@
     <string name="text_sum_price">Tổng thành tiền là: </string>
     <string name="text_price_type">đồng</string>
     <string name="text_data_not_found">Không thể tìm thấy dữ liệu của</string>
-    <string name="text_not_price">Lưu ý: Quý khách sẽ được miễn phí, nếu máy của quý khách còn trong thời hạn bảo hành.</string>
+    <string name="text_not_price">Lưu ý: Bảng giá chỉ có tính tham khảo và có thể thay đổi. Để biết giá chính xác Quý Khách vui lòng gọi</string>
+    <string name="text_not_price_mobile">1900555567</string>
     <string name="text_notice_model_detail">Quý khách đang xem bảng giá của :</string>
     <string name="text_corection_type">Loại sửa chữa: </string>
     <string name="title_model_list">Danh sách các máy khác</string>

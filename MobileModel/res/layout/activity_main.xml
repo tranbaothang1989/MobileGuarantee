@@ -3,30 +3,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white_1"
-    android:gravity="center"
+    android:gravity="center_vertical"
     android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/btn_my_model"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:drawableLeft="@drawable/ic_mobile"
-        android:background="@color/red"
-        android:padding="5dp"
-        android:text="@string/btn_my_model"
-        android:textSize="@dimen/main_btn_text_size"
-        android:textColor="@color/white" />
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mobile"/>
 
-    <Button
-        android:id="@+id/btn_search_model"
-        android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/btn_my_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white_1"
+
+            android:text="@string/btn_my_model"
+            android:textSize="@dimen/main_btn_text_size"
+            android:textColor="@color/red" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_list_main"
-        android:background="@color/red"
-        android:padding="5dp"
-        android:text="@string/btn_search_another_model"
-        android:textSize="@dimen/main_btn_text_size"
-        android:textColor="@color/white" />
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_list_main"/>
+
+        <Button
+            android:id="@+id/btn_search_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white_1"
+
+            android:text="@string/btn_search_another_model"
+            android:textSize="@dimen/main_btn_text_size"
+            android:textColor="@color/red" />
+    </LinearLayout>
 
 </LinearLayout>

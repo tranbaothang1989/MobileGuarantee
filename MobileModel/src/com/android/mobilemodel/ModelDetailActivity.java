@@ -1,22 +1,27 @@
 package com.android.mobilemodel;
 
 import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
 import java.util.ArrayList;
-import java.util.Locale;
 
-import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.text.Html;
-import android.util.Log;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ClickableSpan;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.RelativeSizeSpan;
+import android.text.style.UnderlineSpan;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.android.mobilemodel.database.DatabaseHelper;
@@ -49,6 +54,7 @@ public class ModelDetailActivity extends ActionBarActivity {
 		TextView tvNoticeModelDetail = (TextView) findViewById(R.id.tv_notice_model_detail);
         TextView tvFeePrice = (TextView) findViewById(R.id.tv_fee);
 		TextView tvPrice = (TextView) findViewById(R.id.tv_price);
+        TextView tvPriceNotice = (TextView) findViewById(R.id.tv_price_notice);
 
 		llContentAppliance = (LinearLayout)findViewById(R.id.ll_content_appliance);
 		
@@ -92,6 +98,32 @@ public class ModelDetailActivity extends ActionBarActivity {
         tvFeePrice.setText(formatter.format(maxFeePrice)+" "+getResources().getString(R.string.text_price_type));
 
 		tvPrice.setText(formatter.format(sumPrice)+" "+getResources().getString(R.string.text_price_type));
+
+        String sNotice = getResources().getString(R.string.text_not_price)+" ";
+        final String sNoticeNumber = getResources().getString(R.string.text_not_price_mobile);
+        Spannable word = new SpannableString(sNotice);
+
+        tvPriceNotice.setText(word);
+        SpannableString wordTwo = new SpannableString(sNoticeNumber);
+
+        wordTwo.setSpan(new ForegroundColorSpan(Color.BLUE), 0, wordTwo.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        wordTwo.setSpan(new RelativeSizeSpan(1.3f), 0, wordTwo.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        wordTwo.setSpan(new UnderlineSpan(), 0, wordTwo.length(), 0);
+
+        ClickableSpan clickableSpan = new ClickableSpan() {
+            @Override
+            public void onClick(View textView) {
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:"+sNoticeNumber));
+                startActivity(callIntent);
+            }
+        };
+
+        wordTwo.setSpan(clickableSpan, 0, wordTwo.length(), SpannableString.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        tvPriceNotice.append(wordTwo);
+        tvPriceNotice.setMovementMethod(LinkMovementMethod.getInstance());
+
 	}
 	
 	@Override

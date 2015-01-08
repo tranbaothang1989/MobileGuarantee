@@ -54,12 +54,12 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 		int btnWidth = (screenWidth*70)/100;
 		int btnHeight = (screenHeight*20)/100;
 
-		btnMyModel.setWidth(btnWidth);
+		//btnMyModel.setWidth(btnWidth);
 		btnMyModel.setHeight(btnHeight);
         sModel        = Build.MODEL;
         btnMyModel.setText(getResources().getString(R.string.btn_my_model)+" "+sModel);
 
-		btnSearchModel.setWidth(btnWidth);
+		//btnSearchModel.setWidth(btnWidth);
 		btnSearchModel.setHeight(btnHeight);
 		
 //		String sManufacturer = Build.MANUFACTURER;
@@ -87,6 +87,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 			break;
 		case R.id.btn_search_model:
 			Intent i2 = new Intent(getApplicationContext(), ModelListActivity.class);
+            //Intent i2 = new Intent(getApplicationContext(), BrandActivity.class);
 			startActivity(i2);
 			break;
 
