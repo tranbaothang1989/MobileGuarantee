@@ -3,6 +3,7 @@ package com.android.mobilemodel;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.DisplayMetrics;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -27,14 +28,33 @@ public class BrandActivity extends ActionBarActivity implements View.OnClickList
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         imgHTC = (ImageView)findViewById(R.id.imageViewHTC);
+        imgLenovo = (ImageView)findViewById(R.id.imageViewLenovo);
         imgAlcatel = (ImageView)findViewById(R.id.imageViewALCATEL);
         imgHuawei = (ImageView)findViewById(R.id.imageViewHuawei);
-        imgLenovo = (ImageView)findViewById(R.id.imageViewLenovo);
 
         imgHTC.setOnClickListener(this);
+        imgLenovo.setOnClickListener(this);
         imgAlcatel.setOnClickListener(this);
         imgHuawei.setOnClickListener(this);
-        imgLenovo.setOnClickListener(this);
+
+
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        int screenHeight = metrics.heightPixels;
+        int screenWidth = metrics.widthPixels;
+
+        int imgWidth = (screenWidth*50)/100;
+        int imgHeight = (screenHeight*20)/100;
+
+        imgHTC.getLayoutParams().width = imgWidth;
+        imgLenovo.getLayoutParams().width = imgWidth;
+        imgAlcatel.getLayoutParams().width = imgWidth;
+        imgHuawei.getLayoutParams().width = imgWidth;
+
+        imgHTC.getLayoutParams().height = imgHeight;
+        imgLenovo.getLayoutParams().height = imgHeight;
+        imgAlcatel.getLayoutParams().height = imgHeight;
+        imgHuawei.getLayoutParams().height = imgHeight;
 
     }
 
