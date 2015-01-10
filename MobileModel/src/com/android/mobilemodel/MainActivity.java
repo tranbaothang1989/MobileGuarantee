@@ -64,6 +64,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 		//btnMyModel.setWidth(btnWidth);
 		btnMyModel.setHeight(btnHeight);
         sModel        = Build.MODEL;
+        //sModel = "HTC One M8";
         btnMyModel.setText(getResources().getString(R.string.btn_my_model)+" "+sModel);
 
 		//btnSearchModel.setWidth(btnWidth);

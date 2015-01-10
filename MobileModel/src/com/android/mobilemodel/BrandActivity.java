@@ -1,9 +1,11 @@
 package com.android.mobilemodel;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -44,18 +46,32 @@ public class BrandActivity extends ActionBarActivity implements View.OnClickList
         int screenWidth = metrics.widthPixels;
 
         int imgWidth = (screenWidth*50)/100;
-        int imgHeight = (screenHeight*20)/100;
+        //int imgHeight = (screenHeight*20)/100;
 
         imgHTC.getLayoutParams().width = imgWidth;
         imgLenovo.getLayoutParams().width = imgWidth;
         imgAlcatel.getLayoutParams().width = imgWidth;
         imgHuawei.getLayoutParams().width = imgWidth;
 
-        imgHTC.getLayoutParams().height = imgHeight;
-        imgLenovo.getLayoutParams().height = imgHeight;
-        imgAlcatel.getLayoutParams().height = imgHeight;
-        imgHuawei.getLayoutParams().height = imgHeight;
+        Log.d("ThangTB", "on Create activity branch");
 
+//        imgHTC.getLayoutParams().height = imgHeight;
+//        imgLenovo.getLayoutParams().height = imgHeight;
+//        imgAlcatel.getLayoutParams().height = imgHeight;
+//        imgHuawei.getLayoutParams().height = imgHeight;
+
+    }
+
+    @Override
+    protected void onResume() {
+        Log.d("ThangTB", "on onResume activity branch");
+        super.onResume();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        Log.d("ThangTB", "on onConfigurationChanged activity branch");
+        super.onConfigurationChanged(newConfig);
     }
 
     @Override

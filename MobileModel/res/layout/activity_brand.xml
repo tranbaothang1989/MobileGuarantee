@@ -5,29 +5,43 @@
     android:background="@color/white"
     android:gravity="center_horizontal">
 
-    <ImageView
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:src="@drawable/htc_logo"
-        android:id="@+id/imageViewHTC" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:src="@drawable/lenovo_logo"
-        android:id="@+id/imageViewLenovo" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:src="@drawable/alcatel_logo"
-        android:id="@+id/imageViewALCATEL" />
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:src="@drawable/huawei_logo"
-        android:id="@+id/imageViewHuawei" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:src="@drawable/htc_logo"
+                android:id="@+id/imageViewHTC"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:src="@drawable/lenovo_logo"
+                android:id="@+id/imageViewLenovo"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:src="@drawable/alcatel_logo"
+                android:id="@+id/imageViewALCATEL"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:src="@drawable/huawei_logo"
+                android:id="@+id/imageViewHuawei"/>
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
