@@ -84,7 +84,7 @@ public class SplashScreenActivity extends Activity{
             ArrayList<String> appliance = new ArrayList<String>();
             ArrayList<String> constant = new ArrayList<String>();
             try {
-                InputStream is = getAssets().open("datasuachuadt.csv");
+                InputStream is = getAssets().open("htc.csv");
                 char c = '\t';
                 CsvReader products = new CsvReader(is, c, Charset.forName("UTF-8"));
 
