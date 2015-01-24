@@ -111,7 +111,7 @@ public class SplashScreenActivity extends Activity{
                     String modelName = products.get(2).trim();
 
                     String correctionCode = products.get(3).trim();
-                    String correctionName = products.get(4).trim();
+                    String correctionName = products.get(5).trim();
 
                     String applianceCode = products.get(6).trim();
                     String applianceName = products.get(7).trim();
