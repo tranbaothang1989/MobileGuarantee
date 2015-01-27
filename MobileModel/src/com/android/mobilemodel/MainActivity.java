@@ -78,6 +78,14 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 //        String sProduct      = Build.PRODUCT;
 //        String sModel        = Build.MODEL;
         databaseHelper = new DatabaseHelper(getApplicationContext());
+        int memSize = getInternalMemorySize();
+        if (sModel.toLowerCase().equals("htc one") || sModel.toLowerCase().equals("htc one x")){
+            if (memSize > 32000){
+                sModel = sModel+" 32G";
+            }else if(memSize > 16000){
+                sModel = sModel+" 16G";
+            }
+        }
 
         model = databaseHelper.getModel(sModel.toLowerCase());
         if (model.getId() ==0){
@@ -87,6 +95,25 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
         Log.d("ThangTB", "memsize is: "+getTotalInternalMemorySize());
 		
 	}
+
+    /*
+        return num of MB
+     */
+    public static int getInternalMemorySize() {
+        File path = Environment.getDataDirectory();
+        StatFs stat = new StatFs(path.getPath());
+        long blockSize = stat.getBlockSize();
+        long totalBlocks = stat.getBlockCount();
+
+        long size = totalBlocks * blockSize;//byte
+        long sizekb = (size/1024);
+        int sizemb = (int) (sizekb/1024);
+        Log.d("ThangTB", "memsize 1 is: "+size);
+        Log.d("ThangTB", "memsize 2 is: "+sizekb);
+        Log.d("ThangTB", "memsize 3 is: "+sizemb);
+
+        return sizemb;
+    }
 
     public static String getTotalInternalMemorySize() {
         File path = Environment.getDataDirectory();
