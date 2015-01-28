@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -22,6 +23,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.android.mobilemodel.database.DatabaseHelper;
 import com.android.mobilemodel.entity.ApplianceEntity;
@@ -92,7 +94,21 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
             llMyModel.setVisibility(View.GONE);
         }
 
+        TextView tvTest = (TextView)findViewById(R.id.textViewTest);
+
+
+        tvTest.setTextColor(getResources().getColor(R.color.red));
         Log.d("ThangTB", "memsize is: "+getTotalInternalMemorySize());
+
+
+        Log.d("ThangTB", "total:"+bytesToHuman(TotalMemory()));
+        Log.d("ThangTB", "free:"+bytesToHuman(FreeMemory()));
+        Log.d("ThangTB", "use:"+bytesToHuman(BusyMemory()));
+
+        tvTest.setText("  Detect: Model:"+sModel+
+                "  total:"+bytesToHuman(TotalMemory())+
+                "  free:"+bytesToHuman(FreeMemory())+
+                "  use:"+bytesToHuman(BusyMemory()));
 		
 	}
 
@@ -100,19 +116,77 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
         return num of MB
      */
     public static int getInternalMemorySize() {
-        File path = Environment.getDataDirectory();
-        StatFs stat = new StatFs(path.getPath());
+       // File path = Environment.getDataDirectory();
+        StatFs stat = new StatFs(Environment.getDataDirectory().getPath());
+        //StatFs stat = new StatFs(Environment.getRootDirectory().getAbsolutePath());
         long blockSize = stat.getBlockSize();
         long totalBlocks = stat.getBlockCount();
 
         long size = totalBlocks * blockSize;//byte
         long sizekb = (size/1024);
-        int sizemb = (int) (sizekb/1024);
+        long sizemb = (sizekb/1024);
+        int sizeGB = (int)(sizemb/1024);
         Log.d("ThangTB", "memsize 1 is: "+size);
         Log.d("ThangTB", "memsize 2 is: "+sizekb);
         Log.d("ThangTB", "memsize 3 is: "+sizemb);
 
-        return sizemb;
+
+        //long   Total  = ( (long) statFs.getBlockCount() * (long) statFs.getBlockSize());
+        //return Total;
+
+        return sizeGB;
+    }
+
+    public long TotalMemory()
+    {
+        StatFs statFs = new StatFs(Environment.getDataDirectory().getPath());
+        //StatFs statFs = new StatFs(Environment.getRootDirectory().getAbsolutePath());
+        long   Total  = ( (long) statFs.getBlockCount() * (long) statFs.getBlockSize());
+        return Total;
+    }
+
+    public long FreeMemory()
+    {
+        StatFs statFs = new StatFs(Environment.getDataDirectory().getPath());
+        //StatFs statFs = new StatFs(Environment.getRootDirectory().getAbsolutePath());
+        long   Free   = (statFs.getAvailableBlocks() * (long) statFs.getBlockSize());
+        return Free;
+    }
+
+    public long BusyMemory()
+    {
+        StatFs statFs = new StatFs(Environment.getDataDirectory().getPath());
+        //StatFs statFs = new StatFs(Environment.getRootDirectory().getAbsolutePath());
+        long   Total  = ((long) statFs.getBlockCount() * (long) statFs.getBlockSize());
+        long   Free   = (statFs.getAvailableBlocks()   * (long) statFs.getBlockSize());
+        long   Busy   = Total - Free;
+        return Busy;
+    }
+
+    public static String floatForm (double d)
+    {
+        return new DecimalFormat("#.##").format(d);
+    }
+
+
+    public static String bytesToHuman (long size)
+    {
+        long Kb = 1  * 1024;
+        long Mb = Kb * 1024;
+        long Gb = Mb * 1024;
+        long Tb = Gb * 1024;
+        long Pb = Tb * 1024;
+        long Eb = Pb * 1024;
+
+        if (size <  Kb)                 return floatForm(        size     ) + " byte";
+        if (size >= Kb && size < Mb)    return floatForm((double)size / Kb) + " Kb";
+        if (size >= Mb && size < Gb)    return floatForm((double)size / Mb) + " Mb";
+        if (size >= Gb && size < Tb)    return floatForm((double)size / Gb) + " Gb";
+        if (size >= Tb && size < Pb)    return floatForm((double)size / Tb) + " Tb";
+        if (size >= Pb && size < Eb)    return floatForm((double)size / Pb) + " Pb";
+        if (size >= Eb)                 return floatForm((double)size / Eb) + " Eb";
+
+        return "???";
     }
 
     public static String getTotalInternalMemorySize() {
