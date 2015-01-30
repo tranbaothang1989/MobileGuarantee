@@ -81,18 +81,14 @@ public class SplashScreenActivity extends Activity{
 
         @Override
         protected Object doInBackground(Object... params) {
-            ArrayList<String> appliance = new ArrayList<String>();
             ArrayList<String> constant = new ArrayList<String>();
             try {
                 InputStream is = getAssets().open("htc.csv");
                 char c = '\t';
                 CsvReader products = new CsvReader(is, c, Charset.forName("UTF-8"));
-
                 //products.readHeaders();
 
-                HashMap<String, Model> mapModel = new HashMap<String, Model>();
                 HashMap<String, CorrectionEntity> mapCorrection = new HashMap<String, CorrectionEntity>();
-                //HashMap<String, ApplianceEntity> mapComponent = new HashMap<String, ApplianceEntity>();
                 ArrayList<Model> listModel = new ArrayList<Model>();
                 ArrayList<CorrectionEntity> listCorrection = new ArrayList<CorrectionEntity>();
                 ArrayList<ApplianceEntity> listAppliance = new ArrayList<ApplianceEntity>();
@@ -143,17 +139,17 @@ public class SplashScreenActivity extends Activity{
 
                 products.close();
 
-                Log.d("ThangTB", " list model before: " + listModel.size());
+                //Log.d("ThangTB", " list model before: " + listModel.size());
                 databaseHelper.insertModelList(listModel);
                 listModel = (ArrayList<Model>) databaseHelper.getAllModels();
-                Log.d("ThangTB", " list model after: "+ listModel.size());
+                //Log.d("ThangTB", " list model after: "+ listModel.size());
 
                 int modelSize = listModel.size();
 
                 ArrayList<MainModel> mainModelsTemp = (ArrayList<MainModel>) mainModels.clone();
                 HashMap<String, ArrayList<ApplianceEntity>> applianceMaps = new HashMap<String, ArrayList<ApplianceEntity>>();
 
-                Log.d("ThangTB", " list correction after: "+ listCorrection.size()+ "  time "+ new Date().getTime());
+                //Log.d("ThangTB", " list correction after: "+ listCorrection.size()+ "  time "+ new Date().getTime());
                 long time1 =new Date().getTime();
                 for (int i = 0; i < modelSize; i++) {
 
@@ -192,7 +188,7 @@ public class SplashScreenActivity extends Activity{
 
                 }
 
-                Log.d("ThangTB", " list correction after: "+ listCorrection.size()+ "  time "+ new Date().getTime());
+                //Log.d("ThangTB", " list correction after: "+ listCorrection.size()+ "  time "+ new Date().getTime());
 
                 databaseHelper.insertCorrections(listCorrection);
 
@@ -210,10 +206,10 @@ public class SplashScreenActivity extends Activity{
                     }
 
                 }
-                Log.d("ThangTB", " list listAppliance after: "+ listAppliance.size()+ "  time "+ new Date().getTime());
+                //Log.d("ThangTB", " list listAppliance after: "+ listAppliance.size()+ "  time "+ new Date().getTime());
                 databaseHelper.insertAppliances(listAppliance);
-                long time2 =new Date().getTime();
-                Log.d("ThangTB", " total time : "+ (time2-time1));
+                //long time2 =new Date().getTime();
+                //Log.d("ThangTB", " total time : "+ (time2-time1));
 
             } catch (FileNotFoundException e) {
                 e.printStackTrace();

@@ -63,16 +63,10 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 		btnSearchModel = (Button)findViewById(R.id.btn_search_model);
         llMyModel.setOnClickListener(this);
         llSearchModel.setOnClickListener(this);
-		//int btnWidth = (screenWidth*70)/100;
 		int btnHeight = (screenHeight*20)/100;
 
-		//btnMyModel.setWidth(btnWidth);
 		btnMyModel.setHeight(btnHeight);
         sModel        = Build.MODEL;
-        //sModel = "HTC One M8";
-        btnMyModel.setText(getResources().getString(R.string.btn_my_model)+" "+sModel);
-
-		//btnSearchModel.setWidth(btnWidth);
 		btnSearchModel.setHeight(btnHeight);
 		
 //		String sManufacturer = Build.MANUFACTURER;
@@ -80,15 +74,17 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 //        String sProduct      = Build.PRODUCT;
 //        String sModel        = Build.MODEL;
         databaseHelper = new DatabaseHelper(getApplicationContext());
-        int memSize = getInternalMemorySize();
+        double memSize = convertbytes(TotalMemory());
+        Log.d("ThangTB", "memsize = "+memSize );
         if (sModel.toLowerCase().equals("htc one") || sModel.toLowerCase().equals("htc one x")){
-            if (memSize > 32000){
+            if (memSize > 16){
                 sModel = sModel+" 32G";
-            }else if(memSize > 16000){
+            }else{
                 sModel = sModel+" 16G";
             }
         }
 
+        btnMyModel.setText(getResources().getString(R.string.btn_my_model)+" "+sModel);
         model = databaseHelper.getModel(sModel.toLowerCase());
         if (model.getId() ==0){
             llMyModel.setVisibility(View.GONE);
@@ -98,17 +94,12 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 
 
         tvTest.setTextColor(getResources().getColor(R.color.red));
-        Log.d("ThangTB", "memsize is: "+getTotalInternalMemorySize());
-
-
-        Log.d("ThangTB", "total:"+bytesToHuman(TotalMemory()));
-        Log.d("ThangTB", "free:"+bytesToHuman(FreeMemory()));
-        Log.d("ThangTB", "use:"+bytesToHuman(BusyMemory()));
 
         tvTest.setText("  Detect: Model:"+sModel+
                 "  total:"+bytesToHuman(TotalMemory())+
                 "  free:"+bytesToHuman(FreeMemory())+
                 "  use:"+bytesToHuman(BusyMemory()));
+        tvTest.setVisibility(View.GONE);
 		
 	}
 
@@ -141,25 +132,42 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
     {
         StatFs statFs = new StatFs(Environment.getDataDirectory().getPath());
         //StatFs statFs = new StatFs(Environment.getRootDirectory().getAbsolutePath());
-        long   Total  = ( (long) statFs.getBlockCount() * (long) statFs.getBlockSize());
-        return Total;
+        long total = 0;
+        if (Build.VERSION.SDK_INT <18) {
+            total = ((long) statFs.getBlockCount() * (long) statFs.getBlockSize());
+        }else{
+            total = ((long) statFs.getBlockCountLong() * (long) statFs.getBlockSizeLong());
+        }
+        return total;
     }
 
     public long FreeMemory()
     {
         StatFs statFs = new StatFs(Environment.getDataDirectory().getPath());
         //StatFs statFs = new StatFs(Environment.getRootDirectory().getAbsolutePath());
-        long   Free   = (statFs.getAvailableBlocks() * (long) statFs.getBlockSize());
-        return Free;
+        long free=0;
+        if (Build.VERSION.SDK_INT <18) {
+            free = (statFs.getAvailableBlocks() * (long) statFs.getBlockSize());
+        }else{
+            free = (statFs.getAvailableBlocksLong() * (long) statFs.getBlockSizeLong());
+        }
+        return free;
     }
 
     public long BusyMemory()
     {
         StatFs statFs = new StatFs(Environment.getDataDirectory().getPath());
         //StatFs statFs = new StatFs(Environment.getRootDirectory().getAbsolutePath());
-        long   Total  = ((long) statFs.getBlockCount() * (long) statFs.getBlockSize());
-        long   Free   = (statFs.getAvailableBlocks()   * (long) statFs.getBlockSize());
-        long   Busy   = Total - Free;
+        long total = 0;
+        long free = 0;
+        if (Build.VERSION.SDK_INT <18) {
+            total = ((long) statFs.getBlockCount() * (long) statFs.getBlockSize());
+            free = (statFs.getAvailableBlocks() * (long) statFs.getBlockSize());
+        }else{
+            total = ((long) statFs.getBlockCountLong() * (long) statFs.getBlockSizeLong());
+            free = (statFs.getAvailableBlocksLong() * (long) statFs.getBlockSizeLong());
+        }
+        long   Busy   = total - free;
         return Busy;
     }
 
@@ -187,6 +195,26 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
         if (size >= Eb)                 return floatForm((double)size / Eb) + " Eb";
 
         return "???";
+    }
+
+    public static double convertbytes (long size)
+    {
+        long Kb = 1  * 1024;
+        long Mb = Kb * 1024;
+        long Gb = Mb * 1024;
+        long Tb = Gb * 1024;
+        long Pb = Tb * 1024;
+        long Eb = Pb * 1024;
+
+        if (size <  Kb)                 return  size;
+        if (size >= Kb && size < Mb)    return (double)size / Kb;
+        if (size >= Mb && size < Gb)    return ((double)size / Mb);
+        if (size >= Gb && size < Tb)    return ((double)size / Gb);
+        if (size >= Tb && size < Pb)    return ((double)size / Tb);
+        if (size >= Pb && size < Eb)    return ((double)size / Pb);
+        if (size >= Eb)                 return ((double)size / Eb);
+
+        return 0;
     }
 
     public static String getTotalInternalMemorySize() {
