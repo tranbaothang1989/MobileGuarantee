@@ -74,15 +74,25 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 //        String sProduct      = Build.PRODUCT;
 //        String sModel        = Build.MODEL;
         databaseHelper = new DatabaseHelper(getApplicationContext());
-        double memSize = convertbytes(TotalMemory());
-        Log.d("ThangTB", "memsize = "+memSize );
-        if (sModel.toLowerCase().equals("htc one") || sModel.toLowerCase().equals("htc one x")){
+        double memSize = 0;
+
+        if (sModel.toLowerCase().equals("htc one")){
+            memSize = convertbytes(TotalMemory());
             if (memSize > 16){
                 sModel = sModel+" 32G";
             }else{
                 sModel = sModel+" 16G";
             }
         }
+        if(sModel.toLowerCase().equals("htc one x")){
+            memSize = convertbytes(getTotalExternalMemorySizeToInt());
+            if (memSize > 16){
+                sModel = sModel+" 32G";
+            }else{
+                sModel = sModel+" 16G";
+            }
+        }
+        Log.d("ThangTB", "memsize = "+memSize );
 
         btnMyModel.setText(getResources().getString(R.string.btn_my_model)+" "+sModel);
         model = databaseHelper.getModel(sModel.toLowerCase());
@@ -100,6 +110,12 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
                 "  free:"+bytesToHuman(FreeMemory())+
                 "  use:"+bytesToHuman(BusyMemory()));
         tvTest.setVisibility(View.GONE);
+
+//        Log.d("HTC One X", getAvailableInternalMemorySize());
+//        Log.d("HTC One X", getTotalInternalMemorySize1());
+//        Log.d("HTC One X", getAvailableExternalMemorySize());
+        //Log.d("HTC One X", getTotalExternalMemorySize());
+
 		
 	}
 
@@ -269,5 +285,88 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 			break;
 		}
 	}
+
+
+    //-----------------------------
+    public static boolean externalMemoryAvailable() {
+        return android.os.Environment.getExternalStorageState().equals(
+                android.os.Environment.MEDIA_MOUNTED);
+    }
+
+    public static String getAvailableInternalMemorySize() {
+        File path = Environment.getDataDirectory();
+        StatFs stat = new StatFs(path.getPath());
+        long blockSize = stat.getBlockSize();
+        long availableBlocks = stat.getAvailableBlocks();
+        return formatSize(availableBlocks * blockSize);
+    }
+
+    public static String getTotalInternalMemorySize1() {
+        File path = Environment.getDataDirectory();
+        StatFs stat = new StatFs(path.getPath());
+        long blockSize = stat.getBlockSize();
+        long totalBlocks = stat.getBlockCount();
+        return formatSize(totalBlocks * blockSize);
+    }
+
+    public static String getAvailableExternalMemorySize() {
+        if (externalMemoryAvailable()) {
+            File path = Environment.getExternalStorageDirectory();
+            StatFs stat = new StatFs(path.getPath());
+            long blockSize = stat.getBlockSize();
+            long availableBlocks = stat.getAvailableBlocks();
+            return formatSize(availableBlocks * blockSize);
+        } else {
+            return "ERROR";
+        }
+    }
+
+    public static String getTotalExternalMemorySize() {
+        if (externalMemoryAvailable()) {
+            File path = Environment.getExternalStorageDirectory();
+            StatFs stat = new StatFs(path.getPath());
+            long blockSize = stat.getBlockSize();
+            long totalBlocks = stat.getBlockCount();
+            return formatSize(totalBlocks * blockSize);
+        } else {
+            return "ERROR";
+        }
+    }
+
+    public static long getTotalExternalMemorySizeToInt() {
+        if (externalMemoryAvailable()) {
+            File path = Environment.getExternalStorageDirectory();
+            StatFs stat = new StatFs(path.getPath());
+            long blockSize = stat.getBlockSize();
+            long totalBlocks = stat.getBlockCount();
+            return (totalBlocks * blockSize);
+        } else {
+            return 0;
+        }
+    }
+
+    public static String formatSize1(long size) {
+        String suffix = null;
+
+        if (size >= 1024) {
+            suffix = "KB";
+            size /= 1024;
+            if (size >= 1024) {
+                suffix = "MB";
+                size /= 1024;
+            }
+        }
+
+        StringBuilder resultBuffer = new StringBuilder(Long.toString(size));
+
+        int commaOffset = resultBuffer.length() - 3;
+        while (commaOffset > 0) {
+            resultBuffer.insert(commaOffset, ',');
+            commaOffset -= 3;
+        }
+
+        if (suffix != null) resultBuffer.append(suffix);
+        return resultBuffer.toString();
+    }
 	
 }
