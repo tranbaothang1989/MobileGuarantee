@@ -83,7 +83,7 @@ public class SplashScreenActivity extends Activity{
         protected Object doInBackground(Object... params) {
             ArrayList<String> constant = new ArrayList<String>();
             try {
-                InputStream is = getAssets().open("htc.csv");
+                InputStream is = getAssets().open("htc11022015.csv");
                 char c = '\t';
                 CsvReader products = new CsvReader(is, c, Charset.forName("UTF-8"));
                 //products.readHeaders();
