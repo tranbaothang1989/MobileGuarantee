@@ -53,7 +53,7 @@ public class BrandActivity extends ActionBarActivity implements View.OnClickList
         imgAlcatel.getLayoutParams().width = imgWidth;
         imgHuawei.getLayoutParams().width = imgWidth;
 
-        Log.d("ThangTB", "on Create activity branch");
+//        Log.d("ThangTB", "on Create activity branch");
 
 //        imgHTC.getLayoutParams().height = imgHeight;
 //        imgLenovo.getLayoutParams().height = imgHeight;
@@ -64,13 +64,13 @@ public class BrandActivity extends ActionBarActivity implements View.OnClickList
 
     @Override
     protected void onResume() {
-        Log.d("ThangTB", "on onResume activity branch");
+//        Log.d("ThangTB", "on onResume activity branch");
         super.onResume();
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
-        Log.d("ThangTB", "on onConfigurationChanged activity branch");
+//        Log.d("ThangTB", "on onConfigurationChanged activity branch");
         super.onConfigurationChanged(newConfig);
     }
 

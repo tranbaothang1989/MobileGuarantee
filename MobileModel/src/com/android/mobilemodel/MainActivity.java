@@ -92,7 +92,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
                 sModel = sModel+" 16G";
             }
         }
-        Log.d("ThangTB", "memsize = "+memSize );
+//        Log.d("ThangTB", "memsize = "+memSize );
 
         btnMyModel.setText(getResources().getString(R.string.btn_my_model)+" "+sModel);
         model = databaseHelper.getModel(sModel.toLowerCase());
@@ -133,9 +133,9 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
         long sizekb = (size/1024);
         long sizemb = (sizekb/1024);
         int sizeGB = (int)(sizemb/1024);
-        Log.d("ThangTB", "memsize 1 is: "+size);
-        Log.d("ThangTB", "memsize 2 is: "+sizekb);
-        Log.d("ThangTB", "memsize 3 is: "+sizemb);
+//        Log.d("ThangTB", "memsize 1 is: "+size);
+//        Log.d("ThangTB", "memsize 2 is: "+sizekb);
+//        Log.d("ThangTB", "memsize 3 is: "+sizemb);
 
 
         //long   Total  = ( (long) statFs.getBlockCount() * (long) statFs.getBlockSize());

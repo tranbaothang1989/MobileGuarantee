@@ -166,7 +166,7 @@ public class ModelListActivity extends ActionBarActivity implements OnQueryTextL
 		// TODO Auto-generated method stub
 		Model item = (Model) adapter.getItem(position);
 		
-		Log.d("ThangTB", "click on :"+item.getModelName());
+		//Log.d("ThangTB", "click on :"+item.getModelName());
         Intent i = new Intent(getApplicationContext(), CorrectionListActivity.class);
         i.putExtra("model_item", item);
         startActivity(i);

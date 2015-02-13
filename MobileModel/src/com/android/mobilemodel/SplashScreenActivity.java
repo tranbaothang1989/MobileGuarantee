@@ -83,7 +83,7 @@ public class SplashScreenActivity extends Activity{
         protected Object doInBackground(Object... params) {
             ArrayList<String> constant = new ArrayList<String>();
             try {
-                InputStream is = getAssets().open("htc11022015.csv");
+                InputStream is = getAssets().open("htc12022015.csv");
                 char c = '\t';
                 CsvReader products = new CsvReader(is, c, Charset.forName("UTF-8"));
                 //products.readHeaders();
@@ -123,8 +123,18 @@ public class SplashScreenActivity extends Activity{
                     mainModel.setCorrectionName(correctionName);
                     mainModel.setApplianceCode(applianceCode);
                     mainModel.setApplianceName(applianceName);
-                    mainModel.setAppliancePrice(Integer.parseInt(appliancePrice.trim().equals("") ? "0": appliancePrice));
-                    mainModel.setFee(Integer.parseInt(fee.trim().equals("") ? "0": fee));
+                    mainModel.setAppliancePrice(0);
+                    mainModel.setFee(0);
+                    try {
+                        mainModel.setAppliancePrice(Integer.parseInt(appliancePrice.trim().equals("") ? "0": appliancePrice));
+                    }catch(Exception ex){
+                        Log.d("ThangTB", "can not parser appliancePrice : "+appliancePrice.trim());
+                    }
+                    try {
+                        mainModel.setFee(Integer.parseInt(fee.trim().equals("") ? "0": fee));
+                    }catch(Exception ex){
+                        Log.d("ThangTB", "can not parser fee : "+fee.trim());
+                    }
                     mainModels.add(mainModel);
 
                     if (!constant.contains(modelName)) {
@@ -223,7 +233,7 @@ public class SplashScreenActivity extends Activity{
         @Override
         protected void onPostExecute(Object result) {
             // TODO Auto-generated method stub
-            Log.d("ThangTB", "import done");
+            //Log.d("ThangTB", "import done");
             super.onPostExecute(result);
 
             StartMainActivity();

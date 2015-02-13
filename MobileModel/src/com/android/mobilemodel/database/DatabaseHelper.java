@@ -12,7 +12,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteStatement;
-import android.util.Log;
+//import android.util.Log;
 
 import com.android.mobilemodel.Contants;
 import com.android.mobilemodel.entity.ApplianceEntity;
@@ -118,7 +118,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		values.put(COL_MODEL_CODE, model.getModelName());
 		values.put(COL_CREATED_AT, getDateTime());
 
-		Log.d("ThangTB", " insert model "+model.getModelName());
+//		Log.d("ThangTB", " insert model "+model.getModelName());
 		// insert row
 //		long model_id = db.insert(TABLE_MODEL, null, values);
 		long model_id = db.insertWithOnConflict(TABLE_MODEL, null, values, SQLiteDatabase.CONFLICT_REPLACE);
@@ -185,7 +185,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 		String selectQuery = "SELECT  * FROM " + TABLE_MODEL + " WHERE "
 				+ COL_MODEL_CODE + " like '%"+modelName+"%'";
-		Log.e(LOG, selectQuery);
+		//Log.e(LOG, selectQuery);
 		Cursor c = db.rawQuery(selectQuery, null);
 		
 		Model model = new Model();
@@ -311,7 +311,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	 * Inserting a model
 	 */
 	public int insertCorrections(ArrayList<CorrectionEntity> listCorrections) {
-		Log.d("ThangTB", "====> insertAppliances "+ listCorrections.size());
+//		Log.d("ThangTB", "====> insertAppliances "+ listCorrections.size());
 		SQLiteDatabase db = this.getWritableDatabase();
 		db.beginTransaction();
 		try {
@@ -341,7 +341,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	 * Inserting a model
 	 */
 	public int insertAppliances(ArrayList<ApplianceEntity> listAppliances) {
-		Log.d("ThangTB", "====> insertAppliances "+ listAppliances.size());
+//		Log.d("ThangTB", "====> insertAppliances "+ listAppliances.size());
 		SQLiteDatabase db = this.getWritableDatabase();
 		db.beginTransaction();
 		try {
@@ -410,7 +410,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		String selectQuery = "SELECT  * FROM " + TABLE_APPLIANCE
 				+ " WHERE "+ COL_APP_COR_ID + " like '" + cor_id + "'";
 
-		Log.e(LOG, selectQuery);
+		//Log.e(LOG, selectQuery);
 
 		SQLiteDatabase db = this.getReadableDatabase();
 		Cursor c = db.rawQuery(selectQuery, null);
