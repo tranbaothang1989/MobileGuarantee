@@ -1,18 +1,16 @@
 package com.android.mobilemodel.adapter;
 
-import java.util.ArrayList;
-
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.android.mobilemodel.R;
 import com.android.mobilemodel.entity.Model;
+
+import java.util.ArrayList;
 
 public class ModelAdapter extends BaseAdapter {
 
@@ -53,14 +51,6 @@ public class ModelAdapter extends BaseAdapter {
 			holder = (ViewHolder) convertView.getTag();
 		}
 		holder.tvName.setText(model.getModelName());
-//		convertView.setOnClickListener(new OnClickListener() {
-//			
-//			@Override
-//			public void onClick(View v) {
-//				// TODO Auto-generated method stub
-//				Log.d("ThangTB", "click------------");
-//			}
-//		});
         return convertView;
 	}
 

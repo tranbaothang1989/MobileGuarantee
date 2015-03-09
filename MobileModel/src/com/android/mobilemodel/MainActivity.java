@@ -1,24 +1,12 @@
 package com.android.mobilemodel;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.Charset;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.StatFs;
 import android.support.v7.app.ActionBarActivity;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -26,11 +14,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.android.mobilemodel.database.DatabaseHelper;
-import com.android.mobilemodel.entity.ApplianceEntity;
-import com.android.mobilemodel.entity.CorrectionEntity;
-import com.android.mobilemodel.entity.MainModel;
 import com.android.mobilemodel.entity.Model;
-import com.csvreader.CsvReader;
+
+import java.io.File;
+import java.text.DecimalFormat;
 
 public class MainActivity extends ActionBarActivity implements OnClickListener{
 
@@ -110,22 +97,13 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
                 "  free:"+bytesToHuman(FreeMemory())+
                 "  use:"+bytesToHuman(BusyMemory()));
         tvTest.setVisibility(View.GONE);
-
-//        Log.d("HTC One X", getAvailableInternalMemorySize());
-//        Log.d("HTC One X", getTotalInternalMemorySize1());
-//        Log.d("HTC One X", getAvailableExternalMemorySize());
-        //Log.d("HTC One X", getTotalExternalMemorySize());
-
-		
 	}
 
     /*
         return num of MB
      */
     public static int getInternalMemorySize() {
-       // File path = Environment.getDataDirectory();
         StatFs stat = new StatFs(Environment.getDataDirectory().getPath());
-        //StatFs stat = new StatFs(Environment.getRootDirectory().getAbsolutePath());
         long blockSize = stat.getBlockSize();
         long totalBlocks = stat.getBlockCount();
 
@@ -133,21 +111,12 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
         long sizekb = (size/1024);
         long sizemb = (sizekb/1024);
         int sizeGB = (int)(sizemb/1024);
-//        Log.d("ThangTB", "memsize 1 is: "+size);
-//        Log.d("ThangTB", "memsize 2 is: "+sizekb);
-//        Log.d("ThangTB", "memsize 3 is: "+sizemb);
-
-
-        //long   Total  = ( (long) statFs.getBlockCount() * (long) statFs.getBlockSize());
-        //return Total;
-
         return sizeGB;
     }
 
     public long TotalMemory()
     {
         StatFs statFs = new StatFs(Environment.getDataDirectory().getPath());
-        //StatFs statFs = new StatFs(Environment.getRootDirectory().getAbsolutePath());
         long total = 0;
         if (Build.VERSION.SDK_INT <18) {
             total = ((long) statFs.getBlockCount() * (long) statFs.getBlockSize());
@@ -160,7 +129,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
     public long FreeMemory()
     {
         StatFs statFs = new StatFs(Environment.getDataDirectory().getPath());
-        //StatFs statFs = new StatFs(Environment.getRootDirectory().getAbsolutePath());
         long free=0;
         if (Build.VERSION.SDK_INT <18) {
             free = (statFs.getAvailableBlocks() * (long) statFs.getBlockSize());
@@ -173,7 +141,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
     public long BusyMemory()
     {
         StatFs statFs = new StatFs(Environment.getDataDirectory().getPath());
-        //StatFs statFs = new StatFs(Environment.getRootDirectory().getAbsolutePath());
         long total = 0;
         long free = 0;
         if (Build.VERSION.SDK_INT <18) {
@@ -276,7 +243,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
 			startActivity(i);
 			break;
 		case R.id.ll_search_model:
-			//Intent i2 = new Intent(getApplicationContext(), ModelListActivity.class);
             Intent i2 = new Intent(getApplicationContext(), BrandActivity.class);
 			startActivity(i2);
 			break;

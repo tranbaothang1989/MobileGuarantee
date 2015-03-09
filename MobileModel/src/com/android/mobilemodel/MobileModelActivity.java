@@ -1,6 +1,17 @@
 package com.android.mobilemodel;
 
-import java.util.ArrayList;
+import android.app.Activity;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.android.mobilemodel.database.DatabaseHelper;
 import com.android.mobilemodel.entity.MainModel;
@@ -8,23 +19,10 @@ import com.android.mobilemodel.entity.Model;
 import com.android.mobilemodel.entity.Price;
 import com.android.mobilemodel.fragment.ModelDetailFragment;
 import com.android.mobilemodel.fragment.ModelFragment;
-import com.android.mobilemodel.fragment.NavigationDrawerFragment;
 import com.android.mobilemodel.fragment.ModelFragment.OnClickItemList;
+import com.android.mobilemodel.fragment.NavigationDrawerFragment;
 
-import android.app.Activity;
-import android.os.Build;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
+import java.util.ArrayList;
 
 
 public class MobileModelActivity extends ActionBarActivity
