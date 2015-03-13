@@ -4,13 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <com.android.mobilemodel.view.AnimatedExpandableListView
+    <com.suntelecom.mobilewaranty.view.AnimatedExpandableListView
         android:id="@+id/expandable_lv_model"
         android:layout_width="match_parent"
         android:visibility="gone"
         android:layout_height="wrap_content">
         
-    </com.android.mobilemodel.view.AnimatedExpandableListView>
+    </com.suntelecom.mobilewaranty.view.AnimatedExpandableListView>
 
     <ListView
         android:id="@+id/lv_model"

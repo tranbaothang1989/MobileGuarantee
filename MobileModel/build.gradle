@@ -16,6 +16,14 @@ android {
         }
     }
 
+//    defaultConfig {
+//        applicationId "com.suntelecom.mobilewaranty"
+//        minSdkVersion 8
+//        targetSdkVersion 17
+//        versionCode 1
+//        versionName "1.0"
+//    }
+
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
