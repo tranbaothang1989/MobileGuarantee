@@ -1,0 +1,610 @@
+LDT		Model App	Mã Sửa Chữa	Sửa Chữa	Mã LK	Linh Kiện	Loại Bảo Hành	Tiền linh kiện	Tiền Công Sửa	Mức Sửa
+Lenovo		Lenovo A269i	LNV-2.10	Thay Bo mạch chính	5B29A6MYK0	Bo mạch chính Lenovo A269i	YES	1090000	200000	M2
+Lenovo		Lenovo A316i	LNV-2.10	Thay Bo mạch chính	5B29A467SH	Bo mạch chính Lenovo A316i	YES	1360000	200000	M2
+Lenovo		Lenovo A319	LNV-2.10	Thay Bo mạch chính	5B29A6N43A	Bo mạch chính Lenovo A319	YES	1330000	250000	M2.5
+Lenovo		Lenovo A328	LNV-2.10	Thay Bo mạch chính	5B29A6N2BT	Bo mạch chính Lenovo A328 8G	YES	2080000	250000	M2.5
+Lenovo		Lenovo A369i	LNV-2.10	Thay Bo mạch chính	5P69A464Z8	Bo mạch chính Lenovo A369I	YES	960000	200000	M2
+Lenovo		Lenovo A390	LNV-2.10	Thay Bo mạch chính	5B29A465B4	Bo mạch chính Lenovo A390	YES	1000000	200000	M2
+Lenovo		Lenovo A5000	LNV-2.10	Thay Bo mạch chính	5B28C00738	Bo mạch chính Lenovo A5000	YES	1570000	250000	M2.5
+Lenovo		Lenovo A516	LNV-2.10	Thay Bo mạch chính	5B29A464CN	Bo mạch chính Lenovo A516	YES	1300000	200000	M2
+Lenovo		Lenovo A526	LNV-2.10	Thay Bo mạch chính	5B29A6MW51	Bo mạch chính Lenovo A526 (4G)	YES	1720000	200000	M2
+Lenovo		Lenovo A536	LNV-2.10	Thay Bo mạch chính	5B29A6N0D9	Bo mạch chính 8G Lenovo A536	YES	1800000	250000	M2.5
+Lenovo		Lenovo A6000	LNV-2.10	Thay Bo mạch chính	5B28C00654	Bo mạch chính Lenovo A6000	YES	1960000	300000	M3
+Lenovo		Lenovo A680	LNV-2.10	Thay Bo mạch chính	5B29A4671W	Bo mạch chính Lenovo A680	YES	760000	250000	M2.5
+Lenovo		Lenovo A706	LNV-2.10	Thay Bo mạch chính	SP69A43642	Bo mạch chính Lenovo A706	YES	2080000	200000	M2
+Lenovo		Lenovo A850	LNV-2.10	Thay Bo mạch chính	5P69A464OV	Bo mạch chính Lenovo A850	YES	1530000	200000	M2
+Lenovo		Lenovo A859	LNV-2.10	Thay Bo mạch chính	5B29A467PI	Bo mạch chính Lenovo A859	YES	1580000	200000	M2
+Lenovo		Lenovo K900_16G	LNV-2.10	Thay Bo mạch chính	5B29A463W0	Bo mạch chính Lenovo K900	YES	4340000	200000	M2
+Lenovo		Lenovo K900_32G	LNV-2.10	Thay Bo mạch chính	5B29A464CK	Bo mạch chính Lenovo K900_32G	YES	4450000	200000	M2
+Lenovo		Lenovo K910L	LNV-2.10	Thay Bo mạch chính	5B29A4673A	Bo mạch chính Lenovo K910L	YES	4270000	200000	M2
+Lenovo		Lenovo P700i	LNV-2.10	Thay Bo mạch chính	SP69A15470	Bo mạch chính Lenovo P700i	YES	1410000	200000	M2
+Lenovo		Lenovo P70-A	LNV-2.10	Thay Bo mạch chính	5B28C00449	Bo mạch chính 16G Lenovo P70-A	YES	2680000	300000	M3
+Lenovo		Lenovo P770	LNV-2.10	Thay Bo mạch chính	5P69A15684	Bo mạch chính Lenovo P770	YES	2090000	200000	M2
+Lenovo		Lenovo P780_4G	LNV-2.10	Thay Bo mạch chính	5B29A462LE	Bo mạch chính Lenovo P780	YES	1850000	200000	M2
+Lenovo		Lenovo P780_8G	LNV-2.10	Thay Bo mạch chính	5B29A4647N	Bo mạch chính Lenovo P780_8G	YES	2150000	200000	M2
+Lenovo		Lenovo S580	LNV-2.10	Thay Bo mạch chính	5B29A6N2YN	Bo mạch chính Lenovo S580	YES	840000	300000	M3
+Lenovo		Lenovo S650	LNV-2.10	Thay Bo mạch chính	5B29A4666J	Bo mạch chính Lenovo S650	YES	1440000	200000	M2
+Lenovo		Lenovo S660	LNV-2.10	Thay Bo mạch chính	5B29A6MVXT	Bo mạch chính Lenovo S660	YES	2030000	300000	M3
+Lenovo		Lenovo S820	LNV-2.10	Thay Bo mạch chính	5B29A462LD	Bo mạch chính Lenovo S820	YES	1790000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.10	Thay Bo mạch chính	5B29A4647L	Bo mạch chính Lenovo S820_8G	YES	1790000	200000	M2
+Lenovo		Lenovo S850	LNV-2.10	Thay Bo mạch chính	5B29A6MYK4	Bo mạch chính Lenovo S850	YES	1810000	200000	M2
+Lenovo		Lenovo S850	LNV-2.10	Thay Bo mạch chính	5D79A467EN	Miếng đệm loa sau Lenovo S850	YES	20000	200000	M2
+Lenovo		Lenovo S860	LNV-2.10	Thay Bo mạch chính	5B29A6MW3E	Bo mạch chính Lenovo S860	YES	2160000	200000	M2
+Lenovo		Lenovo S90-A_32G	LNV-2.10	Thay Bo mạch chính	5B28C00166	Bo mạch chính Lenovo S90-A	YES	2470000	300000	M3
+Lenovo		Lenovo S920	LNV-2.10	Thay Bo mạch chính	SP69A45655	Bo mạch chính Lenovo S920 4G	YES	2000000	250000	M2.5
+Lenovo		Lenovo S920_8G	LNV-2.10	Thay Bo mạch chính	5B29A464CB	Bo mạch chính Lenovo S920_8G	YES	1730000	200000	M2
+Lenovo		Lenovo S930	LNV-2.10	Thay Bo mạch chính	5B29A465W1	Bo mạch chính Lenovo S930	YES	1710000	200000	M2
+Lenovo		Lenovo S960	LNV-2.10	Thay Bo mạch chính	5B29A465BR	Bo mạch chính Lenovo S960	YES	2730000	200000	M2
+Lenovo		Lenovo X2	LNV-2.10	Thay Bo mạch chính	5B29A6N4SY	Bo mạch chính Lenovo X2	YES	4780000	300000	M3
+Lenovo		Lenovo A5000	LNV-2.11	Thay Bo Phụ	5P68C00749	Bo anten phụ Lenovo A5000	YES	80000	200000	M2
+Lenovo		Lenovo A516	LNV-2.11	Thay Bo Phụ	SP69A44847	Bo phụ Lenovo A516	YES	100000	200000	M2
+Lenovo		Lenovo A6000	LNV-2.11	Thay Bo Phụ	5P68C00653	Bo phụ Lenovo A6000	YES	40000	300000	M3
+Lenovo		Lenovo A706	LNV-2.11	Thay Bo Phụ	SP69A44034	Bo phụ Lenovo A706	YES	60000	200000	M2
+Lenovo		Lenovo A850	LNV-2.11	Thay Bo Phụ	5P69A464OY	Bo phụ Lenovo A850	YES	190000	200000	M2
+Lenovo		Lenovo A859	LNV-2.11	Thay Bo Phụ	5P69A467PO	Bo phụ Lenovo A859	YES	110000	200000	M2
+Lenovo		Lenovo K900_16G	LNV-2.11	Thay Bo Phụ	5F79A4640R	Cáp phụ (Micro, chuông, jack sạc/ tai nghe) Lenovo K900	YES	490000	200000	M2
+Lenovo		Lenovo K900_32G	LNV-2.11	Thay Bo Phụ	5F79A4640R	Cáp phụ (Micro, chuông, jack sạc/ tai nghe) Lenovo K900	YES	490000	200000	M2
+Lenovo		Lenovo P70-A	LNV-2.11	Thay Bo Phụ	5P68C00466	Bo phụ Lenovo P70-A	YES	50000	300000	M3
+Lenovo		Lenovo P770	LNV-2.11	Thay Bo Phụ	5P69A15269	Bo phụ Lenovo P770	YES	140000	200000	M2
+Lenovo		Lenovo P780_4G	LNV-2.11	Thay Bo Phụ	SP69A15601	Bo phụ Lenovo P780_8G	YES	120000	200000	M2
+Lenovo		Lenovo P780_8G	LNV-2.11	Thay Bo Phụ	SP69A15601	Bo phụ Lenovo P780_8G	YES	120000	200000	M2
+Lenovo		Lenovo S580	LNV-2.11	Thay Bo Phụ	5P69A6N2YF	Bo phụ Lenovo S580	YES	10000	250000	M2.5
+Lenovo		Lenovo S650	LNV-2.11	Thay Bo Phụ	SP69A4629X	Bo phụ Lenovo S650	YES	110000	200000	M2
+Lenovo		Lenovo S660	LNV-2.11	Thay Bo Phụ	5P69A6MVY8	Bo phụ Lenovo S660	YES	610000	200000	M2
+Lenovo		Lenovo S820	LNV-2.11	Thay Bo Phụ	SP69A15532	Bo phụ Lenovo S820_8G	YES	140000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.11	Thay Bo Phụ	SP69A15532	Bo phụ Lenovo S820_8G	YES	140000	200000	M2
+Lenovo		Lenovo S860	LNV-2.11	Thay Bo Phụ	5P69A6MW3F	Bo phụ Lenovo S860	YES	200000	200000	M2
+Lenovo		Lenovo S920	LNV-2.11	Thay Bo Phụ	5P69A15507	Bo phụ Lenovo S920	YES	110000	200000	M2
+Lenovo		Lenovo S930	LNV-2.11	Thay Bo Phụ	SP69A462NL	Bo phụ Lenovo S930	YES	150000	200000	M2
+Lenovo		Lenovo X2	LNV-2.11	Thay Bo Phụ	5P69A6N4T8	Bo phụ Lenovo X2	YES	260000	300000	M3
+Lenovo		Lenovo P780_4G	LNV-2.12	Thay Bo SIM	SP69A15602	Bo SIM Lenovo P780_8G	YES	70000	200000	M2
+Lenovo		Lenovo P780_8G	LNV-2.12	Thay Bo SIM	SP69A15602	Bo SIM Lenovo P780_8G	YES	70000	200000	M2
+Lenovo		Lenovo A319	LNV-2.200	Thay Màn hình có cảm ứng	5D69A6N43B	Màn hình có cảm ứng Lenovo A319	YES	800000	200000	M2
+Lenovo		Lenovo A526	LNV-2.200	Thay Màn hình có cảm ứng	5D69A6MW4Y	Màn hình có cảm ứng Lenovo A526	YES	1320000	200000	M2
+Lenovo		Lenovo A6000	LNV-2.200	Thay Màn hình có cảm ứng	5D68C00655	Màn hình có cảm ứng Lenovo A6000	YES	1150000	300000	M3
+Lenovo		Lenovo K900_16G	LNV-2.200	Thay Màn hình có cảm ứng	SD19A39424	Màn hình có cảm ứng Lenovo K900	YES	2780000	300000	M3
+Lenovo		Lenovo K900_16G	LNV-2.200	Thay Màn hình có cảm ứng	SMO9A44693	Khung sườn có keo dán màn hình và cảm ứng Lenovo K900	YES	530000	300000	M3
+Lenovo		Lenovo K900_32G	LNV-2.200	Thay Màn hình có cảm ứng	SD19A39424	Màn hình có cảm ứng Lenovo K900	YES	2780000	300000	M3
+Lenovo		Lenovo K900_32G	LNV-2.200	Thay Màn hình có cảm ứng	SMO9A44693	Khung sườn có keo dán màn hình và cảm ứng Lenovo K900	YES	530000	300000	M3
+Lenovo		Lenovo P700i	LNV-2.200	Thay Màn hình có cảm ứng	5D19A39234	Màn hình Lenovo P700i	YES	920000	250000	M2.5
+Lenovo		Lenovo P70-A	LNV-2.200	Thay Màn hình có cảm ứng	5D68C00450	Màn hình có cảm ứng Lenovo P70-A	YES	1550000	300000	M3
+Lenovo		Lenovo P780_4G	LNV-2.200	Thay Màn hình có cảm ứng	5D79A463TI	Keo dán cảm ứng Lenovo P780_8G	YES	50000	250000	M2.5
+Lenovo		Lenovo P780_4G	LNV-2.200	Thay Màn hình có cảm ứng	SD19A39381	Màn hình có cảm ứng Lenovo P780_8G	YES	2070000	300000	M3
+Lenovo		Lenovo P780_8G	LNV-2.200	Thay Màn hình có cảm ứng	5D79A463TI	Keo dán cảm ứng Lenovo P780_8G	YES	50000	250000	M2.5
+Lenovo		Lenovo P780_8G	LNV-2.200	Thay Màn hình có cảm ứng	SD19A39381	Màn hình có cảm ứng Lenovo P780_8G	YES	2070000	300000	M3
+Lenovo		Lenovo S660	LNV-2.200	Thay Màn hình có cảm ứng	5D69A6MVY7	Màn hình có cảm ứng và vỏ mặt trước Lenovo S660	YES	1740000	300000	M3
+Lenovo		Lenovo S820	LNV-2.200	Thay Màn hình có cảm ứng	SD19A39401	Màn hình có cảm ứng (đen) Lenovo S820_8G	YES	2170000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.200	Thay Màn hình có cảm ứng	SD19A39401	Màn hình có cảm ứng (đen) Lenovo S820_8G	YES	2170000	200000	M2
+Lenovo		Lenovo S860	LNV-2.200	Thay Màn hình có cảm ứng	5D69A6MW3C	Màn hình có cảm ứng và vỏ mặt trước Lenovo S860	YES	2170000	200000	M2
+Lenovo		Lenovo S920	LNV-2.200	Thay Màn hình có cảm ứng	5D19A39353	Màn hình có cảm ứng (đen) Lenovo S920	YES	2350000	200000	M2
+Lenovo		Lenovo S920	LNV-2.200	Thay Màn hình có cảm ứng	5D79A4639T	Keo dán cảm ứng Lenovo S920	YES	50000	250000	M2.5
+Lenovo		Lenovo S920_8G	LNV-2.200	Thay Màn hình có cảm ứng	5D19A39353	Màn hình có cảm ứng (đen) Lenovo S920	YES	2350000	200000	M2
+Lenovo		Lenovo S920_8G	LNV-2.200	Thay Màn hình có cảm ứng	5D79A4639T	Keo dán cảm ứng Lenovo S920	YES	50000	250000	M2.5
+Lenovo		Lenovo S930	LNV-2.200	Thay Màn hình có cảm ứng	5D69A465W2	Màn hình có cảm ứng và vỏ mặt trước Lenovo S930	YES	2550000	200000	M2
+Lenovo		Lenovo S960	LNV-2.200	Thay Màn hình có cảm ứng	5D69A465L8	Màn hình có cảm ứng và vỏ mặt trước Lenovo S960	YES	3090000	200000	M2
+Lenovo		Lenovo X2	LNV-2.200	Thay Màn hình có cảm ứng	5D69A6N4T7	Màn hình có cảm ứng Lenovo X2	YES	2120000	300000	M3
+Lenovo		Lenovo A319	LNV-2.201	Thay Màn hình có cảm ứng (đen)	5D69A6N43B	Màn hình có cảm ứng Lenovo A319	YES	800000	200000	M2
+Lenovo		Lenovo A328	LNV-2.201	Thay Màn hình có cảm ứng (đen)	5D19A6N2BU	Màn hình có cảm ứng và vỏ mặt trước (đen) Lenovo A328	YES	880000	250000	M2.5
+Lenovo		Lenovo A5000	LNV-2.201	Thay Màn hình có cảm ứng (đen)	5D68C00742	Màn hình có cảm ứng (đen) Lenovo A5000	YES	1030000	250000	M2.5
+Lenovo		Lenovo A536	LNV-2.201	Thay Màn hình có cảm ứng (đen)	5D69A6N0DB	Màn hình có cảm ứng và vỏ mặt trước (đen) Lenovo A536	YES	1240000	250000	M2.5
+Lenovo		Lenovo A680	LNV-2.201	Thay Màn hình có cảm ứng (đen)	5D69A4671U	Màn hình có cảm ứng và vỏ mặt trước (đen) Lenovo A680	YES	1240000	300000	M3
+Lenovo		Lenovo A850	LNV-2.201	Thay Màn hình có cảm ứng (đen)	5T59A464P1	Màn hình có cảm ứng và vỏ mặt trước Lenovo A850 (đen)	YES	1100000	300000	M3
+Lenovo		Lenovo A859	LNV-2.201	Thay Màn hình có cảm ứng (đen)	5D69A6MWTE	Màn hình (xám) Lenovo A859	YES	1860000	300000	M3
+Lenovo		Lenovo K910L	LNV-2.201	Thay Màn hình có cảm ứng (đen)	5D69A4673B	Bộ màn hình có cảm ứng và vỏ mặt trước (đen) Lenovo K910L	YES	3100000	300000	M3
+Lenovo		Lenovo S580	LNV-2.201	Thay Màn hình có cảm ứng (đen)	5D69A6N3EU	Màn hình có cảm ứng (đen) Lenovo S580	YES	1600000	250000	M2.5
+Lenovo		Lenovo S650	LNV-2.201	Thay Màn hình có cảm ứng (đen)	SD69A462FT	Màn hình có cảm ứng Lenovo S650 (đen)	YES	1310000	200000	M2
+Lenovo		Lenovo S820	LNV-2.201	Thay Màn hình có cảm ứng (đen)	5S59A463PK	Khung vỏ mặt trước có keo dán cảm ứng (xám) Lenovo S820_8G	YES	310000	250000	M2.5
+Lenovo		Lenovo S820	LNV-2.201	Thay Màn hình có cảm ứng (đen)	SD19A39401	Màn hình có cảm ứng (đen) Lenovo S820_8G	YES	2170000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.201	Thay Màn hình có cảm ứng (đen)	5S59A463PK	Khung vỏ mặt trước có keo dán cảm ứng (xám) Lenovo S820_8G	YES	310000	250000	M2.5
+Lenovo		Lenovo S820_8G	LNV-2.201	Thay Màn hình có cảm ứng (đen)	SD19A39401	Màn hình có cảm ứng (đen) Lenovo S820_8G	YES	2170000	200000	M2
+Lenovo		Lenovo S850	LNV-2.201	Thay Màn hình có cảm ứng (đen)	5D69A6N0GC	Màn hình có cảm ứng và vỏ mặt trước (đen) Lenovo S850	YES	1910000	250000	M2.5
+Lenovo		Lenovo S90-A_32G	LNV-2.201	Thay Màn hình có cảm ứng (đen)	5D68C00172	Màn hình có cảm ứng (xám) Lenovo S90-A	YES	1530000	300000	M3
+Lenovo		Lenovo A328	LNV-2.202	Thay Màn hình có cảm ứng (trắng)	5D19A6N2BV	Màn hình có cảm ứng và vỏ mặt trước (trắng) Lenovo A328	YES	880000	250000	M2.5
+Lenovo		Lenovo A5000	LNV-2.202	Thay Màn hình có cảm ứng (trắng)	5D68C01819	Màn hình có cảm ứng (trắng) Lenovo A5000	YES	1030000	250000	M2.5
+Lenovo		Lenovo A536	LNV-2.202	Thay Màn hình có cảm ứng (trắng)	5D69A6N0DA	Màn hình có cảm ứng và vỏ mặt trước (trắng) Lenovo A536	YES	1240000	250000	M2.5
+Lenovo		Lenovo A680	LNV-2.202	Thay Màn hình có cảm ứng (trắng)	5D69A467LB	Màn hình có cảm ứng và vỏ mặt trước (trắng) Lenovo A680	YES	1210000	300000	M3
+Lenovo		Lenovo A850	LNV-2.202	Thay Màn hình có cảm ứng (trắng)	5T59A464Y8	Màn hình có cảm ứng và vỏ mặt trước (trắng) Lenovo A850	YES	1060000	300000	M3
+Lenovo		Lenovo A859	LNV-2.202	Thay Màn hình có cảm ứng (trắng)	5D69A467PK	Màn hình có cảm ứng (trắng) Lenovo A859	YES	1730000	300000	M3
+Lenovo		Lenovo S580	LNV-2.202	Thay Màn hình có cảm ứng (trắng)	5D68C00148	Màn hình có cảm ứng (silver) Lenovo S580	YES	2090000	300000	M3
+Lenovo		Lenovo S650	LNV-2.202	Thay Màn hình có cảm ứng (trắng)	5D69A46629	Màn hình có cảm ứng (trắng) Lenovo S650	YES	1290000	200000	M2
+Lenovo		Lenovo S650	LNV-2.202	Thay Màn hình có cảm ứng (trắng)	5S59A4662B	Khung vỏ mặt trước có keo dán cảm ứng (trắng) Lenovo S650	YES	330000	250000	M2.5
+Lenovo		Lenovo S820	LNV-2.202	Thay Màn hình có cảm ứng (trắng)	SD19A39401	Màn hình có cảm ứng (đen) Lenovo S820_8G	YES	2170000	200000	M2
+Lenovo		Lenovo S820	LNV-2.202	Thay Màn hình có cảm ứng (trắng)	SMO9A09856	Khung vỏ mặt trước có keo dán cảm ứng (trắng) Lenovo S820_8G	YES	300000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.202	Thay Màn hình có cảm ứng (trắng)	SD19A39401	Màn hình có cảm ứng (đen) Lenovo S820_8G	YES	2170000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.202	Thay Màn hình có cảm ứng (trắng)	SMO9A09856	Khung vỏ mặt trước có keo dán cảm ứng (trắng) Lenovo S820_8G	YES	300000	200000	M2
+Lenovo		Lenovo S850	LNV-2.202	Thay Màn hình có cảm ứng (trắng)	5D69A6MYK6	Màn hình có cảm ứng và vỏ mặt trước (trắng) Lenovo S850	YES	1910000	250000	M2.5
+Lenovo		Lenovo S580	LNV-2.203	Thay Màn hình có cảm ứng (vàng)	5D68C00151	Màn hình có cảm ứng (gold) Lenovo S580	YES	1480000	300000	M3
+Lenovo		Lenovo S90-A_32G	LNV-2.203	Thay Màn hình có cảm ứng (vàng)	5D68C00174	Màn hình có cảm ứng (vàng) Lenovo S90-A	YES	1540000	300000	M3
+Lenovo		Lenovo S580	LNV-2.204	Thay Màn hình có cảm ứng (bạc)	5D68C00148	Màn hình có cảm ứng (silver) Lenovo S580	YES	2090000	300000	M3
+Lenovo		Lenovo S90-A_32G	LNV-2.204	Thay Màn hình có cảm ứng (bạc)	5D68C00232	Màn hình có cảm ứng (bạc) Lenovo S90-A	YES	1530000	300000	M3
+Lenovo		Lenovo A526	LNV-2.210	Thay Màn hình có cảm ứng (đỏ)	5D69A6MW4Y	Màn hình có cảm ứng Lenovo A526	YES	1320000	200000	M2
+Lenovo		Lenovo S820	LNV-2.210	Thay Màn hình có cảm ứng (đỏ)	SD19A39401	Màn hình có cảm ứng (đen) Lenovo S820_8G	YES	2170000	200000	M2
+Lenovo		Lenovo S820	LNV-2.210	Thay Màn hình có cảm ứng (đỏ)	SMO9A45601	Khung vỏ mặt trước có keo dán cảm ứng (đỏ) Lenovo S820_8G	YES	310000	250000	M2.5
+Lenovo		Lenovo S820_8G	LNV-2.210	Thay Màn hình có cảm ứng (đỏ)	SD19A39401	Màn hình có cảm ứng (đen) Lenovo S820_8G	YES	2170000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.210	Thay Màn hình có cảm ứng (đỏ)	SMO9A45601	Khung vỏ mặt trước có keo dán cảm ứng (đỏ) Lenovo S820_8G	YES	310000	250000	M2.5
+Lenovo		Lenovo S960	LNV-2.210	Thay Màn hình có cảm ứng (đỏ)	5D69A465L8	Màn hình có cảm ứng và vỏ mặt trước Lenovo S960	YES	3090000	200000	M2
+Lenovo		Lenovo A269i	LNV-2.220	Thay Màn hình	SD19A44464	Màn hình Lenovo A269i	YES	320000	200000	M2
+Lenovo		Lenovo A316i	LNV-2.220	Thay Màn hình	5D19A465I5	Màn hình Lenovo A316i	YES	530000	300000	M3
+Lenovo		Lenovo A316i	LNV-2.220	Thay Màn hình	5D79A467SW	Keo dán cảm ứng Lenovo A316I	YES	40000	250000	M2.5
+Lenovo		Lenovo A369i	LNV-2.220	Thay Màn hình	5D19A463HH	Màn hình kg cảm ứng Lenovo A369I	YES	600000	250000	M2.5
+Lenovo		Lenovo A390	LNV-2.220	Thay Màn hình	5D19A39193	Màn hình Lenovo A390/A690	YES	650000	250000	M2.5
+Lenovo		Lenovo A390	LNV-2.220	Thay Màn hình	5O29A464B9	Miếng keo cảm ứng Lenovo A390	YES	30000	0	Free
+Lenovo		Lenovo A516	LNV-2.220	Thay Màn hình	SD19A43929	Màn hình kg cảm ứng Lenovo A516	YES	860000	250000	M2.5
+Lenovo		Lenovo A706	LNV-2.220	Thay Màn hình	5D19A39177	Màn hình Lenovo A706/A800	YES	870000	300000	M3
+Lenovo		Lenovo A706	LNV-2.220	Thay Màn hình	5D79A4639S	Miếng dán cảm ứng Lenovo A706	YES	40000	0	Free
+Lenovo		Lenovo P770	LNV-2.220	Thay Màn hình	5D19A39294	Màn hình Lenovo P770	YES	890000	300000	M3
+Lenovo		Lenovo P770	LNV-2.220	Thay Màn hình	5D79A463TG	Keo dán cảm ứng Lenovo P770	YES	40000	250000	M2.5
+Lenovo		Lenovo A269i	LNV-2.230	Thay Cảm ứng	5S59A465KK	Cảm ứng có vỏ mặt trước Lenovo A269I	YES	400000	200000	M2
+Lenovo		Lenovo A316i	LNV-2.230	Thay Cảm ứng	5D79A467SW	Keo dán cảm ứng Lenovo A316I	YES	40000	250000	M2.5
+Lenovo		Lenovo A316i	LNV-2.230	Thay Cảm ứng	5T59A4663F	Cảm ứng Lenovo A316i	YES	500000	300000	M3
+Lenovo		Lenovo A369i	LNV-2.230	Thay Cảm ứng	5T59A463WG	Cảm ứng Lenovo A369I	YES	400000	250000	M2.5
+Lenovo		Lenovo A390	LNV-2.231	Thay Cảm ứng (đen)	5O29A464B9	Miếng keo cảm ứng Lenovo A390	YES	30000	0	Free
+Lenovo		Lenovo A390	LNV-2.231	Thay Cảm ứng (đen)	SD19A39368	Cảm ứng Lenovo A390	YES	420000	250000	M2.5
+Lenovo		Lenovo A516	LNV-2.231	Thay Cảm ứng (đen)	SD19A39435	Cảm ứng (đen) Lenovo A516	YES	590000	250000	M2.5
+Lenovo		Lenovo A706	LNV-2.231	Thay Cảm ứng (đen)	5D79A4639S	Miếng dán cảm ứng Lenovo A706	YES	40000	0	Free
+Lenovo		Lenovo A706	LNV-2.231	Thay Cảm ứng (đen)	SD19A39333	Cảm ứng (đen) Lenovo A706	YES	620000	300000	M3
+Lenovo		Lenovo P770	LNV-2.231	Thay Cảm ứng (đen)	5D19A39396	Cảm ứng Lenovo P770	YES	740000	300000	M3
+Lenovo		Lenovo P770	LNV-2.231	Thay Cảm ứng (đen)	5D79A463TG	Keo dán cảm ứng Lenovo P770	YES	40000	250000	M2.5
+Lenovo		Lenovo S560	LNV-2.231	Thay Cảm ứng (đen)	5D19A39236	Cảm ứng (đen) Lenovo S560	YES	630000	250000	M2.5
+Lenovo		Lenovo A390	LNV-2.232	Thay Cảm ứng (trắng)	5O29A464B9	Miếng keo cảm ứng Lenovo A390	YES	30000	0	Free
+Lenovo		Lenovo A390	LNV-2.232	Thay Cảm ứng (trắng)	SD19A45925	Cảm ứng (trắng) Lenovo A390	YES	480000	250000	M2.5
+Lenovo		Lenovo A516	LNV-2.232	Thay Cảm ứng (trắng)	ST59A4638A	Cảm ứng (trắng) Lenovo A516	YES	530000	250000	M2.5
+Lenovo		Lenovo A706	LNV-2.232	Thay Cảm ứng (trắng)	5D79A4639S	Miếng dán cảm ứng Lenovo A706	YES	40000	0	Free
+Lenovo		Lenovo A706	LNV-2.232	Thay Cảm ứng (trắng)	SD19A39423	Cảm ứng (trắng) Lenovo A706	YES	560000	300000	M3
+Lenovo		Lenovo P770	LNV-2.233	Thay Cảm ứng (xanh)	5D19A39388	Cảm ứng (xanh đen) Lenovo P770	YES	680000	300000	M3
+Lenovo		Lenovo P770	LNV-2.233	Thay Cảm ứng (xanh)	5D79A463TG	Keo dán cảm ứng Lenovo P770	YES	40000	250000	M2.5
+Lenovo		Lenovo A369i	LNV-2.30	Thay Cáp tín hiệu nút nguồn	5F79A463HM	Cáp tín hiệu phím nguồn Lenovo A369I	YES	20000	200000	M2
+Lenovo		Lenovo A390	LNV-2.30	Thay Cáp tín hiệu nút nguồn	SB29A43658	Dây tín hiệu phím nguồn Lenovo A390	YES	20000	200000	M2
+Lenovo		Lenovo A5000	LNV-2.30	Thay Cáp tín hiệu nút nguồn	5F78C00718	Cáp tín hiệu phím âm thanh Lenovo A5000	YES	40000	200000	M2
+Lenovo		Lenovo A516	LNV-2.30	Thay Cáp tín hiệu nút nguồn	SP69A44032	Dây tín hiệu phím nguồn Lenovo A516	YES	20000	200000	M2
+Lenovo		Lenovo A536	LNV-2.30	Thay Cáp tín hiệu nút nguồn	5F79A6N0DL	Cáp tín hiệu phím Lenovo A536	YES	20000	250000	M2.5
+Lenovo		Lenovo A680	LNV-2.30	Thay Cáp tín hiệu nút nguồn	5F79A466RG	Cáp tín hiệu phím nguồn Lenovo A680	YES	20000	200000	M2
+Lenovo		Lenovo A706	LNV-2.30	Thay Cáp tín hiệu nút nguồn	SP69A15526	Cáp cảm biến Lenovo A706	YES	100000	200000	M2
+Lenovo		Lenovo A850	LNV-2.30	Thay Cáp tín hiệu nút nguồn	SF79A4625F	Cáp cảm biến Lenovo A850	YES	30000	200000	M2
+Lenovo		Lenovo A859	LNV-2.30	Thay Cáp tín hiệu nút nguồn	5F79A465RD	Cáp cảm biến Lenovo A859	YES	30000	200000	M2
+Lenovo		Lenovo K900_16G	LNV-2.30	Thay Cáp tín hiệu nút nguồn	SP69A15464	Cáp tín hiệu phím nguồn Lenovo K900	YES	30000	200000	M2
+Lenovo		Lenovo K900_32G	LNV-2.30	Thay Cáp tín hiệu nút nguồn	SP69A15464	Cáp tín hiệu phím nguồn Lenovo K900	YES	30000	200000	M2
+Lenovo		Lenovo P70-A	LNV-2.30	Thay Cáp tín hiệu nút nguồn	5F78C00455	Cáp tín hiệu phím nguồn & volume Lenovo P70-A	YES	30000	300000	M3
+Lenovo		Lenovo P770	LNV-2.30	Thay Cáp tín hiệu nút nguồn	5P69A15293	Cáp cảm biến Lenovo P770	YES	130000	200000	M2
+Lenovo		Lenovo P780_4G	LNV-2.30	Thay Cáp tín hiệu nút nguồn	SP69A15599	Cáp cảm biến Lenovo P780_8G	YES	60000	200000	M2
+Lenovo		Lenovo P780_8G	LNV-2.30	Thay Cáp tín hiệu nút nguồn	SP69A15599	Cáp cảm biến Lenovo P780_8G	YES	60000	200000	M2
+Lenovo		Lenovo S650	LNV-2.30	Thay Cáp tín hiệu nút nguồn	SF79A462GN	Cáp tín hiệu cảm biến (có phím nguồn) Lenovo S650	YES	70000	250000	M2.5
+Lenovo		Lenovo S660	LNV-2.30	Thay Cáp tín hiệu nút nguồn	5F79A6MVYA	Cáp tín hiệu phím Lenovo S660	YES	60000	200000	M2
+Lenovo		Lenovo S820	LNV-2.30	Thay Cáp tín hiệu nút nguồn	SP69A15637	Cáp tín hiệu phím nguồn Lenovo S820_8G	YES	90000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.30	Thay Cáp tín hiệu nút nguồn	SP69A15637	Cáp tín hiệu phím nguồn Lenovo S820_8G	YES	90000	200000	M2
+Lenovo		Lenovo S850	LNV-2.30	Thay Cáp tín hiệu nút nguồn	5F79A466TR	Cáp tín hiệu phím Lenovo S850	YES	30000	200000	M2
+Lenovo		Lenovo S90-A_32G	LNV-2.30	Thay Cáp tín hiệu nút nguồn	SF79A6N1LB	Cáp tín hiệu phím nguồn & âm thanh Lenovo S90-A	YES	60000	300000	M3
+Lenovo		Lenovo S920	LNV-2.30	Thay Cáp tín hiệu nút nguồn	5P69A15512	Cáp tín hiệu phím nguồn Lenovo S920	YES	20000	200000	M2
+Lenovo		Lenovo X2	LNV-2.30	Thay Cáp tín hiệu nút nguồn	5F79A6MX3M	Dây dẫn tính hiệu phím Lenovo X2	YES	60000	300000	M3
+Lenovo		Lenovo A269i	LNV-2.31	Thay Cáp tín hiệu nút Volume	5F79A464UT	Dây tín hiệu volume Lenovo A269I	YES	20000	200000	M2
+Lenovo		Lenovo A319	LNV-2.31	Thay Cáp tín hiệu nút Volume	5B69A6N435	Cáp tín hiệu phím hông Lenovo A319	YES	20000	200000	M2
+Lenovo		Lenovo A328	LNV-2.31	Thay Cáp tín hiệu nút Volume	5F79A6N1W5	Cáp tín hiệu phím Lenovo A328	YES	20000	200000	M2
+Lenovo		Lenovo A369i	LNV-2.31	Thay Cáp tín hiệu nút Volume	5F79A464Z5	Dây tín hiệu volume Lenovo A369I	YES	20000	200000	M2
+Lenovo		Lenovo A390	LNV-2.31	Thay Cáp tín hiệu nút Volume	SB29A43657	Dây tín hiệu volume Lenovo A390	YES	20000	200000	M2
+Lenovo		Lenovo A516	LNV-2.31	Thay Cáp tín hiệu nút Volume	SP69A44031	Dây tín hiệu volume Lenovo A516	YES	20000	200000	M2
+Lenovo		Lenovo A680	LNV-2.31	Thay Cáp tín hiệu nút Volume	5F79A466RI	Cáp tín hiệu nút phím hông Lenovo A680	YES	20000	200000	M2
+Lenovo		Lenovo A706	LNV-2.31	Thay Cáp tín hiệu nút Volume	SP69A15528	Cáp tín hiệu phím âm thanh Lenovo A706	YES	40000	200000	M2
+Lenovo		Lenovo A859	LNV-2.31	Thay Cáp tín hiệu nút Volume	5F79A465RH	Cáp tín hiệu phím âm thanh Lenovo A859	YES	30000	200000	M2
+Lenovo		Lenovo K900_16G	LNV-2.31	Thay Cáp tín hiệu nút Volume	SP69A15465	Cáp tín hiệu phím âm thanh Lenovo K900	YES	60000	200000	M2
+Lenovo		Lenovo K900_32G	LNV-2.31	Thay Cáp tín hiệu nút Volume	SP69A15465	Cáp tín hiệu phím âm thanh Lenovo K900	YES	60000	200000	M2
+Lenovo		Lenovo P770	LNV-2.31	Thay Cáp tín hiệu nút Volume	5P69A15294	Cáp tín hiệu phím âm thanh Lenovo P770	YES	30000	200000	M2
+Lenovo		Lenovo P780_4G	LNV-2.31	Thay Cáp tín hiệu nút Volume	SP69A15598	Cáp tín hiệu phím volume Lenovo P780_8G	YES	40000	200000	M2
+Lenovo		Lenovo P780_8G	LNV-2.31	Thay Cáp tín hiệu nút Volume	SP69A15598	Cáp tín hiệu phím volume Lenovo P780_8G	YES	40000	200000	M2
+Lenovo		Lenovo S820	LNV-2.31	Thay Cáp tín hiệu nút Volume	SP69A15638	Cáp tín hiệu phím âm thanh Lenovo S820_8G	YES	30000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.31	Thay Cáp tín hiệu nút Volume	SP69A15638	Cáp tín hiệu phím âm thanh Lenovo S820_8G	YES	30000	200000	M2
+Lenovo		Lenovo S860	LNV-2.31	Thay Cáp tín hiệu nút Volume	5F79A465FJ	Dây tín hiệu nút bên hông Lenovo S860	YES	60000	200000	M2
+Lenovo		Lenovo S920	LNV-2.31	Thay Cáp tín hiệu nút Volume	5P69A15513	Cáp tín hiệu nút phím hông Lenovo S920	YES	20000	200000	M2
+Lenovo		Lenovo A5000	LNV-2.33	Thay Cáp kết nối bo mạch chính	5F78C00747	Cáp kết nối chính Lenovo A5000	YES	40000	250000	M2.5
+Lenovo		Lenovo A516	LNV-2.33	Thay Cáp kết nối bo mạch chính	SP69A44030	Dây kết nối chính Lenovo A516	YES	60000	200000	M2
+Lenovo		Lenovo A6000	LNV-2.33	Thay Cáp kết nối bo mạch chính	5F78C00299	Cáp kết nối chính Lenovo A6000	YES	60000	300000	M3
+Lenovo		Lenovo A850	LNV-2.33	Thay Cáp kết nối bo mạch chính	SF79A4625E	Cáp tín hiệu chính Lenovo A850	YES	140000	200000	M2
+Lenovo		Lenovo A859	LNV-2.33	Thay Cáp kết nối bo mạch chính	5F79A465RF	Cáp kết nối chính Lenovo A859	YES	30000	200000	M2
+Lenovo		Lenovo P70-A	LNV-2.33	Thay Cáp kết nối bo mạch chính	5F78C00454	Cáp kết nối chính Lenovo P70-A	YES	110000	300000	M3
+Lenovo		Lenovo P770	LNV-2.33	Thay Cáp kết nối bo mạch chính	5P69A15504	Cáp kết nối chinh Lenovo P770	YES	110000	200000	M2
+Lenovo		Lenovo S650	LNV-2.33	Thay Cáp kết nối bo mạch chính	SF79A462RN	Dây tín hiệu kết nối chính Lenovo S650	YES	100000	250000	M2.5
+Lenovo		Lenovo S660	LNV-2.33	Thay Cáp kết nối bo mạch chính	5F79A6MVXW	Cáp kết nối bo Lenovo S660	YES	70000	200000	M2
+Lenovo		Lenovo S820	LNV-2.33	Thay Cáp kết nối bo mạch chính	SP69A15639	Cáp tín hiệu chính Lenovo S820_8G	YES	100000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.33	Thay Cáp kết nối bo mạch chính	SP69A15639	Cáp tín hiệu chính Lenovo S820_8G	YES	100000	200000	M2
+Lenovo		Lenovo S920	LNV-2.33	Thay Cáp kết nối bo mạch chính	5P69A15510	Cáp kết nối chính Lenovo S920	YES	90000	200000	M2
+Lenovo		Lenovo X2	LNV-2.33	Thay Cáp kết nối bo mạch chính	5F79A6MX3L	Dây kết nối chính Lenovo X2	YES	120000	300000	M3
+Lenovo		Lenovo A316i	LNV-2.35	Thay Micro	5M49A464UU	Micro Lenovo A316i	YES	20000	200000	M2
+Lenovo		Lenovo A319	LNV-2.35	Thay Micro	SSB9A45896	Micro Lenovo A319	YES	10000	250000	M2.5
+Lenovo		Lenovo A369i	LNV-2.35	Thay Micro	5SB9A36577	Micro (có cao su che) Lenovo A369I	YES	10000	200000	M2
+Lenovo		Lenovo A5000	LNV-2.35	Thay Micro	5SB9A36588	Micro Lenovo A5000	YES	10000	200000	M2
+Lenovo		Lenovo A6000	LNV-2.35	Thay Micro	5M48C00280	Micro Lenovo A6000	YES	10000	300000	M3
+Lenovo		Lenovo A680	LNV-2.35	Thay Micro	5M49A466RK	Micro Lenovo A680	YES	20000	200000	M2
+Lenovo		Lenovo K910L	LNV-2.35	Thay Micro	5F79A467FC	Cáp kết nối phụ Lenovo K910L	YES	100000	200000	M2
+Lenovo		Lenovo S580	LNV-2.35	Thay Micro	5M49A6N2YG	Micro Lenovo S580	YES	10000	250000	M2.5
+Lenovo		Lenovo S850	LNV-2.35	Thay Micro	5M49A6MWA4	Micro Lenovo S850	YES	10000	200000	M2
+Lenovo		Lenovo K900_32G	LNV-2.37	Thay Cáp cảm biến	SP69A15466	Cáp nối trên Lenovo K900	YES	130000	200000	M2
+Lenovo		Lenovo P770	LNV-2.37	Thay Cáp cảm biến	5P69A15293	Cáp cảm biến Lenovo P770	YES	130000	200000	M2
+Lenovo		Lenovo S660	LNV-2.37	Thay Cáp cảm biến	5F79A6MVXX	Cáp cảm biến Lenovo S660	YES	90000	200000	M2
+Lenovo		Lenovo S850	LNV-2.37	Thay Cáp cảm biến	5F79A466TS	Cáp tín hiệu cảm biến Lenovo S850	YES	40000	200000	M2
+Lenovo		Lenovo S860	LNV-2.37	Thay Cáp cảm biến	5F79A465FH	Cáp cảm biến Lenovo S860	YES	50000	200000	M2
+Lenovo		Lenovo S920	LNV-2.37	Thay Cáp cảm biến	5P69A15511	Cáp cảm biến Lenovo S920	YES	60000	200000	M2
+Lenovo		Lenovo K910L	LNV-2.38	Thay Cáp kết nối phụ	5F79A463XC	Cáp tín hiệu bo usb Lenovo K910L	YES	210000	200000	M2
+Lenovo		Lenovo A6000	LNV-2.40	Thay Ăng ten chính	5C18C00277	Cáp ăn ten Lenovo A6000	YES	20000	300000	M3
+Lenovo		Lenovo A706	LNV-2.40	Thay Ăng ten chính	SCA9A26203	Cáp tín hiệu ăng ten Lenovo A706	YES	50000	200000	M2
+Lenovo		Lenovo A850	LNV-2.40	Thay Ăng ten chính	SC19A462NU	Cáp tín hiệu ăn ten Lenovo A850	YES	50000	250000	M2.5
+Lenovo		Lenovo P70-A	LNV-2.40	Thay Ăng ten chính	5C18C00453	Cáp ăn ten Lenovo P70-A	YES	20000	300000	M3
+Lenovo		Lenovo P780_8G	LNV-2.40	Thay Ăng ten chính	SCA9A26207	Cáp tín hiệu ăng ten Lenovo P780_8G	YES	50000	200000	M2
+Lenovo		Lenovo S650	LNV-2.40	Thay Ăng ten chính	SC19A462SO	Cáp tín hiệu ăn ten Lenovo S650	YES	40000	200000	M2
+Lenovo		Lenovo S860	LNV-2.40	Thay Ăng ten chính	5C19A465UI	Cáp ăn ten Lenovo S860	YES	60000	200000	M2
+Lenovo		Lenovo X2	LNV-2.40	Thay Ăng ten chính	5C19A6MY2D	Cáp anten chính Lenovo X2	YES	30000	300000	M3
+Lenovo		Lenovo P780_8G	LNV-2.43	Thay Ăng ten GPS	SA39A29335	Ăng ten GPS Lenovo P780_8G	YES	40000	200000	M2
+Lenovo		Lenovo A269i	LNV-2.500	Thay Nút nguồn ngoài	5B69A464V5	Phím nguồn ngoài Lenovo A269I	YES	20000	100000	M1
+Lenovo		Lenovo P780_8G	LNV-2.500	Thay Nút nguồn ngoài	SB69A4626M	Phím nguồn ngoài Lenovo P780_8G	YES	20000	200000	M2
+Lenovo		Lenovo A316i	LNV-2.501	Thay Nút nguồn ngoài (đen)	5B69A467ST	Phím nguồn ngoài Lenovo A316i	YES	20000	200000	M2
+Lenovo		Lenovo A369i	LNV-2.501	Thay Nút nguồn ngoài (đen)	5B69A463WK	Phím nguồn ngoài (đen) Lenovo A369I	YES	0	100000	M1
+Lenovo		Lenovo A390	LNV-2.501	Thay Nút nguồn ngoài (đen)	SI29A43751	Phím nguồn ngoài (đen) Lenovo A390	YES	10000	100000	M1
+Lenovo		Lenovo A5000	LNV-2.501	Thay Nút nguồn ngoài (đen)	5B68C00755	Phím âm thanh (Phím nguồn) Lenovo A5000 (đen)	YES	10000	200000	M2
+Lenovo		Lenovo A680	LNV-2.501	Thay Nút nguồn ngoài (đen)	5B69A466RP	Phím nguồn ngoài Lenovo A680	YES	20000	200000	M2
+Lenovo		Lenovo A5000	LNV-2.502	Thay Nút nguồn ngoài (trắng)	5B68C00754	Phím âm thanh (Phím nguồn) Lenovo A5000 (trắng)	YES	10000	200000	M2
+Lenovo		Lenovo A680	LNV-2.502	Thay Nút nguồn ngoài (trắng)	5B69A467L6	Phím nguồn ngoài (trắng) Lenovo A680	YES	20000	200000	M2
+Lenovo		Lenovo A850	LNV-2.502	Thay Nút nguồn ngoài (trắng)	5B69A463UN	Phím nguồn ngoài (trắng) Lenovo A850	YES	20000	200000	M2
+Lenovo		Lenovo S920	LNV-2.502	Thay Nút nguồn ngoài (trắng)	5B69A30812	Phím nguồn ngoài (trắng) Lenovo S920	YES	20000	200000	M2
+Lenovo		Lenovo S920_8G	LNV-2.502	Thay Nút nguồn ngoài (trắng)	5B69A30812	Phím nguồn ngoài (trắng) Lenovo S920	YES	20000	200000	M2
+Lenovo		Lenovo A269i	LNV-2.510	Thay Nút volume ngoài	5B69A464V4	Phím volume ngoài Lenovo A269I	YES	20000	200000	M2
+Lenovo		Lenovo P780_4G	LNV-2.510	Thay Nút volume ngoài	SB69A4626N	Phím âm thanh ngoài Lenovo P780_8G	YES	20000	200000	M2
+Lenovo		Lenovo P780_8G	LNV-2.510	Thay Nút volume ngoài	SB69A4626N	Phím âm thanh ngoài Lenovo P780_8G	YES	20000	200000	M2
+Lenovo		Lenovo A316i	LNV-2.511	Thay Nút volume ngoài (đen)	5B69A467SU	Phím âm thanh ngoài Lenovo A316i	YES	20000	200000	M2
+Lenovo		Lenovo A369i	LNV-2.511	Thay Nút volume ngoài (đen)	5B69A463WL	Phím volume ngoài (đen) Lenovo A369I	YES	10000	100000	M1
+Lenovo		Lenovo A269i	LNV-2.600	Thay Loa	5R79A46400	Loa Lenovo A269I	YES	40000	200000	M2
+Lenovo		Lenovo A316i	LNV-2.600	Thay Loa	5R79A46400	Loa Lenovo A269I	YES	40000	200000	M2
+Lenovo		Lenovo A319	LNV-2.600	Thay Loa	5R79A6N432	Loa Lenovo A319	YES	30000	200000	M2
+Lenovo		Lenovo A328	LNV-2.600	Thay Loa	SSB9A43894	Loa Lenovo A390	YES	40000	200000	M2
+Lenovo		Lenovo A369i	LNV-2.600	Thay Loa	5R79A463HK	Loa Lenovo A369I	YES	30000	200000	M2
+Lenovo		Lenovo A390	LNV-2.600	Thay Loa	5R79A462AG	Loa Lenovo A390	YES	30000	200000	M2
+Lenovo		Lenovo A5000	LNV-2.600	Thay Loa	5R78C00720	Loa Lenovo A5000	YES	30000	200000	M2
+Lenovo		Lenovo A516	LNV-2.600	Thay Loa	5SB9A36520	Loa Lenovo A516	YES	20000	200000	M2
+Lenovo		Lenovo A526	LNV-2.600	Thay Loa	5R79A6MVXY	Loa Lenovo A526	YES	30000	200000	M2
+Lenovo		Lenovo A536	LNV-2.600	Thay Loa	5R79A6N0DJ	Loa Lenovo A536	YES	20000	200000	M2
+Lenovo		Lenovo A6000	LNV-2.600	Thay Loa	5R78C00275	Loa Lenovo A6000	YES	40000	300000	M3
+Lenovo		Lenovo A680	LNV-2.600	Thay Loa	5R79A4671T	Loa Lenovo A680	YES	40000	200000	M2
+Lenovo		Lenovo A706	LNV-2.600	Thay Loa	SSB9A36582	Loa Lenovo A706	YES	60000	200000	M2
+Lenovo		Lenovo A850	LNV-2.600	Thay Loa	5SB9A36520	Loa Lenovo A516	YES	20000	200000	M2
+Lenovo		Lenovo A859	LNV-2.600	Thay Loa	5SB9A36520	Loa Lenovo A516	YES	20000	200000	M2
+Lenovo		Lenovo K900_16G	LNV-2.600	Thay Loa	5SB9A36336	Loa Lenovo K860	YES	80000	200000	M2
+Lenovo		Lenovo K900_32G	LNV-2.600	Thay Loa	5SB9A36336	Loa Lenovo K860	YES	80000	200000	M2
+Lenovo		Lenovo K910L	LNV-2.600	Thay Loa	SSB9A45893	Loa Lenovo K910L	YES	70000	200000	M2
+Lenovo		Lenovo P70-A	LNV-2.600	Thay Loa	SSB9A43894	Loa Lenovo A390	YES	40000	200000	M2
+Lenovo		Lenovo P770	LNV-2.600	Thay Loa	SSB9A36561	Loa Lenovo P770	YES	60000	200000	M2
+Lenovo		Lenovo P780_4G	LNV-2.600	Thay Loa	SSB9A36561	Loa Lenovo P770	YES	60000	200000	M2
+Lenovo		Lenovo P780_8G	LNV-2.600	Thay Loa	SSB9A36561	Loa Lenovo P770	YES	60000	200000	M2
+Lenovo		Lenovo S580	LNV-2.600	Thay Loa	SSB9A43894	Loa Lenovo A390	YES	40000	200000	M2
+Lenovo		Lenovo S650	LNV-2.600	Thay Loa	5SB9A36520	Loa Lenovo A516	YES	20000	200000	M2
+Lenovo		Lenovo S660	LNV-2.600	Thay Loa	5R79A6MVXY	Loa Lenovo A526	YES	30000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.600	Thay Loa	30500376	Loa Lenovo S820_8G	YES	20000	200000	M2
+Lenovo		Lenovo S850	LNV-2.600	Thay Loa	SSB9A45893	Loa Lenovo K910L	YES	70000	200000	M2
+Lenovo		Lenovo S860	LNV-2.600	Thay Loa	SSB9A36561	Loa Lenovo P770	YES	60000	200000	M2
+Lenovo		Lenovo S90-A_32G	LNV-2.600	Thay Loa	SR79A6N0PA	Loa Lenovo S90-A	YES	60000	300000	M3
+Lenovo		Lenovo S920	LNV-2.600	Thay Loa	5SB9A36520	Loa Lenovo A516	YES	20000	200000	M2
+Lenovo		Lenovo S920_8G	LNV-2.600	Thay Loa	5SB9A36520	Loa Lenovo A516	YES	20000	200000	M2
+Lenovo		Lenovo S960	LNV-2.600	Thay Loa	SSB9A36563	Chuông Lenovo S650	YES	80000	200000	M2
+Lenovo		Lenovo X2	LNV-2.600	Thay Loa	SSB9A45893	Loa Lenovo K910L	YES	70000	200000	M2
+Lenovo		Lenovo A269i	LNV-2.610	Thay Chuông	5SB9A464UV	Chuông Lenovo A269I	YES	30000	200000	M2
+Lenovo		Lenovo A316i	LNV-2.610	Thay Chuông	5SB9A467SN	Chuông Lenovo A316i	YES	30000	200000	M2
+Lenovo		Lenovo A319	LNV-2.610	Thay Chuông	5SB9A6N434	Chuông Lenovo A319	YES	60000	200000	M2
+Lenovo		Lenovo A369i	LNV-2.610	Thay Chuông	5SB9A4646X	Chuông Lenovo A369I	YES	30000	200000	M2
+Lenovo		Lenovo A390	LNV-2.610	Thay Chuông	5SB9A36579	Chuông Lenovo A390	YES	50000	200000	M2
+Lenovo		Lenovo A5000	LNV-2.610	Thay Chuông	5SB8C00719	Chuông Lenovo A5000	YES	40000	200000	M2
+Lenovo		Lenovo A516	LNV-2.610	Thay Chuông	SSB9A46322	Chuông Lenovo A516	YES	60000	200000	M2
+Lenovo		Lenovo A526	LNV-2.610	Thay Chuông	5SB9A6MW55	Chuông Lenovo A526	YES	30000	200000	M2
+Lenovo		Lenovo A536	LNV-2.610	Thay Chuông	5SB9A6N0DH	Chuông Lenovo A536	YES	30000	200000	M2
+Lenovo		Lenovo A6000	LNV-2.610	Thay Chuông	5SB8C00627	Chuông Lenovo A6000	YES	40000	300000	M3
+Lenovo		Lenovo A680	LNV-2.610	Thay Chuông	5SB9A466S2	Chuông Lenovo A680	YES	30000	200000	M2
+Lenovo		Lenovo A706	LNV-2.610	Thay Chuông	5SB9A36509	Chuông Lenovo A706/A850/S820/S890	YES	60000	200000	M2
+Lenovo		Lenovo A850	LNV-2.610	Thay Chuông	5SB9A36509	Chuông Lenovo A706/A850/S820/S890	YES	60000	200000	M2
+Lenovo		Lenovo A859	LNV-2.610	Thay Chuông	SSB9A36563	Chuông Lenovo S650	YES	80000	200000	M2
+Lenovo		Lenovo K910L	LNV-2.610	Thay Chuông	SSB9A46286	Chuông (có hộp chuông và ănten) Lenovo K910L	YES	230000	200000	M2
+Lenovo		Lenovo P70-A	LNV-2.610	Thay Chuông	5SB8C00462	Hộp chuông Lenovo P70-A	YES	120000	300000	M3
+Lenovo		Lenovo P770	LNV-2.610	Thay Chuông	5SB9A36508	Chuông Lenovo P770	YES	40000	200000	M2
+Lenovo		Lenovo P780_4G	LNV-2.610	Thay Chuông	SSB9A36560	Chuông Lenovo P780_8G	YES	60000	200000	M2
+Lenovo		Lenovo P780_8G	LNV-2.610	Thay Chuông	SSB9A36560	Chuông Lenovo P780_8G	YES	60000	200000	M2
+Lenovo		Lenovo S580	LNV-2.610	Thay Chuông	5SB9A6MX5J	Chuông Lenovo S580	YES	70000	250000	M2.5
+Lenovo		Lenovo S650	LNV-2.610	Thay Chuông	SSB9A36563	Chuông Lenovo S650	YES	80000	200000	M2
+Lenovo		Lenovo S820	LNV-2.610	Thay Chuông	5SB9A36509	Chuông Lenovo A706/A850/S820/S890	YES	60000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.610	Thay Chuông	5SB9A36509	Chuông Lenovo A706/A850/S820/S890	YES	60000	200000	M2
+Lenovo		Lenovo S850	LNV-2.610	Thay Chuông	5SB9A6MVTX	Chuông Lenovo S850	YES	90000	200000	M2
+Lenovo		Lenovo S860	LNV-2.610	Thay Chuông	5SB9A46603	Hộp chuông Lenovo S860	YES	150000	0	Free
+Lenovo		Lenovo S90-A_32G	LNV-2.610	Thay Chuông	SSB9A6N22W	Chuông Lenovo S90-A	YES	210000	300000	M3
+Lenovo		Lenovo S920	LNV-2.610	Thay Chuông	5SB9A36556	Chuông Lenovo S920	YES	90000	200000	M2
+Lenovo		Lenovo X2	LNV-2.610	Thay Chuông	5SB9A6MY1T	Hộp chuông Lenovo X2	YES	190000	300000	M3
+Lenovo		Lenovo A319	LNV-2.612	Thay Chuông dưới	5SB9A6N434	Chuông Lenovo A319	YES	60000	200000	M2
+Lenovo		Lenovo A316i	LNV-2.62	Thay Rung	5M79A467SO	Mô tơ rung Lenovo A316i	YES	30000	200000	M2
+Lenovo		Lenovo A319	LNV-2.62	Thay Rung	5M79A35710	Rung Lenovo A60+	YES	30000	200000	M2
+Lenovo		Lenovo A328	LNV-2.62	Thay Rung	5M79A35710	Rung Lenovo A60+	YES	30000	200000	M2
+Lenovo		Lenovo A369i	LNV-2.62	Thay Rung	5SB9A36414	Rung Lenovo A369I	YES	30000	150000	M1.5
+Lenovo		Lenovo A390	LNV-2.62	Thay Rung	5M79A35705	Rung Lenovo A390	YES	30000	200000	M2
+Lenovo		Lenovo A526	LNV-2.62	Thay Rung	5M79A6MW56	Rung Lenovo A526	YES	30000	200000	M2
+Lenovo		Lenovo A536	LNV-2.62	Thay Rung	5M79A6N0DK	Rung Lenovo A536	YES	30000	200000	M2
+Lenovo		Lenovo A6000	LNV-2.62	Thay Rung	5M78C00267	Rung Lenovo A6000	YES	30000	300000	M3
+Lenovo		Lenovo A680	LNV-2.62	Thay Rung	5M79A462WF	Mô tơ rung Lenovo A680	YES	30000	200000	M2
+Lenovo		Lenovo A706	LNV-2.62	Thay Rung	5M79A35635	Mô tơ rung Lenovo A706	YES	30000	200000	M2
+Lenovo		Lenovo A859	LNV-2.62	Thay Rung	SM79A46237	Mô tơ rung Lenovo A859	YES	50000	200000	M2
+Lenovo		Lenovo K900_16G	LNV-2.62	Thay Rung	SM79A35718	Mô tơ rung Lenovo K900	YES	40000	200000	M2
+Lenovo		Lenovo K900_32G	LNV-2.62	Thay Rung	SM79A35718	Mô tơ rung Lenovo K900	YES	40000	200000	M2
+Lenovo		Lenovo P70-A	LNV-2.62	Thay Rung	5M79A462WF	Mô tơ rung Lenovo A680	YES	30000	200000	M2
+Lenovo		Lenovo S650	LNV-2.62	Thay Rung	SM79A45889	Mô tơ rung Lenovo S650	YES	40000	200000	M2
+Lenovo		Lenovo S850	LNV-2.62	Thay Rung	5M79A6MXRR	Rung Lenovo S850	YES	40000	200000	M2
+Lenovo		Lenovo S930	LNV-2.62	Thay Rung	SM79A45889	Mô tơ rung Lenovo S650	YES	40000	200000	M2
+Lenovo		Lenovo S960	LNV-2.62	Thay Rung	5M79A465HS	Mô tơ rung Lenovo S960	YES	40000	200000	M2
+Lenovo		Lenovo X2	LNV-2.62	Thay Rung	5M79A6MY1U	Rung (có cao su đệm) Lenovo X2	YES	60000	300000	M3
+Lenovo		Lenovo A269i	LNV-2.630	Thay Camera sau	5C29A465KR	Camera Lenovo A269I	YES	130000	200000	M2
+Lenovo		Lenovo A316i	LNV-2.630	Thay Camera sau	5C29A467SP	Camera chính Lenovo A316i	YES	130000	200000	M2
+Lenovo		Lenovo A319	LNV-2.630	Thay Camera sau	SC29A6N24Y	Camera Lenovo A319	YES	300000	250000	M2.5
+Lenovo		Lenovo A328	LNV-2.630	Thay Camera sau	SC29A4631D	Camera chính Lenovo A328	YES	200000	200000	M2
+Lenovo		Lenovo A369i	LNV-2.630	Thay Camera sau	5C29A464SL	Camera Lenovo A369i	YES	150000	200000	M2
+Lenovo		Lenovo A390	LNV-2.630	Thay Camera sau	SC29A12362	Camera sau Lenovo A390	YES	280000	200000	M2
+Lenovo		Lenovo A5000	LNV-2.630	Thay Camera sau	SC29A6N0A9	Camera Lenovo A6000	YES	240000	300000	M3
+Lenovo		Lenovo A516	LNV-2.630	Thay Camera sau	SC29A12396	Camera sau Lenovo A516	YES	360000	200000	M2
+Lenovo		Lenovo A526	LNV-2.630	Thay Camera sau	SC29A4631E	Camera sau Lenovo A526	YES	310000	200000	M2
+Lenovo		Lenovo A536	LNV-2.630	Thay Camera sau	SC29A462M0	Camera chính Lenovo A536	YES	310000	250000	M2.5
+Lenovo		Lenovo A6000	LNV-2.630	Thay Camera sau	SC29A6N0A9	Camera Lenovo A6000	YES	240000	300000	M3
+Lenovo		Lenovo A680	LNV-2.630	Thay Camera sau	SC29A4631C	Camera chính Lenovo A680	YES	310000	200000	M2
+Lenovo		Lenovo A706	LNV-2.630	Thay Camera sau	5C29A12370	Camera chính Lenovo A706	YES	430000	200000	M2
+Lenovo		Lenovo A850	LNV-2.630	Thay Camera sau	SC29A44787	Camera chính Lenovo A850	YES	340000	200000	M2
+Lenovo		Lenovo A859	LNV-2.630	Thay Camera sau	5C29A465CS	Camera chính Lenovo A859	YES	680000	200000	M2
+Lenovo		Lenovo K900_16G	LNV-2.630	Thay Camera sau	SC29A4631K	Camera chính Lenovo K900	YES	1030000	200000	M2
+Lenovo		Lenovo K900_32G	LNV-2.630	Thay Camera sau	SC29A4631K	Camera chính Lenovo K900	YES	1030000	200000	M2
+Lenovo		Lenovo K910L	LNV-2.630	Thay Camera sau	SC29A44281	Camera chính Lenovo K910L	YES	1220000	200000	M2
+Lenovo		Lenovo P70-A	LNV-2.630	Thay Camera sau	5C29A6MXCA	Camera chính Lenovo P70-A	YES	680000	300000	M3
+Lenovo		Lenovo P770	LNV-2.630	Thay Camera sau	SC29A12364	Camera chính Lenovo P770	YES	430000	200000	M2
+Lenovo		Lenovo P780_8G	LNV-2.630	Thay Camera sau	SC29A12371	Camera chính  Lenovo P780_8G	YES	680000	200000	M2
+Lenovo		Lenovo S580	LNV-2.630	Thay Camera sau	5C29A6MYE2	Camera chính Lenovo S580	YES	540000	250000	M2.5
+Lenovo		Lenovo S650	LNV-2.630	Thay Camera sau	5C29A12359	Camera chính Lenovo S650	YES	610000	200000	M2
+Lenovo		Lenovo S660	LNV-2.630	Thay Camera sau	5C29A465CU	Camera chính Lenovo S660	YES	620000	200000	M2
+Lenovo		Lenovo S820	LNV-2.630	Thay Camera sau	SC29A12381	Camera chính Lenovo S820_8G	YES	870000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.630	Thay Camera sau	SC29A12381	Camera chính Lenovo S820_8G	YES	870000	200000	M2
+Lenovo		Lenovo S850	LNV-2.630	Thay Camera sau	5C29A466XD	Camera chính Lenovo S850	YES	930000	200000	M2
+Lenovo		Lenovo S860	LNV-2.630	Thay Camera sau	5C29A465CT	Camera chính Lenovo S860	YES	670000	200000	M2
+Lenovo		Lenovo S90-A_32G	LNV-2.630	Thay Camera sau	SC29A6N1BJ	Camera sau Lenovo S90-A	YES	740000	300000	M3
+Lenovo		Lenovo S920	LNV-2.630	Thay Camera sau	5C29A12360	Camera chính Lenovo S920	YES	720000	200000	M2
+Lenovo		Lenovo S920_8G	LNV-2.630	Thay Camera sau	5C29A12360	Camera chính Lenovo S920	YES	720000	200000	M2
+Lenovo		Lenovo S930	LNV-2.630	Thay Camera sau	SC29A44784	Camera chính  Lenovo S930	YES	640000	200000	M2
+Lenovo		Lenovo S960	LNV-2.630	Thay Camera sau	5C29A466CL	Camera phụ Lenovo S960	YES	450000	200000	M2
+Lenovo		Lenovo X2	LNV-2.630	Thay Camera sau	5C29A6MWWU	Camera Lenovo X2	YES	940000	300000	M3
+Lenovo		Lenovo A516	LNV-2.631	Err:512	SC29A44022	Camera trước Lenovo A516	YES	90000	200000	M2
+Lenovo		Lenovo A526	LNV-2.631	Err:512	5C29A6MW57	Camera trước Lenovo A526	YES	60000	200000	M2
+Lenovo		Lenovo A680	LNV-2.631	Err:512	5C29A6MWWY	Camera phụ Lenovo A680	YES	60000	200000	M2
+Lenovo		Lenovo A850	LNV-2.631	Err:512	SC29A44022	Camera trước Lenovo A516	YES	90000	200000	M2
+Lenovo		Lenovo A859	LNV-2.631	Err:512	5C29A467PQ	Camera phụ Lenovo A859	YES	210000	200000	M2
+Lenovo		Lenovo K900_16G	LNV-2.631	Err:512	SC29A12350	Camera phụ Lenovo K900	YES	340000	200000	M2
+Lenovo		Lenovo P770	LNV-2.631	Err:512	5C29A12300	Camera phụ Lenovo P770	YES	100000	200000	M2
+Lenovo		Lenovo S580	LNV-2.631	Err:512	5C29A6MX5H	Camera phụ Lenovo S580	YES	130000	250000	M2.5
+Lenovo		Lenovo S650	LNV-2.631	Err:512	SC29A44022	Camera trước Lenovo A516	YES	90000	200000	M2
+Lenovo		Lenovo S660	LNV-2.631	Err:512	5C29A6MVY1	Camera phụ Lenovo S660	YES	70000	200000	M2
+Lenovo		Lenovo S820	LNV-2.631	Err:512	5C29A12355	Camera phụ Lenovo S820_8G	YES	180000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.631	Err:512	5C29A12355	Camera phụ Lenovo S820_8G	YES	180000	200000	M2
+Lenovo		Lenovo S930	LNV-2.631	Err:512	5C29A465WP	Camera phụ Lenovo S930	YES	220000	200000	M2
+Lenovo		Lenovo A319	LNV-2.632	Thay Camera trước (trên)	5C29A6N433	Camera phụ Lenovo A319	YES	120000	200000	M2
+Lenovo		Lenovo A328	LNV-2.632	Thay Camera trước (trên)	5C29A6N2BW	Camera phụ Lenovo A328	YES	770000	200000	M2
+Lenovo		Lenovo A5000	LNV-2.632	Thay Camera trước (trên)	5C28C00721	Camera phụ Lenovo A5000	YES	130000	200000	M2
+Lenovo		Lenovo A526	LNV-2.632	Thay Camera trước (trên)	5C29A6MW57	Camera trước Lenovo A526	YES	60000	200000	M2
+Lenovo		Lenovo A536	LNV-2.632	Thay Camera trước (trên)	5C29A6N0DG	Camera phụ Lenovo A536	YES	120000	200000	M2
+Lenovo		Lenovo A6000	LNV-2.632	Thay Camera trước (trên)	5C28C00273	Camera trước Lenovo A6000	YES	100000	300000	M3
+Lenovo		Lenovo A680	LNV-2.632	Thay Camera trước (trên)	5C29A6MWWY	Camera phụ Lenovo A680	YES	60000	200000	M2
+Lenovo		Lenovo A850	LNV-2.632	Thay Camera trước (trên)	SC29A44022	Camera trước Lenovo A516	YES	90000	200000	M2
+Lenovo		Lenovo A859	LNV-2.632	Thay Camera trước (trên)	5C29A467PQ	Camera phụ Lenovo A859	YES	210000	200000	M2
+Lenovo		Lenovo P70-A	LNV-2.632	Thay Camera trước (trên)	SC29A6N0M1	Camera phụ Lenovo P70-A	YES	190000	300000	M3
+Lenovo		Lenovo P770	LNV-2.632	Thay Camera trước (trên)	5C29A12300	Camera phụ Lenovo P770	YES	100000	200000	M2
+Lenovo		Lenovo S580	LNV-2.632	Thay Camera trước (trên)	5C29A6MX5H	Camera phụ Lenovo S580	YES	130000	250000	M2.5
+Lenovo		Lenovo S650	LNV-2.632	Thay Camera trước (trên)	SC29A44022	Camera trước Lenovo A516	YES	90000	200000	M2
+Lenovo		Lenovo S660	LNV-2.632	Thay Camera trước (trên)	5C29A6MVY1	Camera phụ Lenovo S660	YES	70000	200000	M2
+Lenovo		Lenovo S820	LNV-2.632	Thay Camera trước (trên)	5C29A12355	Camera phụ Lenovo S820_8G	YES	180000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.632	Thay Camera trước (trên)	5C29A12355	Camera phụ Lenovo S820_8G	YES	180000	200000	M2
+Lenovo		Lenovo S850	LNV-2.632	Thay Camera trước (trên)	SC29A4631I	Camera trước Lenovo S850	YES	420000	200000	M2
+Lenovo		Lenovo S90-A_32G	LNV-2.632	Thay Camera trước (trên)	SC29A6N1BK	Camera trước Lenovo S90-A	YES	650000	300000	M3
+Lenovo		Lenovo S920	LNV-2.632	Thay Camera trước (trên)	5C29A12355	Camera phụ Lenovo S820_8G	YES	180000	200000	M2
+Lenovo		Lenovo S920_8G	LNV-2.632	Thay Camera trước (trên)	5C29A12355	Camera phụ Lenovo S820_8G	YES	180000	200000	M2
+Lenovo		Lenovo S930	LNV-2.632	Thay Camera trước (trên)	5C29A465WP	Camera phụ Lenovo S930	YES	220000	200000	M2
+Lenovo		Lenovo S960	LNV-2.632	Thay Camera trước (trên)	5C29A466CL	Camera phụ Lenovo S960	YES	450000	200000	M2
+Lenovo		Lenovo X2	LNV-2.632	Thay Camera trước (trên)	5C29A6MWWV	Camera trước trên Lenovo X2	YES	470000	300000	M3
+Lenovo		Lenovo A390	LNV-2.634	Thay Kính Camera	SMO9A43395	Kính camera (đen) Lenovo A390	YES	20000	100000	M1
+Lenovo		Lenovo A706	LNV-2.634	Thay Kính Camera	SMO9A09377	Kính camera Lenovo A706	YES	20000	200000	M2
+Lenovo		Lenovo K900_16G	LNV-2.634	Thay Kính Camera	SMO9A09175	Kính camera Lenovo K900	YES	60000	200000	M2
+Lenovo		Lenovo K900_32G	LNV-2.634	Thay Kính Camera	SMO9A09175	Kính camera Lenovo K900	YES	60000	200000	M2
+Lenovo		Lenovo P780_8G	LNV-2.634	Thay Kính Camera	SMO9A09650	Kính camera Lenovo P780_8G	YES	20000	200000	M2
+Lenovo		Lenovo S820	LNV-2.634	Thay Kính Camera	SMO9A09517	Kính camera Lenovo S820_8G	YES	20000	200000	M2
+Lenovo		Lenovo S820_8G	LNV-2.634	Thay Kính Camera	SMO9A09517	Kính camera Lenovo S820_8G	YES	20000	200000	M2
+Lenovo		Lenovo S920	LNV-2.634	Thay Kính Camera	5MO9A09383	Kính camera đen Lenovo S920	YES	20000	200000	M2
+Lenovo		Lenovo S920_8G	LNV-2.634	Thay Kính Camera	5MO9A09383	Kính camera đen Lenovo S920	YES	20000	200000	M2
+Lenovo		Lenovo A269i	LNV-2.700	Thay Sạc (đen) kg cáp USB	SO29A43501	Sạc kg cáp 700mA/5V C-P39 (đen) Lenovo A269I	YES	120000	0	Free
+Lenovo		Lenovo A316i	LNV-2.700	Thay Sạc (đen) kg cáp USB	5A19A464M5	Sạc kg cáp 1A C-P57 (đen) Lenovo A526	YES	120000	0	Free
+Lenovo		Lenovo A328	LNV-2.700	Thay Sạc (đen) kg cáp USB	5A19A464M5	Sạc kg cáp 1A C-P57 (đen) Lenovo A526	YES	120000	0	Free
+Lenovo		Lenovo A369i	LNV-2.700	Thay Sạc (đen) kg cáp USB	SO29A43501	Sạc kg cáp 700mA/5V C-P39 (đen) Lenovo A269I	YES	120000	0	Free
+Lenovo		Lenovo A390	LNV-2.700	Thay Sạc (đen) kg cáp USB	5O29A11854	Sạc kg cáp 700mA/5V C-P22 (đen) Lenovo A390	YES	120000	0	Free
+Lenovo		Lenovo A516	LNV-2.700	Thay Sạc (đen) kg cáp USB	SO29A43501	Sạc kg cáp 700mA/5V C-P39 (đen) Lenovo A269I	YES	120000	0	Free
+Lenovo		Lenovo A526	LNV-2.700	Thay Sạc (đen) kg cáp USB	5A19A464M5	Sạc kg cáp 1A C-P57 (đen) Lenovo A526	YES	120000	0	Free
+Lenovo		Lenovo A536	LNV-2.700	Thay Sạc (đen) kg cáp USB	5A19A464M5	Sạc kg cáp 1A C-P57 (đen) Lenovo A526	YES	120000	0	Free
+Lenovo		Lenovo A680	LNV-2.700	Thay Sạc (đen) kg cáp USB	SO29A43501	Sạc kg cáp 700mA/5V C-P39 (đen) Lenovo A269I	YES	120000	0	Free
+Lenovo		Lenovo A850	LNV-2.700	Thay Sạc (đen) kg cáp USB	SO29A43500	Sạc kg cáp USB 1A (đen) Lenovo A850	YES	120000	0	Free
+Lenovo		Lenovo A859	LNV-2.700	Thay Sạc (đen) kg cáp USB	5A19A464M5	Sạc kg cáp 1A C-P57 (đen) Lenovo A526	YES	120000	0	Free
+Lenovo		Lenovo K900_16G	LNV-2.700	Thay Sạc (đen) kg cáp USB	36200528	Sạc không cáp 2A Lenovo K900	YES	160000	0	Free
+Lenovo		Lenovo K900_32G	LNV-2.700	Thay Sạc (đen) kg cáp USB	36200528	Sạc không cáp 2A Lenovo K900	YES	160000	0	Free
+Lenovo		Lenovo K910L	LNV-2.700	Thay Sạc (đen) kg cáp USB	5A19A46456	Sạc không cáp 1.5A Lenovo K910L	YES	140000	0	Free
+Lenovo		Lenovo P780_4G	LNV-2.700	Thay Sạc (đen) kg cáp USB	36200528	Sạc không cáp 2A Lenovo K900	YES	160000	0	Free
+Lenovo		Lenovo P780_8G	LNV-2.700	Thay Sạc (đen) kg cáp USB	36200528	Sạc không cáp 2A Lenovo K900	YES	160000	0	Free
+Lenovo		Lenovo S580	LNV-2.700	Thay Sạc (đen) kg cáp USB	5A19A464M5	Sạc kg cáp 1A C-P57 (đen) Lenovo A526	YES	120000	0	Free
+Lenovo		Lenovo S650	LNV-2.700	Thay Sạc (đen) kg cáp USB	SO29A43500	Sạc kg cáp USB 1A (đen) Lenovo A850	YES	120000	0	Free
+Lenovo		Lenovo S660	LNV-2.700	Thay Sạc (đen) kg cáp USB	5A19A46456	Sạc không cáp 1.5A Lenovo K910L	YES	140000	0	Free
+Lenovo		Lenovo S860	LNV-2.700	Thay Sạc (đen) kg cáp USB	36200528	Sạc không cáp 2A Lenovo K900	YES	160000	0	Free
+Lenovo		Lenovo S920	LNV-2.700	Thay Sạc (đen) kg cáp USB	SO29A43500	Sạc kg cáp USB 1A (đen) Lenovo A850	YES	120000	0	Free
+Lenovo		Lenovo S920_8G	LNV-2.700	Thay Sạc (đen) kg cáp USB	SO29A43500	Sạc kg cáp USB 1A (đen) Lenovo A850	YES	120000	0	Free
+Lenovo		Lenovo A319	LNV-2.701	Thay Sạc (trắng) kg cáp USB	5A19A464MB	Sạc kg cáp USB (trắng) 1A Lenovo A859	YES	120000	0	Free
+Lenovo		Lenovo A328	LNV-2.701	Thay Sạc (trắng) kg cáp USB	5A19A464MB	Sạc kg cáp USB (trắng) 1A Lenovo A859	YES	120000	0	Free
+Lenovo		Lenovo A5000	LNV-2.701	Thay Sạc (trắng) kg cáp USB	5A19A464N4	Sạc kg cáp USB 2A (trắng) Lenovo P70-A	YES	160000	0	Free
+Lenovo		Lenovo A516	LNV-2.701	Thay Sạc (trắng) kg cáp USB	SO29A43509	Sạc kg cáp USB 700mA (trắng) Lenovo A516	YES	120000	0	Free
+Lenovo		Lenovo A6000	LNV-2.701	Thay Sạc (trắng) kg cáp USB	5A19A464MB	Sạc kg cáp USB (trắng) 1A Lenovo A859	YES	120000	0	Free
+Lenovo		Lenovo A706	LNV-2.701	Thay Sạc (trắng) kg cáp USB	SO29A43508	Sạc kg cáp USB 1A (trắng) Lenovo A850	YES	120000	0	Free
+Lenovo		Lenovo A850	LNV-2.701	Thay Sạc (trắng) kg cáp USB	SO29A43508	Sạc kg cáp USB 1A (trắng) Lenovo A850	YES	120000	0	Free
+Lenovo		Lenovo A859	LNV-2.701	Thay Sạc (trắng) kg cáp USB	5A19A464MB	Sạc kg cáp USB (trắng) 1A Lenovo A859	YES	120000	0	Free
+Lenovo		Lenovo P70-A	LNV-2.701	Thay Sạc (trắng) kg cáp USB	5A19A464N4	Sạc kg cáp USB 2A (trắng) Lenovo P70-A	YES	160000	0	Free
+Lenovo		Lenovo S650	LNV-2.701	Thay Sạc (trắng) kg cáp USB	SO29A43508	Sạc kg cáp USB 1A (trắng) Lenovo A850	YES	120000	0	Free
+Lenovo		Lenovo S920	LNV-2.701	Thay Sạc (trắng) kg cáp USB	SO29A43508	Sạc kg cáp USB 1A (trắng) Lenovo A850	YES	120000	0	Free
+Lenovo		Lenovo S920_8G	LNV-2.701	Thay Sạc (trắng) kg cáp USB	SO29A43508	Sạc kg cáp USB 1A (trắng) Lenovo A850	YES	120000	0	Free
+Lenovo		Lenovo S930	LNV-2.701	Thay Sạc (trắng) kg cáp USB	5A19A46470	Sạc (trắng) không cáp 1.5A Lenovo S930	YES	140000	0	Free
+Lenovo		Lenovo S960	LNV-2.701	Thay Sạc (trắng) kg cáp USB	SO29A43508	Sạc kg cáp USB 1A (trắng) Lenovo A850	YES	120000	0	Free
+Lenovo		Lenovo X2	LNV-2.701	Thay Sạc (trắng) kg cáp USB	SA19A6N0TN	Sạc kg cáp (trắng) 1,5A C-P64 Lenovo X2/Z2	YES	140000	0	Free
+Lenovo		Lenovo A269i	LNV-2.710	Thay Cáp USB (đen)	5C19A465KQ	Cáp kết nối dữ liệu Lenovo A269I	YES	50000	0	Free
+Lenovo		Lenovo A316i	LNV-2.710	Thay Cáp USB (đen)	5C19A465KQ	Cáp kết nối dữ liệu Lenovo A269I	YES	50000	0	Free
+Lenovo		Lenovo A328	LNV-2.710	Thay Cáp USB (đen)	5C19A6N3LL	Cáp kết nối dữ liệu USB Lenovo A328	YES	60000	0	Free
+Lenovo		Lenovo A369i	LNV-2.710	Thay Cáp USB (đen)	5C19A6MVR1	Cáp kết nối dữ liệu USB Lenovo A369i	YES	60000	0	Free
+Lenovo		Lenovo A390	LNV-2.710	Thay Cáp USB (đen)	SO29A45624	Cáp kết nối dữ liệu USB (đen) Lenovo	YES	60000	0	Free
+Lenovo		Lenovo A516	LNV-2.710	Thay Cáp USB (đen)	5O29A11836	Cáp kết nối dữ liệu USB (đen) Lenovo	YES	60000	0	Free
+Lenovo		Lenovo A536	LNV-2.710	Thay Cáp USB (đen)	5C19A6N0KY	Cáp tín hiệu USB (đen) Lenovo A536	YES	60000	0	Free
+Lenovo		Lenovo A680	LNV-2.710	Thay Cáp USB (đen)	SO29A45624	Cáp kết nối dữ liệu USB (đen) Lenovo	YES	60000	0	Free
+Lenovo		Lenovo A850	LNV-2.710	Thay Cáp USB (đen)	SO29A11929	Cáp kết nối dữ liệu USB (đen) Lenovo A850	YES	60000	0	Free
+Lenovo		Lenovo K900_16G	LNV-2.710	Thay Cáp USB (đen)	SO29A11933	Cáp kết nối dữ liệu USB (đen)  Lenovo K900	YES	60000	0	Free
+Lenovo		Lenovo K900_32G	LNV-2.710	Thay Cáp USB (đen)	SO29A11933	Cáp kết nối dữ liệu USB (đen)  Lenovo K900	YES	60000	0	Free
+Lenovo		Lenovo K910L	LNV-2.710	Thay Cáp USB (đen)	SO29A11933	Cáp kết nối dữ liệu USB (đen)  Lenovo K900	YES	60000	0	Free
+Lenovo		Lenovo P780_4G	LNV-2.710	Thay Cáp USB (đen)	SO29A11933	Cáp kết nối dữ liệu USB (đen)  Lenovo K900	YES	60000	0	Free
+Lenovo		Lenovo P780_8G	LNV-2.710	Thay Cáp USB (đen)	SO29A11933	Cáp kết nối dữ liệu USB (đen)  Lenovo K900	YES	60000	0	Free
+Lenovo		Lenovo S580	LNV-2.710	Thay Cáp USB (đen)	5C19A6N2YD	Cáp kết nối dữ liệu USB Lenovo S580	YES	60000	0	Free
+Lenovo		Lenovo S650	LNV-2.710	Thay Cáp USB (đen)	SO29A11929	Cáp kết nối dữ liệu USB (đen) Lenovo A850	YES	60000	0	Free
+Lenovo		Lenovo S660	LNV-2.710	Thay Cáp USB (đen)	5C19A6MW8H	Cáp kết nối dữ liệu USB Lenovo S660	YES	60000	0	Free
+Lenovo		Lenovo S820_8G	LNV-2.710	Thay Cáp USB (đen)	5O29A11836	Cáp kết nối dữ liệu USB (đen) Lenovo	YES	60000	0	Free
+Lenovo		Lenovo S860	LNV-2.710	Thay Cáp USB (đen)	SO29A11933	Cáp kết nối dữ liệu USB (đen)  Lenovo K900	YES	60000	0	Free
+Lenovo		Lenovo S920	LNV-2.710	Thay Cáp USB (đen)	5O29A11836	Cáp kết nối dữ liệu USB (đen) Lenovo	YES	60000	0	Free
+Lenovo		Lenovo S920_8G	LNV-2.710	Thay Cáp USB (đen)	5O29A11836	Cáp kết nối dữ liệu USB (đen) Lenovo	YES	60000	0	Free
+Lenovo		Lenovo A319	LNV-2.711	Thay Cáp USB (trắng)	5C19A6N43D	Cáp kết nối dữ liệu USB (trắng) Lenovo A319	YES	60000	0	Free
+Lenovo		Lenovo A516	LNV-2.711	Thay Cáp USB (trắng)	5O29A11837	Cáp kết nối dữ liệu USB (trắng) Lenovo	YES	60000	0	Free
+Lenovo		Lenovo A536	LNV-2.711	Thay Cáp USB (trắng)	5C19A6N0KX	Cáp tín hiệu USB (trắng) Lenovo A536	YES	60000	0	Free
+Lenovo		Lenovo A6000	LNV-2.711	Thay Cáp USB (trắng)	5C18C00967	Cáp kết nối dữ liệu USB (trắng) Lenovo A6000	YES	60000	0	Free
+Lenovo		Lenovo A680	LNV-2.711	Thay Cáp USB (trắng)	5C19A6N4VC	Cáp kết nối dữ liệu USB (trắng) Lenovo A680	YES	60000	0	Free
+Lenovo		Lenovo A706	LNV-2.711	Thay Cáp USB (trắng)	5O29A11837	Cáp kết nối dữ liệu USB (trắng) Lenovo	YES	60000	0	Free
+Lenovo		Lenovo A850	LNV-2.711	Thay Cáp USB (trắng)	SO29A11930	Cáp kết nối dữ liệu USB (trắng) Lenovo A850	YES	60000	0	Free
+Lenovo		Lenovo A859	LNV-2.711	Thay Cáp USB (trắng)	SO29A11930	Cáp kết nối dữ liệu USB (trắng) Lenovo A850	YES	60000	0	Free
+Lenovo		Lenovo K910L	LNV-2.711	Thay Cáp USB (trắng)	SO29A11934	Cáp kết nối dữ liệu USB 2A (trắng) Lenovo S930	YES	60000	0	Free
+Lenovo		Lenovo P70-A	LNV-2.711	Thay Cáp USB (trắng)	5O28C00468	Cáp kết nối dữ liệu USB Lenovo P70-A	YES	60000	0	Free
+Lenovo		Lenovo S850	LNV-2.711	Thay Cáp USB (trắng)	5O29A11837	Cáp kết nối dữ liệu USB (trắng) Lenovo	YES	60000	0	Free
+Lenovo		Lenovo S920	LNV-2.711	Thay Cáp USB (trắng)	5O29A11837	Cáp kết nối dữ liệu USB (trắng) Lenovo	YES	60000	0	Free
+Lenovo		Lenovo S920_8G	LNV-2.711	Thay Cáp USB (trắng)	5O29A11837	Cáp kết nối dữ liệu USB (trắng) Lenovo	YES	60000	0	Free
+Lenovo		Lenovo S930	LNV-2.711	Thay Cáp USB (trắng)	SO29A11934	Cáp kết nối dữ liệu USB 2A (trắng) Lenovo S930	YES	60000	0	Free
+Lenovo		Lenovo S960	LNV-2.711	Thay Cáp USB (trắng)	5O29A11837	Cáp kết nối dữ liệu USB (trắng) Lenovo	YES	60000	0	Free
+Lenovo		Lenovo X2	LNV-2.711	Thay Cáp USB (trắng)	5C19A6MXUV	Cáp kết nối dữ liệu USB (trắng) Lenovo X2	YES	60000	0	Free
+Lenovo		Lenovo A269i	LNV-2.720	Thay Tai nghe (đen)	5H39A465KW	Tai nghe Lenovo A269I	YES	100000	0	Free
+Lenovo		Lenovo A316i	LNV-2.720	Thay Tai nghe (đen)	5H39A465KW	Tai nghe Lenovo A269I	YES	100000	0	Free
+Lenovo		Lenovo A328	LNV-2.720	Thay Tai nghe (đen)	5H39A6N3LM	Tai nghe (đen) Lenovo A328	YES	110000	0	Free
+Lenovo		Lenovo A369i	LNV-2.720	Thay Tai nghe (đen)	5H39A464ZD	Tai nghe (đen) Lenovo A369I	YES	110000	0	Free
+Lenovo		Lenovo A516	LNV-2.720	Thay Tai nghe (đen)	SO29A45643	Tai nghe (đen) Lenovo A516	YES	90000	0	Free
+Lenovo		Lenovo A526	LNV-2.720	Thay Tai nghe (đen)	5H39A465KW	Tai nghe Lenovo A269I	YES	100000	0	Free
+Lenovo		Lenovo A536	LNV-2.720	Thay Tai nghe (đen)	5H39A6N0L1	Tai nghe (đen) Lenovo A536	YES	50000	0	Free
+Lenovo		Lenovo A680	LNV-2.720	Thay Tai nghe (đen)	5H39A467LG	Tai nghe Lenovo A680	YES	120000	0	Free
+Lenovo		Lenovo A850	LNV-2.720	Thay Tai nghe (đen)	SO29A45643	Tai nghe (đen) Lenovo A516	YES	90000	0	Free
+Lenovo		Lenovo A859	LNV-2.720	Thay Tai nghe (đen)	5H39A465HP	Tai nghe (đen) Lenovo A859	YES	110000	0	Free
+Lenovo		Lenovo K900_16G	LNV-2.720	Thay Tai nghe (đen)	SO29A11976	Tai nghe Lenovo K900	YES	120000	0	Free
+Lenovo		Lenovo K910L	LNV-2.720	Thay Tai nghe (đen)	SSB9A46286	Chuông (có hộp chuông và ănten) Lenovo K910L	YES	230000	200000	M2
+Lenovo		Lenovo S580	LNV-2.720	Thay Tai nghe (đen)	5H39A6N2YE	Tai nghe (đen) Lenovo S580	YES	110000	0	Free
+Lenovo		Lenovo S650	LNV-2.720	Thay Tai nghe (đen)	SO29A45643	Tai nghe (đen) Lenovo A516	YES	90000	0	Free
+Lenovo		Lenovo S660	LNV-2.720	Thay Tai nghe (đen)	SO29A45643	Tai nghe (đen) Lenovo A516	YES	90000	0	Free
+Lenovo		Lenovo S860	LNV-2.720	Thay Tai nghe (đen)	SO29A11976	Tai nghe Lenovo K900	YES	120000	0	Free
+Lenovo		Lenovo S920	LNV-2.720	Thay Tai nghe (đen)	SO29A11976	Tai nghe Lenovo K900	YES	120000	0	Free
+Lenovo		Lenovo S920_8G	LNV-2.720	Thay Tai nghe (đen)	SO29A11976	Tai nghe Lenovo K900	YES	120000	0	Free
+Lenovo		Lenovo A319	LNV-2.721	Thay Tai nghe (trắng)	5H39A6N43E	Tai nghe (trắng) Lenovo A319	YES	120000	0	Free
+Lenovo		Lenovo A516	LNV-2.721	Thay Tai nghe (trắng)	SO29A45644	Tai nghe (trắng) Lenovo A516	YES	90000	0	Free
+Lenovo		Lenovo A536	LNV-2.721	Thay Tai nghe (trắng)	5H39A6N0L0	Tai nghe (trắng) Lenovo A536	YES	50000	0	Free
+Lenovo		Lenovo A6000	LNV-2.721	Thay Tai nghe (trắng)	5H38C00968	Tai nghe (trắng) Lenovo A6000	YES	80000	0	Free
+Lenovo		Lenovo A680	LNV-2.721	Thay Tai nghe (trắng)	5H39A6N4VD	Tai nghe (trắng) Lenovo A680	YES	110000	0	Free
+Lenovo		Lenovo A850	LNV-2.721	Thay Tai nghe (trắng)	SO29A45644	Tai nghe (trắng) Lenovo A516	YES	90000	0	Free
+Lenovo		Lenovo A859	LNV-2.721	Thay Tai nghe (trắng)	SO29A45644	Tai nghe (trắng) Lenovo A516	YES	90000	0	Free
+Lenovo		Lenovo K910L	LNV-2.721	Thay Tai nghe (trắng)	SO29A11977	Tai nghe (trắng) Lenovo S820_8G	YES	120000	0	Free
+Lenovo		Lenovo P70-A	LNV-2.721	Thay Tai nghe (trắng)	5H38C00469	Tai nghe Lenovo P70-A	YES	100000	0	Free
+Lenovo		Lenovo S650	LNV-2.721	Thay Tai nghe (trắng)	SO29A45644	Tai nghe (trắng) Lenovo A516	YES	90000	0	Free
+Lenovo		Lenovo S920	LNV-2.721	Thay Tai nghe (trắng)	SO29A11977	Tai nghe (trắng) Lenovo S820_8G	YES	120000	0	Free
+Lenovo		Lenovo S920_8G	LNV-2.721	Thay Tai nghe (trắng)	SO29A11977	Tai nghe (trắng) Lenovo S820_8G	YES	120000	0	Free
+Lenovo		Lenovo S930	LNV-2.721	Thay Tai nghe (trắng)	SO29A11977	Tai nghe (trắng) Lenovo S820_8G	YES	120000	0	Free
+Lenovo		Lenovo X2	LNV-2.721	Thay Tai nghe (trắng)	5H39A6MYB4	Tai nghe LS-118M-09 (trắng) Lenovo X2	YES	130000	0	Free
+Lenovo		Lenovo A269i	LNV-2.73	Thay Pin	5B19A4647H	Pin sạc 1300mAh BL214 Lenovo A269I	YES	180000	0	Free
+Lenovo		Lenovo A316i	LNV-2.73	Thay Pin	5B19A4647H	Pin sạc 1300mAh BL214 Lenovo A269I	YES	180000	0	Free
+Lenovo		Lenovo A319	LNV-2.73	Thay Pin	SB19A6N0AL	Pin sạc 1500mAh BL171 Lenovo A319	YES	140000	0	Free
+Lenovo		Lenovo A328	LNV-2.73	Thay Pin	SB19A46347	Pin sạc 2000mAh BL192 Lenovo A526	YES	310000	0	Free
+Lenovo		Lenovo A369i	LNV-2.73	Thay Pin	SB19A463BT	Pin sạc 1500mAh BL203 Lenovo A369I	YES	170000	0	Free
+Lenovo		Lenovo A390	LNV-2.73	Thay Pin	SB19A19857	Pin sạc 1500mAh BL171 Lenovo A390	YES	220000	0	Free
+Lenovo		Lenovo A5000	LNV-2.73	Thay Pin	SB19A6N2BS	Pin sạc 4000mAh BL234 Lenovo P70-A	YES	420000	200000	M2
+Lenovo		Lenovo A516	LNV-2.73	Thay Pin	SB19A19859	Pin sạc 2000mAh BL209 Lenovo A516	YES	430000	0	Free
+Lenovo		Lenovo A526	LNV-2.73	Thay Pin	SB19A46347	Pin sạc 2000mAh BL192 Lenovo A526	YES	310000	0	Free
+Lenovo		Lenovo A536	LNV-2.73	Thay Pin	SB19A19867	Pin sạc BL210, Lenovo S820_8G	YES	420000	0	Free
+Lenovo		Lenovo A6000	LNV-2.73	Thay Pin	SB19A6N35K	Pin sạc 2300mAh BL242 Lenovo A6000	YES	240000	0	Free
+Lenovo		Lenovo A680	LNV-2.73	Thay Pin	SB19A46347	Pin sạc 2000mAh BL192 Lenovo A526	YES	310000	0	Free
+Lenovo		Lenovo A706	LNV-2.73	Thay Pin	SB19A19859	Pin sạc 2000mAh BL209 Lenovo A516	YES	430000	0	Free
+Lenovo		Lenovo A850	LNV-2.73	Thay Pin	5B19A19806	Pin sạc BL198 Lenovo S890	YES	470000	0	Free
+Lenovo		Lenovo A859	LNV-2.73	Thay Pin	5B19A464YW	Pin sạc 2250mAh BL198, Lenovo A850/A859	YES	320000	0	Free
+Lenovo		Lenovo K900_16G	LNV-2.73	Thay Pin	SB19A19865	Pin sạc BL207, Lenovo K900	YES	510000	150000	M1.5
+Lenovo		Lenovo K900_32G	LNV-2.73	Thay Pin	SB19A19865	Pin sạc BL207, Lenovo K900	YES	510000	150000	M1.5
+Lenovo		Lenovo K910L	LNV-2.73	Thay Pin	SB19A463BV	Pin sạc 3000mAh BL216, Lenovo K910L	YES	370000	150000	M1.5
+Lenovo		Lenovo P70-A	LNV-2.73	Thay Pin	SB19A6N2BS	Pin sạc 4000mAh BL234 Lenovo P70-A	YES	420000	200000	M2
+Lenovo		Lenovo P780_4G	LNV-2.73	Thay Pin	SB19A19868	Pin sạc 4000mAh BL211, Lenovo P780_8G	YES	430000	150000	M1.5
+Lenovo		Lenovo P780_8G	LNV-2.73	Thay Pin	SB19A19868	Pin sạc 4000mAh BL211, Lenovo P780_8G	YES	430000	150000	M1.5
+Lenovo		Lenovo S580	LNV-2.73	Thay Pin	5B19A6MXSF	Pin sạc 2150mAh BL225 Lenovo S580	YES	280000	0	Free
+Lenovo		Lenovo S650	LNV-2.73	Thay Pin	SB19A19867	Pin sạc BL210, Lenovo S820_8G	YES	420000	0	Free
+Lenovo		Lenovo S660	LNV-2.73	Thay Pin	5B19A465W8	Pin sạc 3000mAh BL222, Lenovo S660	YES	460000	0	Free
+Lenovo		Lenovo S820	LNV-2.73	Thay Pin	SB19A19867	Pin sạc BL210, Lenovo S820_8G	YES	420000	0	Free
+Lenovo		Lenovo S820_8G	LNV-2.73	Thay Pin	SB19A19867	Pin sạc BL210, Lenovo S820_8G	YES	420000	0	Free
+Lenovo		Lenovo S850	LNV-2.73	Thay Pin	5B19A6MVUC	Pin sạc 2150mAh BL220 Lenovo S850	YES	340000	200000	M2
+Lenovo		Lenovo S860	LNV-2.73	Thay Pin	5B19A466UJ	Pin sạc 4000mAh BL226, Lenovo S860	YES	590000	200000	M2
+Lenovo		Lenovo S90-A_32G	LNV-2.73	Thay Pin	SB19A6N2FG	Pin sạc 2300mAh BL231 Lenovo S90-A	YES	310000	300000	M3
+Lenovo		Lenovo S920	LNV-2.73	Thay Pin	SB19A19866	Pin sạc BL208, Lenovo S920	YES	420000	0	Free
+Lenovo		Lenovo S930	LNV-2.73	Thay Pin	SB19A463BW	Pin sạc 3000mAh/BL217 Lenovo S930	YES	470000	0	Free
+Lenovo		Lenovo S960	LNV-2.73	Thay Pin	SB19A463BU	Pin sạc 2000mAh BL215, Lenovo S960	YES	460000	200000	M2
+Lenovo		Lenovo X2	LNV-2.73	Thay Pin	5B19A6MX5B	Pin sạc 2300mAh BL231 Lenovo X2	YES	350000	300000	M3
+Lenovo		Lenovo A369i	LNV-2.800	Thay Vỏ mặt trước	5S59A463WH	Vỏ mặt trước (đen) Lenovo A369I	YES	80000	200000	M2
+Lenovo		Lenovo A316i	LNV-2.801	Thay Vỏ mặt trước (đen)	5S59A467SQ	Vỏ mặt trước Lenovo A316i	YES	90000	300000	M3
+Lenovo		Lenovo A516	LNV-2.801	Thay Vỏ mặt trước (đen)	SS59A462T4	Vỏ mặt trước (xám) Lenovo A516	YES	200000	200000	M2
+Lenovo		Lenovo P780_8G	LNV-2.801	Thay Vỏ mặt trước (đen)	5S59A465FM	Vỏ mặt trước (đen) Lenovo P780	YES	320000	300000	M3
+Lenovo		Lenovo A516	LNV-2.802	Thay Vỏ mặt trước (trắng)	SS59A4637X	Khung vỏ mặt trước có keo dán cảm ứng (trắng) Lenovo A516	YES	220000	250000	M2.5
+Lenovo		Lenovo A526	LNV-2.810	Thay Vỏ mặt sau	5S59A6MW53	Vỏ mặt sau Lenovo A526	YES	310000	200000	M2
+Lenovo		Lenovo S660	LNV-2.810	Thay Vỏ mặt sau	5S59A6MVY9	Vỏ mặt sau Lenovo S660	YES	590000	200000	M2
+Lenovo		Lenovo S860	LNV-2.810	Thay Vỏ mặt sau	5S59A6MW3G	Vỏ mặt sau Lenovo S860	YES	910000	200000	M2
+Lenovo		Lenovo A316i	LNV-2.811	Thay Vỏ mặt sau (đen)	5S59A467SJ	Vỏ mặt sau Lenovo A316i	YES	130000	200000	M2
+Lenovo		Lenovo A319	LNV-2.811	Thay Vỏ mặt sau (đen)	5S59A6N43C	Khung sườn sau Lenovo A319	YES	110000	200000	M2
+Lenovo		Lenovo A516	LNV-2.811	Thay Vỏ mặt sau (đen)	SA39A462T7	Vỏ mặt sau (đen) Lenovo A516	YES	170000	200000	M2
+Lenovo		Lenovo A6000	LNV-2.811	Thay Vỏ mặt sau (đen)	5S58C00657	Vỏ mặt sau (đen) Lenovo A6000	YES	180000	300000	M3
+Lenovo		Lenovo A680	LNV-2.811	Thay Vỏ mặt sau (đen)	5S59A4671V	Vỏ mặt sau (đen) Lenovo A680	YES	210000	200000	M2
+Lenovo		Lenovo A850	LNV-2.811	Thay Vỏ mặt sau (đen)	5S59A464OZ	Vỏ mặt sau (đen) Lenovo A850	YES	110000	200000	M2
+Lenovo		Lenovo K900_16G	LNV-2.811	Thay Vỏ mặt sau (đen)	5S59A4644C	Nắp pin sau (đen) Lenovo K900	YES	680000	200000	M2
+Lenovo		Lenovo K900_32G	LNV-2.811	Thay Vỏ mặt sau (đen)	5S59A4644C	Nắp pin sau (đen) Lenovo K900	YES	680000	200000	M2
+Lenovo		Lenovo P780_8G	LNV-2.811	Thay Vỏ mặt sau (đen)	SS59A462CU	Vỏ mặt sau Lenovo P780_8G	YES	150000	200000	M2
+Lenovo		Lenovo S660	LNV-2.811	Thay Vỏ mặt sau (đen)	5S59A6MVY9	Vỏ mặt sau Lenovo S660	YES	590000	200000	M2
+Lenovo		Lenovo A516	LNV-2.812	Thay Vỏ mặt sau (trắng)	5A39A464PM	Vỏ mặt sau (bạc) Lenovo A516	YES	160000	200000	M2
+Lenovo		Lenovo A680	LNV-2.812	Thay Vỏ mặt sau (trắng)	5S59A467LC	Vỏ mặt sau (trắng) Lenovo A680	YES	250000	200000	M2
+Lenovo		Lenovo A850	LNV-2.812	Thay Vỏ mặt sau (trắng)	5S59A464Y6	Vỏ mặt sau (trắng) Lenovo A850	YES	160000	200000	M2
+Lenovo		Lenovo S650	LNV-2.812	Thay Vỏ mặt sau (trắng)	SA39A462NS	Vỏ mặt sau (trắng) Lenovo S650	YES	190000	200000	M2
+Lenovo		Lenovo A859	LNV-2.813	Thay Vỏ mặt sau (xám)	5S59A6MWTG	Vỏ mặt sau (xám) Lenovo A859	YES	140000	200000	M2
+Lenovo		Lenovo K900_16G	LNV-2.813	Thay Vỏ mặt sau (xám)	5S59A4644E	Vỏ mặt sau (xám, có kính camera) Lenovo K900	YES	880000	200000	M2
+Lenovo		Lenovo K900_32G	LNV-2.813	Thay Vỏ mặt sau (xám)	5S59A4644E	Vỏ mặt sau (xám, có kính camera) Lenovo K900	YES	880000	200000	M2
+Lenovo		Lenovo A316i	LNV-2.820	Thay Nắp lưng	5S59A467SL	Nắp pin Lenovo A316i	YES	30000	0	Free
+Lenovo		Lenovo A369i	LNV-2.820	Thay Nắp lưng	5S59A463WJ	Nắp pin (đen) Lenovo A369I	YES	20000	0	Free
+Lenovo		Lenovo A526	LNV-2.820	Thay Nắp lưng	5S59A6MW54	Nắp pin Lenovo A526	YES	80000	0	Free
+Lenovo		Lenovo P70-A	LNV-2.820	Thay Nắp lưng	5S58C00452	Nắp pin Lenovo P70-A	YES	150000	0	Free
+Lenovo		Lenovo S930	LNV-2.820	Thay Nắp lưng	5S59A467LH	Nắp pin (silver) Lenovo S930	YES	150000	300000	M3
+Lenovo		Lenovo S960	LNV-2.820	Thay Nắp lưng	5S59A465LA	Nắp pin Lenovo S960	YES	320000	200000	M2
+Lenovo		Lenovo A269i	LNV-2.821	Thay Nắp lưng (đen)	5S59A465KL	Nắp lưng sau Lenovo A269I	YES	100000	0	Free
+Lenovo		Lenovo A319	LNV-2.821	Thay Nắp lưng (đen)	5S59A6N431	Nắp pin Lenovo A319	YES	120000	0	Free
+Lenovo		Lenovo A5000	LNV-2.821	Thay Nắp lưng (đen)	5S58C00744	Nắp pin Lenovo A5000 (đen)	YES	100000	0	Free
+Lenovo		Lenovo A536	LNV-2.821	Thay Nắp lưng (đen)	5S59A6N0DF	Nắp pin (đen) Lenovo A536	YES	100000	0	Free
+Lenovo		Lenovo A6000	LNV-2.821	Thay Nắp lưng (đen)	5S58C00656	Nắp pin (đen) Lenovo A6000	YES	140000	0	Free
+Lenovo		Lenovo A680	LNV-2.821	Thay Nắp lưng (đen)	5S59A466RO	Nắp pin (đen) Lenovo A680	YES	90000	0	Free
+Lenovo		Lenovo A850	LNV-2.821	Thay Nắp lưng (đen)	5S59A466SD	Nắp pin (đen) Lenovo A850	YES	120000	0	Free
+Lenovo		Lenovo K910L	LNV-2.821	Thay Nắp lưng (đen)	5S59A4678I	Nắp pin (màu kim loại) Lenovo K910L	YES	650000	0	Free
+Lenovo		Lenovo P780_8G	LNV-2.821	Thay Nắp lưng (đen)	SMO9A45537	Nắp pin Lenovo P780_8G	YES	300000	0	Free
+Lenovo		Lenovo S580	LNV-2.821	Thay Nắp lưng (đen)	5S59A6N2YS	Nắp pin (đen) Lenovo S580	YES	350000	0	Free
+Lenovo		Lenovo S660	LNV-2.821	Thay Nắp lưng (đen)	5S59A6MVXV	Nắp pin Lenovo S660	YES	240000	0	Free
+Lenovo		Lenovo X2	LNV-2.821	Thay Nắp lưng (đen)	5S58C00333	Nắp pin (đen) Lenovo X2	YES	980000	300000	M3
+Lenovo		Lenovo A680	LNV-2.822	Thay Nắp lưng (trắng)	5S59A467L8	Nắp pin (trắng) Lenovo A680	YES	110000	0	Free
+Lenovo		Lenovo A850	LNV-2.822	Thay Nắp lưng (trắng)	5S59A466SE	Nắp pin (trắng) Lenovo A850	YES	120000	0	Free
+Lenovo		Lenovo A859	LNV-2.822	Thay Nắp lưng (trắng)	5S59A467PL	Nắp pin (trắng) Lenovo A859	YES	100000	0	Free
+Lenovo		Lenovo K910L	LNV-2.822	Thay Nắp lưng (trắng)	5S59A4673C	Nắp pin (bạc) Lenovo K910L	YES	350000	0	Free
+Lenovo		Lenovo S850	LNV-2.822	Thay Nắp lưng (trắng)	5L99A467DG	Nắp lưng (trắng) Lenovo S850	YES	600000	200000	M2
+Lenovo		Lenovo X2	LNV-2.822	Thay Nắp lưng (trắng)	5S59A6N4T5	Nắp pin (trắng) Lenovo X2	YES	690000	300000	M3
+Lenovo		Lenovo S850	LNV-2.823	Thay Nắp lưng (xanh)	5L99A6MY76	Nắp lưng sau (xanh) Lenovo S850	YES	650000	200000	M2
+Lenovo		Lenovo S850	LNV-2.824	Thay Nắp lưng (hồng)	5L99A4671F	Nắp lưng (hồng) Lenovo S850	YES	570000	200000	M2
+Lenovo		Lenovo S580	LNV-2.825	Thay Nắp lưng (vàng)	5S58C00153	Nắp pin (gold) Lenovo S580 	YES	220000	0	Free
+Lenovo		Lenovo X2	LNV-2.825	Thay Nắp lưng (vàng)	5S59A6N4T1	Nắp pin (vàng) Lenovo X2	YES	940000	300000	M3
+Lenovo		Lenovo S580	LNV-2.826	Thay Nắp lưng (bạc)	5S58C00150	Nắp pin (silver) Lenovo S580	YES	250000	0	Free
+Lenovo		Lenovo A319	LNV-2.827	Thay Nắp lưng (đỏ)	5S59A6N4KD	Nắp pin (đỏ) Lenovo A319	YES	120000	0	Free
+Lenovo		Lenovo X2	LNV-2.827	Thay Nắp lưng (đỏ)	5S59A6N4T3	Nắp pin (đỏ) Lenovo X2	YES	690000	300000	M3
+Lenovo		Lenovo K900_16G	LNV-2.835	Thay khay SIM (xám)	SM89A45171	Khay SIM Lenovo K900	YES	80000	0	Free
+Lenovo		Lenovo K900_32G	LNV-2.835	Thay khay SIM (xám)	SM89A45171	Khay SIM Lenovo K900	YES	80000	0	Free
+Lenovo		Lenovo S860	LNV-2.835	Thay khay SIM (xám)	5M89A6MVND	Khay sim Lenovo S860	YES	190000	0	Free
+Lenovo		Lenovo S960	LNV-2.835	Thay khay SIM (xám)	5M89A464SA	Khay sim Lenovo S960	YES	90000	0	Free

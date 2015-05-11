@@ -24,7 +24,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	private static final String LOG = "DatabaseHelper";
 
 	// Database Version
-	private static final int DATABASE_VERSION = 1;
+	private static final int DATABASE_VERSION = 2;
 
 	// Database Name
 	private static final String DATABASE_NAME = "contactsManager";
@@ -96,14 +96,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		// on upgrade drop older tables
-		db.execSQL("DROP TABLE IF EXISTS " + CREATE_TABLE_MODEL);
-		db.execSQL("DROP TABLE IF EXISTS " + CREATE_TABLE_CORRECTION);
-		db.execSQL("DROP TABLE IF EXISTS " + CREATE_TABLE_APPLIANCE);
+		db.execSQL("DROP TABLE IF EXISTS " + TABLE_MODEL);
+		db.execSQL("DROP TABLE IF EXISTS " + TABLE_CORRECTION);
+		db.execSQL("DROP TABLE IF EXISTS " + TABLE_APPLIANCE);
 
 		// create new tables
 		onCreate(db);
 	}
 
+	public int getDatabaseVersion(){
+		SQLiteDatabase db = this.getWritableDatabase();
+		return db.getVersion();
+	}
 	// ------------------------ "todos" table methods ----------------//
 
 	/*
